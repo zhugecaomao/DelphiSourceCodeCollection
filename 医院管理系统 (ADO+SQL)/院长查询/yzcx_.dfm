@@ -1,0 +1,79 @@
+object yzcx: Tyzcx
+  Left = 303
+  Top = 187
+  Width = 253
+  Height = 316
+  Caption = #38498#38271#26597#35810
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object GroupBox1: TGroupBox
+    Left = 24
+    Top = 24
+    Width = 193
+    Height = 241
+    Caption = #26597#35810#32479#35745#39033#30446
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 40
+      Top = 40
+      Width = 105
+      Height = 33
+      Caption = #36164#36153#26597#35810#32479#35745
+      TabOrder = 0
+      OnClick = BitBtn1Click
+    end
+    object BitBtn2: TBitBtn
+      Left = 40
+      Top = 104
+      Width = 105
+      Height = 33
+      Caption = #30149#24773#26597#35810#32479#35745
+      TabOrder = 1
+      OnClick = BitBtn2Click
+    end
+    object BitBtn3: TBitBtn
+      Left = 40
+      Top = 168
+      Width = 105
+      Height = 33
+      Caption = #25163#26415#26597#35810#32479#35745
+      TabOrder = 2
+      OnClick = BitBtn3Click
+    end
+  end
+  object XPMenu1: TXPMenu
+    DimLevel = 30
+    GrayLevel = 10
+    Font.Charset = GB2312_CHARSET
+    Font.Color = clMenuText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Color = clBtnFace
+    IconBackColor = clBtnFace
+    MenuBarColor = clBtnFace
+    SelectColor = clHighlight
+    SelectBorderColor = clHighlight
+    SelectFontColor = clMenuText
+    DisabledColor = clInactiveCaption
+    SeparatorColor = clBtnFace
+    CheckedColor = clHighlight
+    IconWidth = 24
+    DrawSelect = True
+    UseSystemColors = True
+    OverrideOwnerDraw = False
+    Gradient = False
+    FlatMenu = False
+    AutoDetect = False
+    Active = True
+    Left = 16
+    Top = 136
+  end
+end

@@ -1,0 +1,323 @@
+unit xtcshut;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Buttons, DB, ADODB, ExtCtrls, Psock, NMFtp, ComCtrls;
+
+type
+  Txtcshfm = class(TForm)
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    BitBtn3: TBitBtn;
+    BitBtn4: TBitBtn;
+    BitBtn5: TBitBtn;
+    BitBtn6: TBitBtn;
+    BitBtn7: TBitBtn;
+    BitBtn8: TBitBtn;
+    BitBtn9: TBitBtn;
+    ADOQuery: TADOQuery;
+    OpenDialog1: TOpenDialog;
+    ftpado: TADOQuery;
+    Timer1: TTimer;
+    procedure FormCreate(Sender: TObject);
+    procedure BitBtn1Click(Sender: TObject);
+    procedure BitBtn2Click(Sender: TObject);
+    procedure BitBtn3Click(Sender: TObject);
+    procedure BitBtn4Click(Sender: TObject);
+    procedure BitBtn5Click(Sender: TObject);
+    procedure BitBtn6Click(Sender: TObject);
+    procedure BitBtn7Click(Sender: TObject);
+    procedure BitBtn8Click(Sender: TObject);
+    procedure BitBtn9Click(Sender: TObject);
+    procedure bcbtClick(Sender: TObject);
+    procedure ljClick(Sender: TObject);
+    procedure scbtClick(Sender: TObject);
+    procedure zzbtClick(Sender: TObject);
+    procedure sxbtClick(Sender: TObject);
+    procedure zjdzChange(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure NMFTP1Connect(Sender: TObject);
+    procedure NMFTP1ConnectionFailed(Sender: TObject);
+    procedure NMFTP1Error(Sender: TComponent; Errno: Word; Errmsg: String);
+    procedure NMFTP1InvalidHost(var Handled: Boolean);
+    procedure NMFTP1ListItem(Listing: String);
+    procedure Timer1Timer(Sender: TObject);
+    procedure memo1DrawItem(Control: TWinControl; Index: Integer;
+      Rect: TRect; State: TOwnerDrawState);
+  private
+  procedure shujuchuli(str:string;adoquery:TADOQUERY);
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  xtcshfm: Txtcshfm;
+  mypath,str:string;
+implementation
+
+uses ftput, mainut;
+
+{$R *.dfm}
+procedure Txtcshfm.shujuchuli(str:string;adoquery:TADOQUERY);
+begin
+with adoquery do
+begin
+ close;
+ sql.clear;
+ sql.add(str);
+ try
+
+ if messagedlg('警告！数据删除后不可以恢复，确定操作吗？',mtconfirmation,[mbyes,mbno],0)=mryes then
+ begin
+  execsql;
+  showmessage('操作成功！');
+  end;
+ except
+  showmessage('操作失败！');
+  end;
+  end;
+end;
+procedure Txtcshfm.FormCreate(Sender: TObject);
+begin
+//mypath:=extractfilepath(paramstr(0));
+//ADOquery.ConnectionString:='Provider=Microsoft.Jet.OLEDB.4.0;Data Source='+mypath+'data\kcgl.mdb;Persist Security Info=False';
+  with ftpado do
+   begin
+     close;
+     sql.Clear;
+      sql.Add('select * from ftp表');
+      open;
+      first;
+      while not eof do
+        begin
+           zjdz.items.add(fieldbyname('主机地址').AsString);
+           next;
+        end;
+      end;
+end;
+
+procedure Txtcshfm.BitBtn1Click(Sender: TObject);
+begin
+str:='delete from rkb';
+shujuchuli(str,adoquery);
+str:='delete from rkdb';
+shujuchuli(str,adoquery);
+str:='delete from cprkb';
+shujuchuli(str,adoquery);
+str:='delete from cprkdb';
+shujuchuli(str,adoquery);
+end;
+
+procedure Txtcshfm.BitBtn2Click(Sender: TObject);
+begin
+str:='delete from ckb';
+shujuchuli(str,adoquery);
+str:='delete from ckdb';
+shujuchuli(str,adoquery);
+str:='delete from cpckb';
+shujuchuli(str,adoquery);
+str:='delete from cpckdb';
+shujuchuli(str,adoquery);
+end;
+
+procedure Txtcshfm.BitBtn3Click(Sender: TObject);
+begin
+str:='delete from kcb';
+shujuchuli(str,adoquery);
+str:='delete from cpkcb';
+shujuchuli(str,adoquery);
+end;
+
+procedure Txtcshfm.BitBtn4Click(Sender: TObject);
+begin
+str:='delete from hzb';
+shujuchuli(str,adoquery);
+end;
+
+procedure Txtcshfm.BitBtn5Click(Sender: TObject);
+begin
+str:='delete from bhb';
+shujuchuli(str,adoquery);
+end;
+
+procedure Txtcshfm.BitBtn6Click(Sender: TObject);
+begin
+str:='delete from czyb where 姓名<>"admin"';
+shujuchuli(str,adoquery);
+str:='delete from gzyb';
+shujuchuli(str,adoquery);
+end;
+
+procedure Txtcshfm.BitBtn7Click(Sender: TObject);
+begin
+str:='delete from ghdwb';
+shujuchuli(str,adoquery);
+end;
+
+procedure Txtcshfm.BitBtn8Click(Sender: TObject);
+begin
+str:='delete from tlb';
+shujuchuli(str,adoquery);
+str:='delete from tldb';
+shujuchuli(str,adoquery);
+end;
+
+procedure Txtcshfm.BitBtn9Click(Sender: TObject);
+begin
+str:='delete from thb';
+shujuchuli(str,adoquery);
+str:='delete from thdb';
+shujuchuli(str,adoquery);
+end;
+
+procedure Txtcshfm.bcbtClick(Sender: TObject);
+begin
+with ftpado do
+   begin
+     close;
+     sql.Clear;
+     sql.Add('insert into ftp表(用户帐号,密码,主机地址,文件地址,目录) values(:yhzh,:mm,:zjdz,:wjzd,:ml)');
+     ftpado.Parameters.ParamByName('yhzh').Value:=trim(yhm.Text);
+     ftpado.Parameters.ParamByName('mm').Value:=mainfm.encrypt(trim(dlmm.Text));
+     ftpado.Parameters.ParamByName('zjdz').Value:=trim(zjdz.Text);
+     ftpado.Parameters.ParamByName('wjzd').Value:=trim(wjm.Text);
+     ftpado.Parameters.ParamByName('ml').Value:=trim(fwqwjj.Text);
+    execsql;
+    showmessage('保存成功!');
+   end;
+end;
+
+procedure Txtcshfm.ljClick(Sender: TObject);
+begin
+if yhm.Text='' then
+   begin
+     showmessage('请输入用户帐号！');
+     exit;
+   end;
+  if zjdz.Text='' then
+   begin
+     showmessage('请输入远程主机地址！');
+     exit;
+   end;
+
+  nmftp1.Host :=trim(zjdz.Text) ;
+  nmftp1.UserID :=trim(yhm.text);
+  nmftp1.Password :=trim(dlmm.text);
+  nmftp1.Connect ;
+  nmftp1.ChangeDir(trim(fwqwjj.Text));
+  nmftp1.Connect ;
+ // Timer1.Enabled:=true;
+  sxbt.Click;
+ end;
+
+procedure Txtcshfm.scbtClick(Sender: TObject);
+var s,s1,s2:string;
+ i:integer;
+ num:array[0..100] of string;
+ str:string;
+begin
+
+if wjm.Text='' then
+   begin
+     showmessage('请选择上传文件！');
+     exit;
+   end;
+s:=trim(wjm.Text);
+{s1:='';
+s2:='';
+str:=trim(wjm.Text);
+i:=0;
+   for i:=length(str) downto 1 do
+   begin
+   if (str[i]<>'/') or (str[i]<>'\') then
+    s1:=s1+str[i]
+    else
+    break;
+   end;
+   showmessage(s1);
+   for i:=length(s1) downto 1 do
+   s2:=s2+s1[i];
+   showmessage(s2); }
+ s2:=extractfilename(s);
+ nmftp1.Upload(s,s2);
+ sxbt.Click;
+end;
+
+procedure Txtcshfm.zzbtClick(Sender: TObject);
+begin
+Timer1.Enabled:=false;
+NMFTP1.Abort ;
+end;
+
+procedure Txtcshfm.sxbtClick(Sender: TObject);
+begin
+memo1.items.clear;
+nmftp1.nlist;
+end;
+
+procedure Txtcshfm.zjdzChange(Sender: TObject);
+begin
+with ftpado do
+   begin
+      close;
+      sql.Clear;
+       sql.Add('select * from ftp表 where 主机地址=:zjdz');
+       ftpado.Parameters.ParamByName('zjdz').Value:=trim(zjdz.Text);
+       open;
+       yhm.Text:=fieldbyname('用户帐号').AsString;
+       dlmm.Text:=mainfm.decrypt(fieldbyname('密码').AsString);
+       fwqwjj.Text:=fieldbyname('目录').AsString;
+      end;
+end;
+
+procedure Txtcshfm.SpeedButton1Click(Sender: TObject);
+begin
+if OpenDialog1.Execute then
+wjm.Text:=OpenDialog1.FileName;
+end;
+
+procedure Txtcshfm.NMFTP1Connect(Sender: TObject);
+begin
+showmessage('连接成功!');
+
+end;
+
+procedure Txtcshfm.NMFTP1ConnectionFailed(Sender: TObject);
+begin
+showmessage('连接失败!');
+end;
+
+procedure Txtcshfm.NMFTP1Error(Sender: TComponent; Errno: Word;
+  Errmsg: String);
+begin
+showmessage('连接错误!');
+end;
+
+procedure Txtcshfm.NMFTP1InvalidHost(var Handled: Boolean);
+begin
+showmessage('没有服务器!');
+end;
+
+procedure Txtcshfm.NMFTP1ListItem(Listing: String);
+begin
+memo1.items.add(listing);
+
+end;
+
+procedure Txtcshfm.Timer1Timer(Sender: TObject);
+begin
+sxbt.Click;
+end;
+
+procedure Txtcshfm.memo1DrawItem(Control: TWinControl; Index: Integer;
+  Rect: TRect; State: TOwnerDrawState);
+begin
+fwqwjj.Text:=memo1.Items[Index];
+end;
+
+end.

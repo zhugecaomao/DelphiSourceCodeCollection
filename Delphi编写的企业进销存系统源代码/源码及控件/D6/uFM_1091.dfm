@@ -1,0 +1,1310 @@
+inherited FM_1091: TFM_1091
+  Left = 163
+  Top = 135
+  Hint = #29289#26009#32467#26500#22270
+  Caption = #29289#26009#32467#26500#22270' '#65288'BOM'#65289
+  FormStyle = fsMDIChild
+  OldCreateOrder = True
+  Visible = True
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 12
+  object PageControl1: TPageControl
+    Left = 0
+    Top = 0
+    Width = 804
+    Height = 573
+    ActivePage = TabSheet2
+    Align = alClient
+    Font.Charset = CHINESEBIG5_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #26032#32454#26126#20307
+    Font.Style = []
+    ParentFont = False
+    TabIndex = 1
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = #24314#31435#32467#26500
+      object Label7: TLabel
+        Left = 256
+        Top = 320
+        Width = 35
+        Height = 14
+        Caption = 'Label7'
+      end
+      object TreeView1: TTreeView
+        Left = 0
+        Top = 0
+        Width = 624
+        Height = 544
+        Align = alClient
+        Font.Charset = GB2312_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = #23435#20307
+        Font.Style = []
+        HideSelection = False
+        Images = ImageList1
+        Indent = 19
+        ParentFont = False
+        PopupMenu = PopupMenu1
+        ReadOnly = True
+        RightClickSelect = True
+        TabOrder = 0
+        OnChange = TreeView1Change
+      end
+      object Panel2: TPanel
+        Left = 624
+        Top = 0
+        Width = 172
+        Height = 544
+        Align = alRight
+        BevelInner = bvRaised
+        BevelOuter = bvLowered
+        Font.Charset = GB2312_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = #23435#20307
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+        object Label15: TLabel
+          Left = 21
+          Top = 34
+          Width = 48
+          Height = 12
+          Caption = #26631#20934#29992#37327
+        end
+        object BtnAddA: TSpeedButton
+          Left = 34
+          Top = 78
+          Width = 98
+          Height = 28
+          Caption = #36873#25321#25104#21697
+          Glyph.Data = {
+            36030000424D3603000000000000360000002800000010000000100000000100
+            18000000000000030000C40E0000C40E00000000000000000000FFFF80FFFF80
+            FFFF80FFFF80FFFF80FFFF80FFFF80FFFF80FFFF80FFFF80FFFF80FFFF80FFFF
+            80FFFF80FFFF80FFFF80FFFF800000FF0000FF0000FF0000FF0000FF0000FF00
+            00FF0000FF0000FF0000FF0000FF0000FF0000FF0000FFFFFF80FFFF800000FF
+            0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000
+            FF0000FF0000FFFFFF80FFFF800000FFFFFFFFFFFFFF0000FFFFFFFFFFFFFFFF
+            FFFF0000FF0000FF0000FF0000FFFFFFFFFFFFFF0000FFFFFF80FFFF800000FF
+            FFFFFFFFFFFF0000FF0000FF0000FFFFFFFFFFFFFF0000FF0000FFFFFFFFFFFF
+            FFFFFFFF0000FFFFFF80FFFF800000FF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFF80FFFF800000FF
+            0000FFFFFFFFFFFFFF0000FFFFFFFFFFFFFF0000FFFFFFFFFFFFFF0000FF0000
+            FF0000FF0000FFFFFF80FFFF800000FF0000FFFFFFFFFFFFFF0000FFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FF0000FF0000FFFFFF80FFFF800000FF
+            0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFFFFFFFF
+            FF0000FF0000FFFFFF80FFFF800000FF0000FFFFFFFFFFFFFF0000FF0000FF00
+            00FFFFFFFFFFFFFF0000FFFFFFFFFFFFFF0000FF0000FFFFFF80FFFF800000FF
+            0000FFFFFFFFFFFFFF0000FF0000FF0000FFFFFFFFFFFFFF0000FF0000FF0000
+            FF0000FF0000FFFFFF80FFFF800000FF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+            FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFFFF80FFFF800000FF
+            0000FF0000FF0000FF0000FF0000FF0000FFFFFFFFFFFFFF0000FFFFFFFFFFFF
+            FF0000FF0000FFFFFF80FFFF800000FF0000FF0000FF0000FF0000FF0000FF00
+            00FFFFFFFFFFFFFFFFFFFFFFFFFF0000FF0000FF0000FFFFFF80FFFF800000FF
+            0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000
+            FF0000FF0000FFFFFF80FFFF80FFFF80FFFF80FFFF80FFFF80FFFF80FFFF80FF
+            FF80FFFF80FFFF80FFFF80FFFF80FFFF80FFFF80FFFF80FFFF80}
+          OnClick = BtnAddAClick
+        end
+        object BtnDel: TSpeedButton
+          Left = 34
+          Top = 312
+          Width = 98
+          Height = 28
+          Caption = #31227'    '#38500
+          Glyph.Data = {
+            DE010000424DDE01000000000000760000002800000024000000120000000100
+            04000000000068010000C40E0000C40E00001000000000000000000000000000
+            80000080000000808000800000008000800080800000C0C0C000808080000000
+            FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00771777777777
+            77777777F7777777777777770000799177777777777779787F77777777777777
+            00007999177777777777777877F7777777777777000079B99177777777779778
+            777F7777777777870000779B9177777777797777877F77777777787700007779
+            B9177777779177777877F77777778F770000777799177777791777777787F777
+            7778F77700007777799177779177777777787F77778F77770000777777991779
+            17777777777787F778F777770000777777799191777777777777787F8F777777
+            00007777777799177777777777777788F7777777000077777779919177777777
+            7777787F8F777777000077777799177917777777777887F778F7777700007777
+            999177779177777777877F77778F777700007799B9177777791777778877F777
+            7778F777000079B99177777777917778777F77777777787700009B9917777777
+            7777978777F7777777777777000089987777777777777787FF77777777777777
+            0000}
+          NumGlyphs = 2
+          OnClick = BtnDelClick
+        end
+        object btnClose: TSpeedButton
+          Left = 34
+          Top = 360
+          Width = 98
+          Height = 28
+          Caption = #31163'    '#24320
+          Glyph.Data = {
+            06030000424D060300000000000036000000280000000F0000000F0000000100
+            180000000000D0020000C40E0000C40E00000000000000000000BFBFBFBFBFBF
+            BFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBF
+            BFBFBFBFBFBFBF000000BFBFBF0000007F7F7F0000007F7F7FFFFF007F7F7FFF
+            FF007F7F7F0000000000000000007F7F7F000000BFBFBF000000BFBFBFBFBFBF
+            0000007F7F7F0000007F7F7FFFFF007F7F7FFFFF000000007F7F000000000000
+            007F7F7FBFBFBF000000BFBFBFBFBFBF00000000000000000000000000000000
+            00000000000000007F7F7F7F7F00000000000000BFBFBF000000BFBFBFBFBFBF
+            BFBFBFBFBFBF0000000000FF000000FFFF000000000000007F7F007F7F007F7F
+            00000000BFBFBF000000BFBFBF0000000000000000000000000000FF0000FF00
+            000000007F0000007F7F007F7F7F7F7F00000000BFBFBF000000BFBFBF000000
+            0000FF0000FF0000FF0000FF0000FF0000FF00007F0000007F7F7F0000007F7F
+            7F000000BFBFBF000000BFBFBF0000000000FF0000FF0000FF0000FF0000FF00
+            00FF00007F0000000000000000007F7F00000000BFBFBF000000BFBFBF000000
+            0000000000000000000000FF0000FF00000000007F0000007F7F7F0000007F7F
+            00000000BFBFBF000000BFBFBFBFBFBFBFBFBFBFBFBF0000000000FF000000FF
+            FFFF00007F0000007F7F7F7F7F007F7F7F000000BFBFBF000000BFBFBFBFBFBF
+            BFBFBFBFBFBF000000000000000000FFFF0000007F0000007F7F007F7F007F7F
+            00000000BFBFBF000000BFBFBFBFBFBFBFBFBFBFBFBF000000BFBFBF000000FF
+            FFFFFFFF00FFFFFF0000007F7F7F7F7F00000000BFBFBF000000BFBFBFBFBFBF
+            BFBFBFBFBFBFBFBFBFBFBFBF000000FFFF00FFFFFFFFFF00FFFFFF0000007F7F
+            7F000000BFBFBF000000BFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBF00000000
+            0000000000000000000000000000000000000000BFBFBF000000BFBFBFBFBFBF
+            BFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBF
+            BFBFBFBFBFBFBF000000}
+          OnClick = btnCloseClick
+        end
+        object GpbSub: TGroupBox
+          Left = 21
+          Top = 136
+          Width = 130
+          Height = 148
+          Caption = ' '#21152#20837#23376#38454#29289#21697' '
+          Font.Charset = GB2312_CHARSET
+          Font.Color = clBlue
+          Font.Height = -12
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 0
+          object BtnAddB: TSpeedButton
+            Left = 16
+            Top = 100
+            Width = 98
+            Height = 28
+            Caption = #23458#25143#26469#26009
+            Font.Charset = GB2312_CHARSET
+            Font.Color = clBlack
+            Font.Height = -12
+            Font.Name = #23435#20307
+            Font.Style = []
+            Glyph.Data = {
+              36030000424D3603000000000000360000002800000010000000100000000100
+              18000000000000030000C40E0000C40E00000000000000000000FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF0000800000800000800000800000800000800000
+              8000008000008000008000008000008000008000008000FFFF00FFFF00008000
+              0080000080000080000080000080000080000080000080000080000080000080
+              00008000008000FFFF00FFFF00008000FFFFFFFFFFFF008000008000008000FF
+              FFFFFFFFFF008000008000008000008000008000008000FFFF00FFFF00008000
+              008000FFFFFFFFFFFF008000008000FFFFFFFFFFFF008000008000FFFFFFFFFF
+              FFFFFFFF008000FFFF00FFFF00008000008000008000FFFFFFFFFFFF008000FF
+              FFFFFFFFFF008000FFFFFFFFFFFF008000008000008000FFFF00FFFF00008000
+              008000008000008000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0080000080
+              00008000008000FFFF00FFFF00008000FFFFFFFFFFFF008000008000FFFFFFFF
+              FFFFFFFFFFFFFFFF008000008000008000008000008000FFFF00FFFF00008000
+              008000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FF008000008000FFFF00FFFF00008000008000008000FFFFFFFFFFFF008000FF
+              FFFFFFFFFF008000FFFFFFFFFFFF008000008000008000FFFF00FFFF00008000
+              008000008000FFFFFFFFFFFF008000FFFFFFFFFFFF008000FFFFFFFFFFFF0080
+              00008000008000FFFF00FFFF00008000008000008000008000008000008000FF
+              FFFFFFFFFF008000008000008000008000008000008000FFFF00FFFF00008000
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFF008000FFFF00FFFF00008000008000008000008000008000008000FF
+              FFFFFFFFFF008000008000008000008000008000008000FFFF00FFFF00008000
+              0080000080000080000080000080000080000080000080000080000080000080
+              00008000008000FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00}
+            ParentFont = False
+            OnClick = BtnAddBClick
+          end
+          object BtnAddC: TSpeedButton
+            Left = 16
+            Top = 63
+            Width = 98
+            Height = 28
+            Caption = #21322' '#25104' '#21697
+            Font.Charset = GB2312_CHARSET
+            Font.Color = clBlack
+            Font.Height = -12
+            Font.Name = #23435#20307
+            Font.Style = []
+            Glyph.Data = {
+              36030000424D3603000000000000360000002800000010000000100000000100
+              18000000000000030000C40E0000C40E00000000000000000000FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF00FF0000FF0000FF0000FF0000FF0000FF0000FF
+              0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FFFF00FFFF00FF0000
+              FF0000FF0000FF0000FF0000FF0000FFFFFFFFFFFFFF0000FF0000FF0000FF00
+              00FF0000FF0000FFFF00FFFF00FF0000FF0000FF0000FF0000FF0000FF0000FF
+              FFFFFFFFFFFF0000FF0000FF0000FF0000FF0000FF0000FFFF00FFFF00FF0000
+              FF0000FF0000FF0000FF0000FF0000FFFFFFFFFFFFFF0000FF0000FF0000FF00
+              00FF0000FF0000FFFF00FFFF00FF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FFFF00FFFF00FF0000
+              FF0000FF0000FF0000FF0000FF0000FFFFFFFFFFFFFF0000FF0000FF0000FF00
+              00FF0000FF0000FFFF00FFFF00FF0000FF0000FF0000FF0000FF0000FF0000FF
+              FFFFFFFFFFFF0000FF0000FF0000FF0000FF0000FF0000FFFF00FFFF00FF0000
+              FF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFF0000FF0000FFFF00FFFF00FF0000FF0000FF0000FF0000FF0000FF0000FF
+              FFFFFFFFFFFF0000FF0000FF0000FF0000FF0000FF0000FFFF00FFFF00FF0000
+              FF0000FFFFFFFFFFFFFF0000FF0000FFFFFFFFFFFFFF0000FF0000FFFFFFFFFF
+              FFFF0000FF0000FFFF00FFFF00FF0000FF0000FF0000FFFFFFFFFFFFFFFFFFFF
+              FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000FF0000FF0000FFFF00FFFF00FF0000
+              FF0000FF0000FF0000FF0000FF0000FFFFFFFFFFFFFF0000FF0000FF0000FF00
+              00FF0000FF0000FFFF00FFFF00FF0000FF0000FF0000FF0000FF0000FF0000FF
+              0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FFFF00FFFF00FF0000
+              FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF0000FF00
+              00FF0000FF0000FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00}
+            ParentFont = False
+            OnClick = BtnAddCClick
+          end
+          object BtnAddD: TSpeedButton
+            Left = 16
+            Top = 26
+            Width = 98
+            Height = 28
+            Caption = #21407'    '#26009
+            Font.Charset = GB2312_CHARSET
+            Font.Color = clBlack
+            Font.Height = -12
+            Font.Name = #23435#20307
+            Font.Style = []
+            Glyph.Data = {
+              36030000424D3603000000000000360000002800000010000000100000000100
+              18000000000000030000C40E0000C40E00000000000000000000FFFF00FFFF00
+              FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF
+              00FFFF00FFFF00FFFF00FFFF0040808040808040808040808040808040808040
+              8080408080408080408080408080408080408080408080FFFF00FFFF00408080
+              FFFFFFFFFFFF408080408080FFFFFFFFFFFFFFFFFFFFFFFF4080804080804080
+              80408080408080FFFF00FFFF00408080408080FFFFFFFFFFFFFFFFFF40808040
+              8080FFFFFFFFFFFF408080FFFFFFFFFFFF408080408080FFFF00FFFF00408080
+              408080FFFFFFFFFFFFFFFFFFFFFFFF408080FFFFFFFFFFFFFFFFFFFFFFFF4080
+              80408080408080FFFF00FFFF00408080408080FFFFFFFFFFFF40808040808040
+              8080FFFFFFFFFFFF408080408080408080408080408080FFFF00FFFF00408080
+              408080FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FF408080408080FFFF00FFFF00408080408080FFFFFFFFFFFFFFFFFFFFFFFF40
+              8080408080408080408080FFFFFFFFFFFF408080408080FFFF00FFFF00408080
+              408080FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FF408080408080FFFF00FFFF00408080408080FFFFFFFFFFFFFFFFFFFFFFFF40
+              8080408080408080408080FFFFFFFFFFFF408080408080FFFF00FFFF00408080
+              408080FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FF408080408080FFFF00FFFF00408080408080FFFFFFFFFFFF408080408080FF
+              FFFFFFFFFF408080408080408080408080408080408080FFFF00FFFF00408080
+              408080FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+              FFFFFFFF408080FFFF00FFFF0040808040808040808040808040808040808040
+              8080408080408080408080408080408080408080408080FFFF00FFFF00408080
+              4080804080804080804080804080804080804080804080804080804080804080
+              80408080408080FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF
+              FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00}
+            ParentFont = False
+            OnClick = BtnAddDClick
+          end
+        end
+        object DBEdit1: TDBEdit
+          Left = 75
+          Top = 31
+          Width = 63
+          Height = 20
+          DataField = 'F03'
+          DataSource = DataSource1
+          TabOrder = 1
+        end
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = #26174#31034#25152#26377#25104#21697#32467#26500
+      ImageIndex = 1
+      object Panel1: TPanel
+        Left = 0
+        Top = 0
+        Width = 796
+        Height = 544
+        Align = alClient
+        Caption = 'Panel1'
+        TabOrder = 0
+        object TreeView2: TTreeView
+          Left = 305
+          Top = 1
+          Width = 490
+          Height = 542
+          Align = alClient
+          Font.Charset = GB2312_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = #23435#20307
+          Font.Style = []
+          HideSelection = False
+          Images = ImageList1
+          Indent = 19
+          ParentFont = False
+          PopupMenu = PopupMenu1
+          ReadOnly = True
+          RightClickSelect = True
+          TabOrder = 0
+        end
+        object Panel3: TPanel
+          Left = 1
+          Top = 1
+          Width = 304
+          Height = 542
+          Align = alLeft
+          BevelOuter = bvLowered
+          Caption = 'Panel3'
+          TabOrder = 1
+          object Panel4: TPanel
+            Left = 1
+            Top = 1
+            Width = 302
+            Height = 46
+            Align = alTop
+            Font.Charset = GB2312_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = #23435#20307
+            Font.Style = []
+            ParentFont = False
+            TabOrder = 0
+            object Label1: TLabel
+              Left = 15
+              Top = 6
+              Width = 48
+              Height = 12
+              Caption = #23458#25143#31616#31216
+            end
+            object Label2: TLabel
+              Left = 87
+              Top = 6
+              Width = 24
+              Height = 12
+              Caption = #22411#21495
+            end
+            object Label3: TLabel
+              Left = 129
+              Top = 6
+              Width = 24
+              Height = 12
+              Caption = #21697#21517
+            end
+            object Label4: TLabel
+              Left = 183
+              Top = 6
+              Width = 24
+              Height = 12
+              Caption = #26448#36136
+            end
+            object Label5: TLabel
+              Left = 239
+              Top = 6
+              Width = 24
+              Height = 12
+              Caption = #35268#26684
+            end
+            object Label6: TLabel
+              Left = 257
+              Top = 6
+              Width = 24
+              Height = 12
+              Caption = #24515#23380
+            end
+            object Edit1: TEdit
+              Left = 14
+              Top = 22
+              Width = 69
+              Height = 20
+              TabOrder = 0
+              OnExit = Edit1Exit
+            end
+            object Edit2: TEdit
+              Left = 85
+              Top = 22
+              Width = 42
+              Height = 20
+              TabOrder = 1
+              OnExit = Edit2Exit
+            end
+            object Edit3: TEdit
+              Left = 129
+              Top = 22
+              Width = 53
+              Height = 20
+              TabOrder = 2
+              OnExit = Edit3Exit
+            end
+            object Edit4: TEdit
+              Left = 183
+              Top = 22
+              Width = 55
+              Height = 20
+              TabOrder = 3
+              OnExit = Edit4Exit
+            end
+            object Edit5: TEdit
+              Left = 239
+              Top = 22
+              Width = 58
+              Height = 20
+              TabOrder = 4
+              OnExit = Edit5Exit
+            end
+            object Edit6: TEdit
+              Left = 265
+              Top = 2
+              Width = 16
+              Height = 20
+              TabOrder = 5
+              OnExit = Edit6Exit
+            end
+          end
+          object Panel5: TPanel
+            Left = 1
+            Top = 47
+            Width = 302
+            Height = 494
+            Align = alClient
+            Caption = 'Panel5'
+            TabOrder = 1
+            object DBGrid3: TDBGrid
+              Left = 85
+              Top = 1
+              Width = 216
+              Height = 492
+              Align = alClient
+              Color = clInfoBk
+              DataSource = DataSource3
+              Font.Charset = GB2312_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -12
+              Font.Name = #23435#20307
+              Font.Style = []
+              ParentFont = False
+              TabOrder = 0
+              TitleFont.Charset = CHINESEBIG5_CHARSET
+              TitleFont.Color = clWindowText
+              TitleFont.Height = -12
+              TitleFont.Name = #26032#32454#26126#20307
+              TitleFont.Style = []
+              Columns = <
+                item
+                  Expanded = False
+                  FieldName = 'F01'
+                  Title.Font.Charset = GB2312_CHARSET
+                  Title.Font.Color = clWindowText
+                  Title.Font.Height = -12
+                  Title.Font.Name = #23435#20307
+                  Title.Font.Style = []
+                  Visible = True
+                end
+                item
+                  Expanded = False
+                  FieldName = 'F02'
+                  Title.Font.Charset = GB2312_CHARSET
+                  Title.Font.Color = clWindowText
+                  Title.Font.Height = -12
+                  Title.Font.Name = #23435#20307
+                  Title.Font.Style = []
+                  Width = 60
+                  Visible = True
+                end
+                item
+                  Expanded = False
+                  FieldName = 'F03'
+                  Title.Font.Charset = GB2312_CHARSET
+                  Title.Font.Color = clWindowText
+                  Title.Font.Height = -12
+                  Title.Font.Name = #23435#20307
+                  Title.Font.Style = []
+                  Width = 41
+                  Visible = True
+                end
+                item
+                  Expanded = False
+                  FieldName = 'F04'
+                  Title.Font.Charset = GB2312_CHARSET
+                  Title.Font.Color = clWindowText
+                  Title.Font.Height = -12
+                  Title.Font.Name = #23435#20307
+                  Title.Font.Style = []
+                  Width = 51
+                  Visible = True
+                end
+                item
+                  Expanded = False
+                  FieldName = 'F05'
+                  Title.Font.Charset = GB2312_CHARSET
+                  Title.Font.Color = clWindowText
+                  Title.Font.Height = -12
+                  Title.Font.Name = #23435#20307
+                  Title.Font.Style = []
+                  Visible = False
+                end>
+            end
+            object DBGrid2: TDBGrid
+              Left = 1
+              Top = 1
+              Width = 84
+              Height = 492
+              Align = alLeft
+              Color = clInfoBk
+              DataSource = DataSource2
+              Font.Charset = GB2312_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -12
+              Font.Name = #23435#20307
+              Font.Style = []
+              ParentFont = False
+              TabOrder = 1
+              TitleFont.Charset = CHINESEBIG5_CHARSET
+              TitleFont.Color = clWindowText
+              TitleFont.Height = -12
+              TitleFont.Name = #26032#32454#26126#20307
+              TitleFont.Style = []
+              Columns = <
+                item
+                  Expanded = False
+                  FieldName = 'F03'
+                  Title.Font.Charset = GB2312_CHARSET
+                  Title.Font.Color = clWindowText
+                  Title.Font.Height = -12
+                  Title.Font.Name = #23435#20307
+                  Title.Font.Style = []
+                  Visible = True
+                end>
+            end
+          end
+        end
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = #26174#31034#25152#26377#21322#25104#21697#32467#26500
+      ImageIndex = 2
+      object TreeView3: TTreeView
+        Left = 304
+        Top = 0
+        Width = 492
+        Height = 544
+        Align = alClient
+        Font.Charset = GB2312_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = #23435#20307
+        Font.Style = []
+        HideSelection = False
+        Images = ImageList1
+        Indent = 19
+        ParentFont = False
+        PopupMenu = PopupMenu1
+        ReadOnly = True
+        RightClickSelect = True
+        TabOrder = 0
+      end
+      object Panel6: TPanel
+        Left = 0
+        Top = 0
+        Width = 304
+        Height = 544
+        Align = alLeft
+        BevelOuter = bvLowered
+        Caption = 'Panel6'
+        TabOrder = 1
+        object Panel7: TPanel
+          Left = 1
+          Top = 1
+          Width = 302
+          Height = 46
+          Align = alTop
+          Font.Charset = GB2312_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 1
+          object Label12: TLabel
+            Left = 252
+            Top = 7
+            Width = 24
+            Height = 12
+            Caption = #24515#23380
+            Visible = False
+          end
+          object Label11: TLabel
+            Left = 215
+            Top = 7
+            Width = 24
+            Height = 12
+            Caption = #35268#26684
+          end
+          object Label10: TLabel
+            Left = 142
+            Top = 7
+            Width = 24
+            Height = 12
+            Caption = #26448#36136
+          end
+          object Label9: TLabel
+            Left = 54
+            Top = 7
+            Width = 24
+            Height = 12
+            Caption = #21697#21517
+          end
+          object Label8: TLabel
+            Left = 7
+            Top = 7
+            Width = 24
+            Height = 12
+            Caption = #22411#21495
+          end
+          object Edit7: TEdit
+            Left = 6
+            Top = 23
+            Width = 47
+            Height = 20
+            TabOrder = 0
+            OnExit = Edit7Exit
+          end
+          object Edit8: TEdit
+            Left = 54
+            Top = 23
+            Width = 85
+            Height = 20
+            TabOrder = 1
+            OnExit = Edit8Exit
+          end
+          object Edit9: TEdit
+            Left = 140
+            Top = 23
+            Width = 74
+            Height = 20
+            TabOrder = 2
+            OnExit = Edit9Exit
+          end
+          object Edit10: TEdit
+            Left = 215
+            Top = 23
+            Width = 81
+            Height = 20
+            TabOrder = 3
+            OnExit = Edit10Exit
+          end
+          object Edit11: TEdit
+            Left = 273
+            Top = 6
+            Width = 13
+            Height = 15
+            TabOrder = 4
+            Visible = False
+            OnExit = Edit11Exit
+          end
+        end
+        object DBGrid4: TDBGrid
+          Left = 1
+          Top = 47
+          Width = 302
+          Height = 496
+          Align = alClient
+          Color = clInfoBk
+          DataSource = DataSource4
+          Font.Charset = GB2312_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = #23435#20307
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 0
+          TitleFont.Charset = CHINESEBIG5_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -12
+          TitleFont.Name = #26032#32454#26126#20307
+          TitleFont.Style = []
+          Columns = <
+            item
+              Expanded = False
+              FieldName = 'F01'
+              Title.Font.Charset = GB2312_CHARSET
+              Title.Font.Color = clWindowText
+              Title.Font.Height = -12
+              Title.Font.Name = #23435#20307
+              Title.Font.Style = []
+              Width = 35
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'F02'
+              Title.Font.Charset = GB2312_CHARSET
+              Title.Font.Color = clWindowText
+              Title.Font.Height = -12
+              Title.Font.Name = #23435#20307
+              Title.Font.Style = []
+              Width = 88
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'F03'
+              Title.Font.Charset = GB2312_CHARSET
+              Title.Font.Color = clWindowText
+              Title.Font.Height = -12
+              Title.Font.Name = #23435#20307
+              Title.Font.Style = []
+              Width = 73
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'F04'
+              Title.Font.Charset = GB2312_CHARSET
+              Title.Font.Color = clWindowText
+              Title.Font.Height = -12
+              Title.Font.Name = #23435#20307
+              Title.Font.Style = []
+              Width = 69
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'F05'
+              Title.Font.Charset = GB2312_CHARSET
+              Title.Font.Color = clWindowText
+              Title.Font.Height = -12
+              Title.Font.Name = #23435#20307
+              Title.Font.Style = []
+              Visible = False
+            end>
+        end
+      end
+    end
+  end
+  object Table1: TTable
+    Active = True
+    AfterScroll = Table1AfterScroll
+    DatabaseName = 'STK0311'
+    TableName = 'dbo.T1091'
+    Left = 172
+    Top = 375
+    object Table1Buser: TStringField
+      DisplayWidth = 10
+      FieldName = 'Buser'
+      FixedChar = True
+      Size = 10
+    end
+    object Table1F03: TFloatField
+      DisplayLabel = #26631#20934#29992#37327
+      DisplayWidth = 8
+      FieldName = 'F03'
+    end
+    object Table1Btime: TDateTimeField
+      DisplayWidth = 18
+      FieldName = 'Btime'
+    end
+    object Table1Euser: TStringField
+      DisplayWidth = 10
+      FieldName = 'Euser'
+      FixedChar = True
+      Size = 10
+    end
+    object Table1Etime: TDateTimeField
+      DisplayWidth = 18
+      FieldName = 'Etime'
+    end
+    object Table1F01: TStringField
+      FieldName = 'F01'
+      Required = True
+      FixedChar = True
+      Size = 10
+    end
+    object Table1F02: TStringField
+      FieldName = 'F02'
+      Required = True
+      FixedChar = True
+      Size = 10
+    end
+    object Table1F04: TStringField
+      FieldName = 'F04'
+      Required = True
+      FixedChar = True
+      Size = 8
+    end
+    object Table1F05: TStringField
+      FieldName = 'F05'
+      Required = True
+      FixedChar = True
+      Size = 8
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = Table1
+    Left = 204
+    Top = 375
+  end
+  object ImageList1: TImageList
+    Left = 288
+    Top = 343
+    Bitmap = {
+      494C010105000900040010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      0000000000003600000028000000400000003000000001001000000000000018
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000084208420842084208420842
+      0842084208420842084208420842084200000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000084200000000084208420000
+      0000000000000842084208420842084200000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000084208420000000000000842
+      0842000000000842000000000842084200000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000084208420000000000000000
+      0842000000000000000008420842084200000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000084208420000000008420842
+      0842000000000842084208420842084200000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000084208420000000000000000
+      0000000000000000000000000842084200000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000084208420000000000000000
+      0842084208420842000000000842084200000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000084208420000000000000000
+      0000000000000000000000000842084200000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000084208420000000000000000
+      0842084208420842000000000842084200000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000084208420000000000000000
+      0000000000000000000000000842084200000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000084208420000000008420842
+      0000000008420842084208420842084200000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000084208420000000000000000
+      0000000000000000000000000000084200000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000084208420842084208420842
+      0842084208420842084208420842084200000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000084208420842084208420842
+      0842084208420842084208420842084200000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000007C007C007C007C007C007C
+      007C007C007C007C007C007C007C007C000000001F001F001F001F001F001F00
+      1F001F001F001F001F001F001F001F0000000000000200020002000200020002
+      0002000200020002000200020002000200000000000000000000000000000000
+      0000000000000000000000000000000000000000007C007C007C007C007C007C
+      007C007C007C007C007C007C007C007C000000001F001F001F001F001F001F00
+      000000001F001F001F001F001F001F0000000000000200020002000200020002
+      0002000200020002000200020002000200000000E07F00000000000000000000
+      0000000000000000000000000000000000000000007C00000000007C00000000
+      0000007C007C007C007C00000000007C000000001F001F001F001F001F001F00
+      000000001F001F001F001F001F001F0000000000000200000000000200020002
+      000000000002000200020002000200020000000000000000FF0300000000E07F
+      FF7FE07FFF7FE07F000000000000000000000000007C00000000007C007C007C
+      00000000007C007C000000000000007C000000001F001F001F001F001F001F00
+      000000001F001F001F001F001F001F0000000000000200020000000000020002
+      000000000002000200000000000000020000000000000000FF030000E07FFF7F
+      E07FFF7F00000000000000000000000000000000007C007C0000000000000000
+      0000000000000000000000000000007C000000001F0000000000000000000000
+      00000000000000000000000000001F0000000000000200020002000000000002
+      000000000002000000000002000200020000000000000000FF030000FF7FE07F
+      FF7FE07FFF7FE07FFF7F00000000000000000000007C007C00000000007C0000
+      0000007C00000000007C007C007C007C000000001F001F001F001F001F001F00
+      000000001F001F001F001F001F001F0000000000000200020002000200000000
+      000000000000000000020002000200020000000000000000FF030000E07FFF7F
+      E07FFF7F00000000000000000000000000000000007C007C00000000007C0000
+      00000000000000000000007C007C007C000000001F001F001F001F001F001F00
+      000000001F001F001F001F001F001F0000000000000200000000000200020000
+      000000000000000200020002000200020000000000000000FF030000FF7FE07F
+      FF7FE07FFF7FE07FFF7FE07FFF7FE07F00000000007C007C0000000000000000
+      000000000000007C00000000007C007C000000001F001F000000000000000000
+      0000000000000000000000001F001F0000000000000200020000000000000000
+      000000000000000000000000000200020000000000000000FF030000E07FFF7F
+      0000000000000000000000000000000000000000007C007C00000000007C007C
+      007C00000000007C00000000007C007C000000001F001F001F001F001F001F00
+      000000001F001F001F001F001F001F0000000000000200020002000000000002
+      000000000002000000000002000200020000000000000000000000000000E07F
+      FF7FE07F00000000000000000000000000000000007C007C00000000007C007C
+      007C00000000007C007C007C007C007C000000001F001F00000000001F001F00
+      000000001F001F00000000001F001F0000000000000200020002000000000002
+      0000000000020000000000020002000200000000000000000000000000000000
+      0000000000000000000000000000000000000000007C007C0000000000000000
+      0000000000000000000000000000007C000000001F001F001F00000000000000
+      000000000000000000001F001F001F0000000000000200020002000200020002
+      0000000000020002000200020002000200000000000000000000000000000000
+      0000000000000000000000000000000000000000007C007C007C007C007C007C
+      007C00000000007C00000000007C007C000000001F001F001F001F001F001F00
+      000000001F001F001F001F001F001F0000000000000200000000000000000000
+      0000000000000000000000000000000200000000000000000000000000000000
+      0000000000000000000000000000000000000000007C007C007C007C007C007C
+      007C0000000000000000007C007C007C000000001F001F001F001F001F001F00
+      1F001F001F001F001F001F001F001F0000000000000200020002000200020002
+      0000000000020002000200020002000200000000000000000000000000000000
+      0000000000000000000000000000000000000000007C007C007C007C007C007C
+      007C007C007C007C007C007C007C007C000000001F001F001F001F001F001F00
+      1F001F001F001F001F001F001F001F0000000000000200020002000200020002
+      0002000200020002000200020002000200000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000424D3E000000000000003E000000
+      2800000040000000300000000100010000000000800100000000000000000000
+      000000000000000000000000FFFFFF0000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000FFFF0000000000008001000000000000
+      B3C10000000000009CD90000000000009EF100000000000098C1000000000000
+      9FF90000000000009E190000000000009FF90000000000009E19000000000000
+      9FF900000000000099810000000000009FFD0000000000008001000000000000
+      8001000000000000FFFF000000000000FFFFFFFFFFFFFFFFFFFF800180018001
+      1FFF800181818001041FB70D8181B181000FB19D8181999D000F9FFDBFFD8DB1
+      00079B61818187E100019BF18181B3C100009FD99FF99FF9000198D981818DB1
+      003F98C199998DB1FC7F9FFD8FF18181FFFF80D98181BFFDFFFF80F180018181
+      FFFF800180018001FFFFFFFFFFFFFFFF00000000000000000000000000000000
+      000000000000}
+  end
+  object Qry1: TQuery
+    DatabaseName = 'STK0311'
+    Left = 316
+    Top = 375
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 244
+    Top = 375
+    object N2: TMenuItem
+      Caption = #26356#26032#32467#26500
+      OnClick = N2Click
+    end
+  end
+  object Qry2: TQuery
+    DatabaseName = 'STK0311'
+    Left = 276
+    Top = 375
+  end
+  object Query1: TQuery
+    Active = True
+    DatabaseName = 'STK0311'
+    SQL.Strings = (
+      'select distinct T.F10,C.F03 from T1080 AS T'
+      'Left join T1010 AS C on T.F10=C.F01'
+      '')
+    Left = 68
+    Top = 120
+    object Query1F032: TStringField
+      DisplayLabel = #23458#25143#31616#31216
+      FieldName = 'F03'
+      Origin = 'STK0311.T1010.F03'
+      FixedChar = True
+      Size = 12
+    end
+    object Query1F10: TStringField
+      FieldName = 'F10'
+      Origin = 'STK0311.T1080.F10'
+      FixedChar = True
+      Size = 8
+    end
+  end
+  object Query2: TQuery
+    Active = True
+    AfterScroll = Query2AfterScroll
+    DatabaseName = 'STK0311'
+    DataSource = DataSource2
+    SQL.Strings = (
+      'select * from T1080 where F10=:F10'
+      '')
+    Left = 68
+    Top = 167
+    ParamData = <
+      item
+        DataType = ftFixedChar
+        Name = 'F10'
+        ParamType = ptUnknown
+        Size = 9
+      end>
+    object Query2AutoNo: TIntegerField
+      FieldName = 'AutoNo'
+      Origin = 'STK0311.T1080.AutoNo'
+    end
+    object Query2F01: TStringField
+      DisplayLabel = #22411#21495
+      FieldName = 'F01'
+      Origin = 'STK0311.T1080.F01'
+      FixedChar = True
+      Size = 4
+    end
+    object Query2F02: TStringField
+      DisplayLabel = #21697#21517
+      FieldName = 'F02'
+      Origin = 'STK0311.T1080.F02'
+      FixedChar = True
+      Size = 12
+    end
+    object Query2F03: TStringField
+      DisplayLabel = #26448#36136
+      FieldName = 'F03'
+      Origin = 'STK0311.T1080.F03'
+      FixedChar = True
+      Size = 6
+    end
+    object Query2F04: TStringField
+      DisplayLabel = #35268#26684
+      FieldName = 'F04'
+      Origin = 'STK0311.T1080.F04'
+      FixedChar = True
+    end
+    object Query2F05: TStringField
+      DisplayLabel = #24515#23380
+      FieldName = 'F05'
+      Origin = 'STK0311.T1080.F05'
+      FixedChar = True
+      Size = 5
+    end
+    object Query2F06: TFloatField
+      FieldName = 'F06'
+      Origin = 'STK0311.T1080.F06'
+    end
+    object Query2F07: TFloatField
+      FieldName = 'F07'
+      Origin = 'STK0311.T1080.F07'
+    end
+    object Query2F08: TStringField
+      FieldName = 'F08'
+      Origin = 'STK0311.T1080.F08'
+      FixedChar = True
+    end
+    object Query2F09: TStringField
+      FieldName = 'F09'
+      Origin = 'STK0311.T1080.F09'
+      FixedChar = True
+      Size = 10
+    end
+    object Query2F10: TStringField
+      FieldName = 'F10'
+      Origin = 'STK0311.T1080.F10'
+      FixedChar = True
+      Size = 8
+    end
+    object Query2F12: TFloatField
+      FieldName = 'F12'
+      Origin = 'STK0311.T1080.F12'
+    end
+    object Query2BUSER: TStringField
+      FieldName = 'BUSER'
+      Origin = 'STK0311.T1080.BUSER'
+      FixedChar = True
+      Size = 10
+    end
+    object Query2BTIME: TDateTimeField
+      FieldName = 'BTIME'
+      Origin = 'STK0311.T1080.BTIME'
+    end
+    object Query2EUSER: TStringField
+      FieldName = 'EUSER'
+      Origin = 'STK0311.T1080.EUSER'
+      FixedChar = True
+      Size = 10
+    end
+    object Query2ETIME: TDateTimeField
+      FieldName = 'ETIME'
+      Origin = 'STK0311.T1080.ETIME'
+    end
+  end
+  object DataSource2: TDataSource
+    DataSet = Query1
+    Left = 156
+    Top = 111
+  end
+  object DataSource3: TDataSource
+    DataSet = Query2
+    Left = 124
+    Top = 175
+  end
+  object Query3: TQuery
+    Active = True
+    AfterScroll = Query3AfterScroll
+    DatabaseName = 'STK0311'
+    SQL.Strings = (
+      'select * from T1070')
+    Left = 60
+    Top = 207
+    object Query3AutoNo: TIntegerField
+      FieldName = 'AutoNo'
+      Origin = 'STK0311.T1070.AutoNo'
+    end
+    object Query3F01: TStringField
+      DisplayLabel = #22411#21495
+      FieldName = 'F01'
+      Origin = 'STK0311.T1070.F01'
+      FixedChar = True
+      Size = 4
+    end
+    object Query3F02: TStringField
+      DisplayLabel = #21697#21517
+      FieldName = 'F02'
+      Origin = 'STK0311.T1070.F02'
+      FixedChar = True
+      Size = 12
+    end
+    object Query3F03: TStringField
+      DisplayLabel = #26448#36136
+      FieldName = 'F03'
+      Origin = 'STK0311.T1070.F03'
+      FixedChar = True
+      Size = 6
+    end
+    object Query3F04: TStringField
+      DisplayLabel = #35268#26684
+      FieldName = 'F04'
+      Origin = 'STK0311.T1070.F04'
+      FixedChar = True
+    end
+    object Query3F05: TStringField
+      DisplayLabel = #24515#23380
+      FieldName = 'F05'
+      Origin = 'STK0311.T1070.F05'
+      FixedChar = True
+      Size = 3
+    end
+    object Query3F06: TFloatField
+      FieldName = 'F06'
+      Origin = 'STK0311.T1070.F06'
+    end
+    object Query3F07: TFloatField
+      FieldName = 'F07'
+      Origin = 'STK0311.T1070.F07'
+    end
+    object Query3F08: TStringField
+      FieldName = 'F08'
+      Origin = 'STK0311.T1070.F08'
+      FixedChar = True
+    end
+    object Query3F12: TFloatField
+      FieldName = 'F12'
+      Origin = 'STK0311.T1070.F12'
+    end
+    object Query3BUSER: TStringField
+      FieldName = 'BUSER'
+      Origin = 'STK0311.T1070.BUSER'
+      FixedChar = True
+      Size = 10
+    end
+    object Query3BTIME: TDateTimeField
+      FieldName = 'BTIME'
+      Origin = 'STK0311.T1070.BTIME'
+    end
+    object Query3EUSER: TStringField
+      FieldName = 'EUSER'
+      Origin = 'STK0311.T1070.EUSER'
+      FixedChar = True
+      Size = 10
+    end
+    object Query3ETIME: TDateTimeField
+      FieldName = 'ETIME'
+      Origin = 'STK0311.T1070.ETIME'
+    end
+  end
+  object DataSource4: TDataSource
+    DataSet = Query3
+    Left = 124
+    Top = 207
+  end
+end

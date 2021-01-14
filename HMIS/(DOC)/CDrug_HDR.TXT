@@ -1,0 +1,772 @@
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_Query.BB_AddClick                                         |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      CBE_Field, CB_Cond, LV_SQL, ME_Data, RG_Cond                 |
+|                                                                            |
+| LOCALS:       SQL                                                          |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_Config.BB_CancelClick                                     |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      (none)                                                       |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_DBConfig.BB_CancelClick                                   |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      (none)                                                       |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_Date.BB_CancelClick                                       |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      F_Date                                                       |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_Query.BB_CloseClick                                       |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      F_Query                                                      |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_Config.BB_ConfirmClick                                    |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    LEdit2KeyPress                                               |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      LEdit1, LEdit2                                               |
+|                                                                            |
+| LOCALS:       ini                                                          |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_DBConfig.BB_ConfirmClick                                  |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    LEdit2KeyPress                                               |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      LEdit1, LEdit2                                               |
+|                                                                            |
+| LOCALS:       ini                                                          |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_Date.BB_ConfirmClick                                      |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      F_Date                                                       |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_Query.BB_DatabaseClick                                    |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      F_Query, Q_Table                                             |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_Query.BB_DeleteClick                                      |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      LV_SQL                                                       |
+|                                                                            |
+| LOCALS:       No                                                           |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_Query.BB_QueryClick                                       |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      F_Query, LV_SQL, ME_Data, N_Field, Q_Table, S_Field, T_Field |
+|                                                                            |
+| LOCALS:       buf1, buf2, i, j, No, str                                    |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_CDrug.BitBtn1Click                                        |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      AQ_CDrug, DM                                                 |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_CDrug.BitBtn2Click                                        |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      AQ_CDrug, DM                                                 |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_CDrug.BitBtn3Click                                        |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      AQ_CDrug, DM, DS_CDrug                                       |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_CDrug.BitBtn4Click                                        |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      AQ_CDrug, DM                                                 |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_CDrug.BitBtn5Click                                        |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      (none)                                                       |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_CDrug.BitBtn6Click                                        |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      AQ_CDrug, DM, F_Query, N_Field, Q_Table, S_Field, T_Field    |
+|                                                                            |
+| LOCALS:       str1, str2                                                   |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_Query.CBE_FieldChange                                     |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      CBE_Field, SButton1, T_Field                                 |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROGRAM:      CDrug                                                        |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   (none)                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      (none)                                                       |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TDM.DataModuleCreate                                         |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      ADOConnection, AQ_CDrug, AQ_Person, AQ_PInputB, AQ_PKucun,   |
+|               AQ_TCMoney, AT_CMoney, AT_Count, AT_CReg, AT_HReg, AT_OFWork,|
+|               AT_PInput, DM, F_Config                                      |
+|                                                                            |
+| LOCALS:       CString, ini, iniW, State, str, str1                         |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_CDrug.DBLookupComboBox1Enter                              |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      AT_Assis, DBLookupComboBox1, DM                              |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_CDrug.DBLookupComboBox1Exit                               |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      DBLookupComboBox1                                            |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_CDrug.DBLookupComboBox2Enter                              |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      AT_Assis, DBLookupComboBox2, DM                              |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_CDrug.DBLookupComboBox2Exit                               |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      DBLookupComboBox2                                            |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_CDrug.FormClose                                           |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Action, Sender                                               |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      AT_Assis, DM, F_CDrug                                        |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_Config.FormClose                                          |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Action, Sender                                               |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      (none)                                                       |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_DBConfig.FormClose                                        |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Action, Sender                                               |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      F_Config                                                     |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_Config.FormCreate                                         |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      Label2                                                       |
+|                                                                            |
+| LOCALS:       pName, Size_Com                                              |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_DBConfig.FormCreate                                       |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      Label2                                                       |
+|                                                                            |
+| LOCALS:       pName, Size_Com                                              |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_CDrug.FormShow                                            |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      AQ_CDrug, DM                                                 |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_Query.FormShow                                            |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      CBE_Field, LV_SQL, S_Field                                   |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_Config.LEdit2KeyPress                                     |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Key, Sender                                                  |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        BB_ConfirmClick                                              |
+|                                                                            |
+| GLOBALS:      (none)                                                       |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_DBConfig.LEdit2KeyPress                                   |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Key, Sender                                                  |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        BB_ConfirmClick                                              |
+|                                                                            |
+| GLOBALS:      (none)                                                       |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_Date.MC_DateDblClick                                      |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      F_Date                                                       |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+|                                                                            |
+| PROCEDURE:    TF_Query.SButton1Click                                       |
+|                                                                            |
+| DESCRIPTION:                                                               |
+|                                                                            |
+| PARAMETERS:   Sender                                                       |
+|                                                                            |
+| CALLED BY:    (none)                                                       |
+|                                                                            |
+| CALLS:        (none)                                                       |
+|                                                                            |
+| GLOBALS:      F_Date, F_Query, MC_Date, ME_Data, SButton1                  |
+|                                                                            |
+| LOCALS:       (none)                                                       |
+|                                                                            |
+| REVISION HISTORY:                                                          |
+|                                                                            |
+| Version   Date       Programmer     Modification                           |
+| -------   --------   ------------   -------------------------------------- |
+|                                                                            |
++----------------------------------------------------------------------------+

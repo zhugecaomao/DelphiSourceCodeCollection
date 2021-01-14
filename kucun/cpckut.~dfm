@@ -1,0 +1,422 @@
+object cpckfm: Tcpckfm
+  Left = 219
+  Top = 250
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = #25104#21697#20986#24211
+  ClientHeight = 349
+  ClientWidth = 699
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object inpl: TPanel
+    Left = 0
+    Top = 0
+    Width = 699
+    Height = 349
+    Align = alClient
+    TabOrder = 0
+    object GroupBox3: TGroupBox
+      Left = 1
+      Top = 240
+      Width = 697
+      Height = 108
+      Align = alBottom
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 0
+      object Label2: TLabel
+        Left = 8
+        Top = 16
+        Width = 81
+        Height = 33
+        AutoSize = False
+        Caption = #20179#24211#31649#29702#21592#65306
+        Layout = tlCenter
+      end
+      object bcbt: TSpeedButton
+        Left = 280
+        Top = 64
+        Width = 89
+        Height = 33
+        Hint = #20445#23384#20986#36135#21333
+        Caption = #20445#23384#20986#36135#21333
+        Flat = True
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = bcbtClick
+      end
+      object gbbt: TSpeedButton
+        Left = 466
+        Top = 64
+        Width = 79
+        Height = 33
+        Hint = #20851#38381#31383#21475
+        Caption = #20851#38381#31383#21475
+        Flat = True
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = gbbtClick
+      end
+      object sxbt: TSpeedButton
+        Left = 601
+        Top = 64
+        Width = 41
+        Height = 33
+        Caption = #21047#26032
+        Flat = True
+        Visible = False
+        OnClick = FormCreate
+      end
+      object Bevel2: TBevel
+        Left = 1
+        Top = 46
+        Width = 704
+        Height = 11
+        Shape = bsBottomLine
+      end
+      object dy: TSpeedButton
+        Left = 369
+        Top = 64
+        Width = 96
+        Height = 33
+        Hint = #25171#21360#20986#36135#21333
+        Caption = #25171#21360#20986#36135#21333
+        Flat = True
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = dyClick
+      end
+      object Label6: TLabel
+        Left = 240
+        Top = 28
+        Width = 81
+        Height = 17
+        AutoSize = False
+        Caption = #39033#30446#24635#25104#26412#65306
+      end
+      object kg: TComboBox
+        Left = 88
+        Top = 23
+        Width = 129
+        Height = 21
+        ImeName = #20013#25991' ('#31616#20307') - '#26234#33021' ABC'
+        ItemHeight = 13
+        TabOrder = 0
+      end
+      object DBNavigator1: TDBNavigator
+        Left = 184
+        Top = 64
+        Width = 97
+        Height = 33
+        DataSource = DataSource1
+        VisibleButtons = [nbDelete]
+        Flat = True
+        Hints.Strings = (
+          'First record'
+          'Prior record'
+          'Next record'
+          'Last record'
+          'Insert record'
+          #21024#38500#35760#24405
+          'Edit record'
+          #25552#20132#35760#24405
+          'Cancel edit'
+          'Refresh data')
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 1
+      end
+      object xmcb: TEdit
+        Left = 328
+        Top = 23
+        Width = 121
+        Height = 19
+        ImeName = #20013#25991' ('#31616#20307') - '#26234#33021' ABC'
+        TabOrder = 2
+      end
+    end
+    object GroupBox1: TGroupBox
+      Left = 1
+      Top = 1
+      Width = 697
+      Height = 96
+      Align = alTop
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 1
+      object djbh: TLabel
+        Left = 543
+        Top = 53
+        Width = 153
+        Height = 15
+        AutoSize = False
+        Caption = '11'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clRed
+        Font.Height = -11
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+        Layout = tlCenter
+      end
+      object Label9: TLabel
+        Left = 472
+        Top = 71
+        Width = 65
+        Height = 23
+        AutoSize = False
+        Caption = #20986#36135#26085#26399#65306
+        Layout = tlCenter
+      end
+      object Label1: TLabel
+        Left = 472
+        Top = 48
+        Width = 65
+        Height = 23
+        AutoSize = False
+        Caption = #21333#25454#32534#21495#65306
+        Layout = tlCenter
+      end
+      object Label15: TLabel
+        Left = 176
+        Top = 16
+        Width = 265
+        Height = 33
+        AutoSize = False
+        Caption = #24191#24030#26234#36798#23478#20855#26377#38480#20844#21496' '
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clNavy
+        Font.Height = -19
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label3: TLabel
+        Left = 8
+        Top = 72
+        Width = 65
+        Height = 17
+        AutoSize = False
+        Caption = #23458#25143#21517#31216#65306
+        Layout = tlCenter
+      end
+      object Label4: TLabel
+        Left = 270
+        Top = 48
+        Width = 83
+        Height = 33
+        AutoSize = False
+        Caption = #20986#36135#21333
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clNavy
+        Font.Height = -19
+        Font.Name = 'MS Sans Serif'
+        Font.Style = [fsBold]
+        ParentFont = False
+        Layout = tlCenter
+      end
+      object Bevel1: TBevel
+        Left = 179
+        Top = 48
+        Width = 249
+        Height = 2
+        Shape = bsBottomLine
+      end
+      object jhrqbox: TDateTimePicker
+        Left = 544
+        Top = 71
+        Width = 118
+        Height = 19
+        Date = 38492.474073437500000000
+        Time = 38492.474073437500000000
+        ImeName = #20013#25991' ('#31616#20307') - '#26234#33021' ABC'
+        TabOrder = 0
+      end
+      object khmc: TComboBox
+        Left = 72
+        Top = 69
+        Width = 129
+        Height = 21
+        ImeName = #20013#25991' ('#31616#20307') - '#26234#33021' ABC'
+        ItemHeight = 13
+        TabOrder = 1
+        OnChange = khmcChange
+      end
+    end
+    object GroupBox2: TGroupBox
+      Left = 1
+      Top = 97
+      Width = 697
+      Height = 143
+      Align = alClient
+      Ctl3D = False
+      ParentCtl3D = False
+      TabOrder = 2
+      object DBGrid1: TDBGrid
+        Left = 1
+        Top = 14
+        Width = 695
+        Height = 128
+        Align = alClient
+        Ctl3D = False
+        DataSource = DataSource1
+        ImeName = #20013#25991' ('#31616#20307') - '#26234#33021' ABC'
+        ParentCtl3D = False
+        TabOrder = 0
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'MS Sans Serif'
+        TitleFont.Style = []
+        OnCellClick = DBGrid1CellClick
+        Columns = <
+          item
+            Alignment = taCenter
+            Expanded = False
+            FieldName = #24207#21495
+            Title.Alignment = taCenter
+            Visible = True
+          end
+          item
+            DropDownRows = 20
+            Expanded = False
+            FieldName = #21517#31216
+            PickList.Strings = (
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              ''
+              '')
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = #35268#26684
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = #25968#37327
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = #21333#20301
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = #21333#20215
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = #24635#37329#39069
+            Title.Caption = #21512#35745
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = #22791#27880
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = #21333#25454#32534#21495
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'id'
+            Visible = True
+          end>
+      end
+    end
+  end
+  object ADOQuery: TADOQuery
+    Connection = dataconfm.datacon
+    Parameters = <>
+    SQL.Strings = (
+      'select * from rkb ')
+    Left = 232
+    Top = 192
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOQuery1
+    Left = 177
+    Top = 177
+  end
+  object ADOQuery1: TADOQuery
+    Connection = dataconfm.datacon
+    Parameters = <>
+    Left = 265
+    Top = 193
+  end
+  object ADOQuery2: TADOQuery
+    Connection = dataconfm.datacon
+    Parameters = <>
+    Left = 313
+    Top = 193
+  end
+  object ADOQuery3: TADOQuery
+    Connection = dataconfm.datacon
+    Parameters = <>
+    Left = 345
+    Top = 193
+  end
+end

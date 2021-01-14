@@ -1,0 +1,44 @@
+package osg6220;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'ObjectSight TopGrid - Non Data Aware Grid Component'}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl,
+  rtl;
+
+contains
+  TSSetLib in 'TSSetLib.pas',
+  TSDateTime in 'TSDateTime.pas',
+  TSDateTimeDef in 'TSDateTimeDef.pas',
+  TSGLib in 'TSGLib.pas',
+  TSGrid in 'TSGrid.pas',
+  TSImageList in 'TSImageList.pas',
+  TSMask in 'TSMask.pas',
+  TSMbcs in 'TSMbcs.pas',
+  TSCommon in 'TSCommon.pas',
+  Grids_ts in 'Grids_ts.pas';
+
+end.

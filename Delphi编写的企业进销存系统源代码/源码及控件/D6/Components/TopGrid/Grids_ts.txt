@@ -1,0 +1,14 @@
+Grids_ts 2.20 for Delph 7 installation note
+
+The TopGrid unit Grids_ts.pas is a slightly modified version of the standard Delphi Grids.pas unit and is not included with the installation of the TopGrid. 
+This installation program uses the standard Delphi Grids.pas unit to recreate the source code file for the Grids_ts.pas unit by applying a few changes to the Grids.pas file.
+
+Before running this installation program, you should place a valid copy of the Grids.pas unit in the TopGrid 'Source' subdirectory located under the installation directory chosen during setup of the TopGrid. 
+When choosing the destination directory later during this setup, make sure you choose the TopGrid 'Source' subdirectory as the destination. 
+You can find the Grids.pas unit in the 'Delphi6\Source\VCL' subdirectory. 
+You MUST use the Delphi 7 Grids.pas unit, or the installation will not succeed. After running this installation program, remove the Grids.pas file from the TopGrid 'Source' subdirectory.
+
+*** IMPORTANT ***
+
+The copyright for the Grids.pas unit and the resulting Grids_ts.pas unit lie completely with Inprise Corporation and are subject to the terms and conditions of the Inprise license agreement for Delphi. 
+This installation program applies a number of changes to the Grids.pas unit, resulting in the Grids_ts.pas unit, by automatic means. The installation program will not work without a valid copy of the Grids.pas unit.

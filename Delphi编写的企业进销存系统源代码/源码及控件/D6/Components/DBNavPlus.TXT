@@ -1,0 +1,45 @@
+  DBNavPlus is a decendent of TDBNavigator.  It adds a captions, layout, margin and
+  spacing properties to the buttons.
+
+  Author: William R. Florac
+  Company: FITCO, Verona, WI (wee little company from my house)
+  Copyright 1997, FITCO.  All rights reserved.
+
+ 1)  Users of DBNavPlus (and it's components) must accept this disclaimer of
+     warranty: "DBNavPlus is supplied as is.  The author disclaims all
+     warranties, expressed or implied, including, without limitation,
+     the warranties of merchantability and of fitness for any purpose.
+     The author assumes no liability for damages, direct or conse-
+     quential, which may result from the use of DBNavPlus."
+
+  2) This Software is donated to the public as public domain except as
+     noted below.
+
+  3) If you distribute this software, you must include all parts and pages without
+  	 modification.
+
+  4) Software may be used, modified and distributed freely if compiled in with
+     commercial or private applications (not another VCL).
+
+  5) Fitco retains the copyright to this Software.  You may not distribute
+     the source code (PAS) or its compiled unit (DCU) for profit.
+
+  6) If you do find this component handy and you feel guilty
+     for using such a great product without paying someone,
+     please feel free to send a few bucks ($25) to support further
+     development. .  I have spent a lot of time making this VCL
+     the best it can be and have included a help file to make
+     it complete.
+
+  7) This file was formatted with tabs set to 2.
+
+  8) Thanks to all those who suggested (and got) improvements.
+
+  9) Latest version can always be found at http://sumac.etcconnect.com/fitco/
+
+     Please forward any comments or suggestions to Bill Florac at:
+        email: flash@etcconnect.com
+        mail: FITCO
+              209 Jenna Dr
+              Verona, WI  53593
+

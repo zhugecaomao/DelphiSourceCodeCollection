@@ -1,0 +1,7 @@
+到 .\STK0311\D6\Components\TopGrid\Source 下，
+             先用 Delphi6 打开 osg6220.dpk，Compile；
+             再用 Delphi6 打开 osdg6220.dpk，Compile；
+             再用 Delphi6 打开 osgdcld6.dpk，Install；
+             再用 Delphi6 打开 osgdrp6.dpk，Install.
+
+将 TopGrid 所在目录路径加入 Delphi6 的 Library Path。

@@ -1,0 +1,47 @@
+object frm_Spalsh: Tfrm_Spalsh
+  Left = 228
+  Top = 169
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsNone
+  ClientHeight = 250
+  ClientWidth = 352
+  Color = clSkyBlue
+  Font.Charset = GB2312_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = #23435#20307
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 352
+    Height = 250
+    Align = alClient
+    AutoSize = True
+    Color = clSkyBlue
+    TabOrder = 0
+    object Label3: TLabel
+      Left = 19
+      Top = 30
+      Width = 245
+      Height = 19
+      Caption = 'WdSoft_'#36830#38145#38144#21806#31649#29702#31995#32479
+      Color = clWhite
+      Font.Charset = GB2312_CHARSET
+      Font.Color = clMaroon
+      Font.Height = -19
+      Font.Name = #38582#20070
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      Transparent = True
+    end
+  end
+end

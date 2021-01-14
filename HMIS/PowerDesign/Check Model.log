@@ -1,0 +1,108 @@
+
+Checking package ...
+-	Circular references
+-	Constraint name uniqueness
+-	Constraint name maximum length
+Checking table ...
+-	Table name uniqueness
+-	Table code uniqueness
+-	Table name maximum length
+-	Table code maximum length
+-	Existence of column
+-	Existence of index
+	Warning	The following table has no index:
+		-> CRegister
+		-> CRKind
+		-> TCMoney
+		-> CMoney
+		-> PKucun
+		-> CDrug
+		-> POutput
+		-> POutputB
+		-> PInput
+		-> PInputB
+		-> Company
+		-> HLeave
+		-> HRegister
+		-> THMoney
+		-> HPrepay
+		-> HMoney
+		-> Person
+		-> On_Off_Work
+		-> Duty
+		-> Branch
+		-> KDrug
+		-> CUnit
+		-> Count
+		-> ICure
+		-> Users
+-	Existence of key
+	Warning	The following table has no key:
+		-> CRKind
+		-> On_Off_Work
+		-> Count
+-	Number of auto-incremented columns
+-	Existence of reference
+	Warning	The following table has no reference:
+		-> Count
+		-> ICure
+		-> Users
+Checking column of table
+-	Column name uniqueness
+-	Column code uniqueness
+-	Column code maximum length
+-	Domain divergence
+-	Column mandatory
+-	Detect inconsistencies between default values and check parameters
+-	Detect inconsistencies between check parameters
+-	Precision > Maximum Length
+-	Check for undefined data types
+-	Foreign key column data type divergence
+	Warning	The datatype of the following foreign key columns differ from the primary/alternate key's datatype:
+		-> CReg_Bra
+-	Constraint name uniqueness
+-	Column with sequence not in a key
+-	Auto-incremented column with data type not numeric
+-	Missing computed column expression
+Checking index of table
+-	Index name uniqueness
+-	Index code uniqueness
+-	Index code maximum length
+-	Existence of index column
+-	Index inclusion
+Checking key of table
+-	Key name uniqueness
+-	Key code uniqueness
+-	Key code maximum length
+-	Existence of column
+	Error	The following key has no column:
+		-> Key_1
+-	Key inclusion
+-	Multi-column key has sequence column
+Checking trigger of table
+-	Trigger code maximum length
+Checking view ...
+-	View name uniqueness
+-	View code uniqueness
+-	View code maximum length
+Checking reference ...
+-	Reference name uniqueness
+-	Reference code uniqueness
+-	Reflexive and mandatory reference
+-	Existence of reference join
+-	Reference code maximum length
+-	Incomplete join
+-	Join order
+Checking domain ...
+-	Domain name uniqueness
+-	Domain code uniqueness
+-	Domain code maximum length
+-	Detect inconsistencies between default values and check parameters
+-	Detect inconsistencies between check parameters
+-	Precision > Maximum Length
+-	Check for undefined data types
+Checking user ...
+Checking procedure ...
+Checking file ...
+1 error(s),  32 warning(s).
+The Physical Data Model is incorrect, there are 1 errors.

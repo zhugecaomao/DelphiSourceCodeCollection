@@ -1,0 +1,50 @@
+package osgdcld6;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'ObjectSight TopGrid Components'}
+{$DESIGNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  designide,
+  vcl,
+  osdg6220,
+  osg6220;
+
+contains
+  duCustomGridProperties in '..\Source\duCustomGridProperties.pas' {dgCustomGridProperties},
+  duCustomMasks in '..\Source\duCustomMasks.pas' {dgCustomMasks},
+  duDefineMask in '..\Source\duDefineMask.pas' {dgDefineMask},
+  duMaskHelp in '..\Source\duMaskHelp.pas' {fmMaskHelp},
+  propertyDescs in '..\Source\propertyDescs.pas',
+  duCustomColProperties in '..\Source\duCustomColProperties.pas' {dgCustomColProperties},
+  TSGReg in '..\Source\TSGReg.pas',
+  TSImagelistEditor in '..\Source\TSImagelistEditor.pas',
+  TSSetName in '..\Source\TSSetName.pas' {tsSetNameDlg},
+  osGridEditor in '..\Source\osGridEditor.pas' {fmOsGridEditor},
+  osColorComboBox in '..\Source\osColorComboBox.pas',
+  duSpinOptions in '..\Source\duSpinOptions.pas' {dgSpinOptions};
+
+end.

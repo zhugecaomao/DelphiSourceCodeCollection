@@ -1,0 +1,24 @@
+; This file is maintained by WHD. Do not modify this file directly.
+;
+; This help project was created with Windows Help Designer V 3.1.29.0
+; *** UNREGISTERED ***
+; Windows Help Designer is copyright (C) 1996, 2001 Visage Software
+; Visit http://www.visagesoft.com for more informations
+;
+[OPTIONS]
+REPORT=Yes
+ERRORLOG=D:\PROGRA~1\Borland\Delphi6\Projects\HMIS\Help\HELP_H~1.LOG
+LCID=0x409
+
+[WINDOWS]
+main="", , 0,(255,255,225),(192,192,192),  ; 
+
+[FILES]
+HELP_HMIS.RTF
+
+[MAP]
+Topic1=0x1
+Topic2=0x2
+Topic3=0x3
+Topic4=0x4
+Topic5=0x5

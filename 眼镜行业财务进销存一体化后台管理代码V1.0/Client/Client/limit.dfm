@@ -1,0 +1,86 @@
+object frm_limit: Tfrm_limit
+  Left = 316
+  Top = 170
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = #24211#23384#21830#21697#19978#19979#38480#35774#32622
+  ClientHeight = 139
+  ClientWidth = 254
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -14
+  Font.Name = #23435#20307
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnClose = FormClose
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 14
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 254
+    Height = 139
+    Align = alClient
+    Color = clSkyBlue
+    TabOrder = 0
+    object GroupBox1: TGroupBox
+      Left = 10
+      Top = 1
+      Width = 233
+      Height = 107
+      Color = clSkyBlue
+      ParentColor = False
+      TabOrder = 0
+      object edtup: TLabeledEditint
+        Left = 80
+        Top = 29
+        Width = 130
+        Height = 22
+        EditLabel.Width = 56
+        EditLabel.Height = 14
+        EditLabel.Caption = #24211#23384#19978#38480
+        EditLabel.Transparent = True
+        LabelPosition = lpLeft
+        LabelSpacing = 3
+        TabOrder = 0
+      end
+      object edtdown: TLabeledEditint
+        Left = 80
+        Top = 64
+        Width = 130
+        Height = 22
+        EditLabel.Width = 56
+        EditLabel.Height = 14
+        EditLabel.Caption = #24211#23384#19979#38480
+        EditLabel.Transparent = True
+        LabelPosition = lpLeft
+        LabelSpacing = 3
+        TabOrder = 1
+      end
+    end
+    object btnOk: TBitBtn
+      Left = 95
+      Top = 112
+      Width = 75
+      Height = 25
+      Caption = #30830#23450
+      TabOrder = 1
+      OnClick = SpeedButton1Click
+      Kind = bkOK
+    end
+    object btnCancel: TBitBtn
+      Left = 171
+      Top = 112
+      Width = 75
+      Height = 25
+      Caption = #21462#28040
+      TabOrder = 2
+      OnClick = SpeedButton2Click
+      Kind = bkCancel
+    end
+  end
+end

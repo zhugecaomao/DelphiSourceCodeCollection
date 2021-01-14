@@ -1,0 +1,23 @@
+object fmBase: TfmBase
+  Left = 123
+  Top = 99
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'fmBase'
+  ClientHeight = 348
+  ClientWidth = 536
+  Color = clBtnFace
+  Font.Charset = GB2312_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = #23435#20307
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnClose = FormClose
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+end

@@ -1,0 +1,9 @@
+:Base  HELP_HMIS.HLP
+:Title Contents Title
+1 软件使用说明=Topic1
+1 系统安装
+2 软件安装=Topic2
+1 身份验证
+2 用户登录=Topic3
+1 数据维护
+2 数据备份和还原=Topic4

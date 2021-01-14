@@ -1,0 +1,290 @@
+object frm_Company: Tfrm_Company
+  Left = 6
+  Top = 11
+  Width = 794
+  Height = 542
+  Caption = 'frm_Company'
+  Color = clSkyBlue
+  Font.Charset = GB2312_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = #23435#20307
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 786
+    Height = 515
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'Panel1'
+    Color = clSkyBlue
+    TabOrder = 0
+    object Panel2: TPanel
+      Left = 0
+      Top = 0
+      Width = 786
+      Height = 41
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 0
+    end
+    object Panel3: TPanel
+      Left = 0
+      Top = 41
+      Width = 786
+      Height = 474
+      Align = alClient
+      BevelOuter = bvNone
+      Caption = 'Panel3'
+      Color = clSkyBlue
+      TabOrder = 1
+      object Panel4: TPanel
+        Left = 245
+        Top = 0
+        Width = 541
+        Height = 474
+        Align = alClient
+        BevelOuter = bvNone
+        Color = clSkyBlue
+        TabOrder = 0
+        object Panel5: TPanel
+          Left = 0
+          Top = 0
+          Width = 541
+          Height = 222
+          Align = alTop
+          BevelOuter = bvNone
+          Color = clCream
+          TabOrder = 0
+          object Edit_Name: TLabeledEdit
+            Left = 88
+            Top = 15
+            Width = 450
+            Height = 21
+            EditLabel.Width = 65
+            EditLabel.Height = 13
+            EditLabel.Caption = #20844#21496#21517#31216#65306
+            LabelPosition = lpLeft
+            LabelSpacing = 3
+            TabOrder = 0
+          end
+          object Edit_NO: TLabeledEdit
+            Left = 88
+            Top = 39
+            Width = 450
+            Height = 21
+            EditLabel.Width = 65
+            EditLabel.Height = 13
+            EditLabel.Caption = #20844#21496#20195#30721#65306
+            LabelPosition = lpLeft
+            LabelSpacing = 3
+            TabOrder = 1
+            OnChange = Edit_NOChange
+          end
+          object Edit_address: TLabeledEdit
+            Left = 88
+            Top = 63
+            Width = 450
+            Height = 21
+            EditLabel.Width = 65
+            EditLabel.Height = 13
+            EditLabel.Caption = #20844#21496#22320#22336#65306
+            LabelPosition = lpLeft
+            LabelSpacing = 3
+            TabOrder = 2
+          end
+          object Edit_ZIP: TLabeledEdit
+            Left = 88
+            Top = 87
+            Width = 100
+            Height = 21
+            EditLabel.Width = 65
+            EditLabel.Height = 13
+            EditLabel.Caption = #37038#25919#32534#30721#65306
+            LabelPosition = lpLeft
+            LabelSpacing = 3
+            TabOrder = 3
+          end
+          object Edit_TEL: TLabeledEdit
+            Left = 88
+            Top = 111
+            Width = 185
+            Height = 21
+            EditLabel.Width = 65
+            EditLabel.Height = 13
+            EditLabel.Caption = #32852#31995#30005#35805#65306
+            LabelPosition = lpLeft
+            LabelSpacing = 3
+            TabOrder = 4
+          end
+          object Edit_WWW: TLabeledEdit
+            Left = 88
+            Top = 135
+            Width = 450
+            Height = 21
+            EditLabel.Width = 65
+            EditLabel.Height = 13
+            EditLabel.Caption = #20844#21496#32593#22336#65306
+            LabelPosition = lpLeft
+            LabelSpacing = 3
+            TabOrder = 5
+          end
+          object Edit_Email: TLabeledEdit
+            Left = 88
+            Top = 159
+            Width = 450
+            Height = 21
+            EditLabel.Width = 65
+            EditLabel.Height = 13
+            EditLabel.Caption = #30005#23376#37038#31665#65306
+            LabelPosition = lpLeft
+            LabelSpacing = 3
+            TabOrder = 6
+          end
+          object Edit_Fax: TLabeledEdit
+            Left = 352
+            Top = 111
+            Width = 185
+            Height = 21
+            EditLabel.Width = 65
+            EditLabel.Height = 13
+            EditLabel.Caption = #20256#30495#21495#30721#65306
+            LabelPosition = lpLeft
+            LabelSpacing = 3
+            TabOrder = 7
+          end
+          object CheckBox1: TCheckBox
+            Left = 217
+            Top = 87
+            Width = 88
+            Height = 17
+            Caption = #26159#21542#20026#24635#24215
+            TabOrder = 8
+            OnClick = CheckBox1Click
+          end
+          object ToolBar1: TToolBar
+            Left = 0
+            Top = 193
+            Width = 541
+            Height = 29
+            Align = alBottom
+            ButtonHeight = 24
+            Caption = 'ToolBar1'
+            TabOrder = 9
+            object Cmd_Add: TSpeedButton
+              Left = 0
+              Top = 2
+              Width = 80
+              Height = 24
+              Caption = #22686#21152
+              OnClick = Cmd_AddClick
+            end
+            object Cmd_Delete: TSpeedButton
+              Left = 80
+              Top = 2
+              Width = 80
+              Height = 24
+              Caption = #21024#38500
+              OnClick = Cmd_DeleteClick
+            end
+            object Cmd_Edit: TSpeedButton
+              Left = 160
+              Top = 2
+              Width = 80
+              Height = 24
+              Caption = #20462#25913
+              OnClick = Cmd_EditClick
+            end
+            object Cmd_Save: TSpeedButton
+              Left = 240
+              Top = 2
+              Width = 80
+              Height = 24
+              Caption = #20445#23384
+              Enabled = False
+              OnClick = Cmd_SaveClick
+            end
+            object Cmd_Exit: TSpeedButton
+              Left = 320
+              Top = 2
+              Width = 80
+              Height = 24
+              Caption = #21462#28040
+              OnClick = Cmd_ExitClick
+            end
+            object Cmd_Part: TSpeedButton
+              Left = 400
+              Top = 2
+              Width = 80
+              Height = 24
+              Caption = #37096#38376#24320#35774
+              Enabled = False
+            end
+          end
+          object Edit1: TEdit
+            Left = 302
+            Top = 85
+            Width = 40
+            Height = 21
+            Enabled = False
+            TabOrder = 10
+            Text = #21542
+            OnChange = Edit1Change
+          end
+          object CheckBox2: TCheckBox
+            Left = 420
+            Top = 87
+            Width = 73
+            Height = 17
+            Caption = #20572#29992#26631#24535
+            TabOrder = 11
+            OnClick = CheckBox2Click
+          end
+          object Edit2: TEdit
+            Left = 495
+            Top = 85
+            Width = 40
+            Height = 21
+            Enabled = False
+            TabOrder = 12
+            Text = #21542
+            OnChange = Edit2Change
+          end
+        end
+        object DBGrid1: TDBGrid
+          Left = 0
+          Top = 222
+          Width = 541
+          Height = 252
+          Align = alClient
+          DataSource = frm_Data.DataSource_TMP
+          Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit]
+          ReadOnly = True
+          TabOrder = 1
+          TitleFont.Charset = GB2312_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -13
+          TitleFont.Name = #23435#20307
+          TitleFont.Style = []
+          OnCellClick = DBGrid1CellClick
+        end
+      end
+      object TreeView1: TTreeView
+        Left = 0
+        Top = 0
+        Width = 245
+        Height = 474
+        Align = alLeft
+        Indent = 19
+        TabOrder = 1
+        Visible = False
+      end
+    end
+  end
+end

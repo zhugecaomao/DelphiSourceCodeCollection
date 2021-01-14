@@ -1,0 +1,137 @@
+unit ztut;
+
+interface
+
+uses
+ Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Menus, ComCtrls, ToolWin, ExtCtrls, jpeg,shellapi, ImgList, XPMan, DB,
+  ADODB,registry,inifiles, Psock, NMFtp;
+type
+  Tztfm = class(TForm)
+    Panel1: TPanel;
+    NMFTP1: TNMFTP;
+    ftpado: TADOQuery;
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ztfm: Tztfm;
+
+implementation
+
+uses mainut, xyriut, dataut;
+
+{$R *.dfm}
+
+procedure Tztfm.FormCreate(Sender: TObject);
+var
+  MyTextFile:TextFile;
+  i:integer;
+  opstruc:tshfileopstruct;
+  frombuf,tobuf:array[0..128]of char;
+  Present: TDateTime;
+  Year, Month, Day: Word;
+  datapath:string;
+  zjdz,yhzh,mm,ml:string;
+begin
+datapath:=extractfilepath(paramstr(0));
+
+//mainfm.statusbar.Panels.Items[1].Text:='当前操作：'+n44.Caption;
+  with ftpado do
+    begin
+      close;
+      sql.Clear;
+      sql.Add('select * from ftp表');
+      open;
+      first;
+      if recordcount>=1 then
+        begin
+         zjdz:=fieldbyname('主机地址').AsString;
+         yhzh:=fieldbyname('用户帐号').AsString;
+         mm:=fieldbyname('密码').AsString;
+         ml:=trim(fieldbyname('目录').AsString);
+        end;
+    end;
+  //ztfm.showmodal;
+  ztfm.panel1.caption:='正在系统日志存盘...';
+if not FileExists(datapath+'logfile/Log.txt') then   //将系统日志存盘
+       begin
+         createdir(datapath+'logfile');
+         AssignFile(MyTextFile,datapath+'logfile/Log.txt');
+         Rewrite(MyTextFile);
+         try
+           for i:=0 to xtczrzfm.rzmo.Lines.Count-1 do
+             Writeln(MyTextFile,xtczrzfm.rzmo.lines[i]);
+         finally
+           CloseFile(MyTextFile)
+         end;
+       end
+       else
+       begin
+         AssignFile(MyTextFile,datapath+'logfile/Log.txt');
+         Append(MyTextFile);
+         try
+           for i:=0 to xtczrzfm.rzmo.Lines.Count-1 do
+             Writeln(MyTextFile,xtczrzfm.rzmo.lines[i]);
+         finally
+           CloseFile(MyTextFile)
+         end;
+       end;
+//sjbffm:=Tsjbffm.create(self);
+//sjbffm.showmodal;
+//sjbffm.free;
+Present:=date();
+DecodeDate(Present, Year, Month, Day);
+ztfm.panel1.caption:='正在备份数据...';
+if Day=1 then
+  begin
+   //DeleteDir(application.GetNamePath+'backup');
+  end;
+  begin
+  if directoryexists(datapath+'backup')=false then
+createdir(datapath+'backup');
+if fileexists(datapath+'backup/'+datetostr(date())+'kcgl.bak') then
+deletefile(datapath+'backup/'+datetostr(date())+'kcgl.bak');
+    fillchar(frombuf,sizeof(frombuf),0);
+    fillchar(tobuf,sizeof(tobuf),0);
+    strpcopy(frombuf,pchar(datapath+'data/kcgl.mdb'));
+    strpcopy(tobuf,pchar(datapath+'backup/'+datetostr(date())+'kcgl.bak'));
+    with opstruc do
+    begin
+wnd:=handle;
+wfunc:=fo_copy;
+pfrom:=@frombuf;
+pto:=@tobuf;
+fflags:=fof_noconfirmation or fof_renameoncollision;
+fanyoperationsaborted:=false;
+hnamemappings:=nil;
+lpszprogresstitle:=nil;
+end;
+if shfileoperation(opstruc)=0 then
+begin
+ //showmessage('数据自动备份成功！')
+ ztfm.panel1.caption:='数据备份完毕...';
+end;
+  end;
+
+  //数据上传到服务器
+  ztfm.panel1.caption:='正在上传数据...';
+        dataconfm.datacon.Connected:=false;;
+         nmftp1.Host :=zjdz;
+         nmftp1.UserID :=yhzh;
+         nmftp1.Password :=mm;
+         nmftp1.Connect ;
+         nmftp1.ChangeDir(ml);
+         nmftp1.Connect ;
+         //sleep(5000);
+         nmftp1.Upload(extractfilepath(paramstr(0))+'data/kcgl.mdb','kcgl.mdb');
+         nmftp1.Disconnect;
+         //showmessage('数据上传成功');
+         ztfm.panel1.caption:='上传数据完毕...';
+end;
+
+end.

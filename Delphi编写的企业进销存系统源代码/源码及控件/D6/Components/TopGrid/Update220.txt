@@ -1,0 +1,321 @@
+TopGrid v2.20.24 release notes September 8, 2002
+
+1. C++ Builder 5 installation problems repaired (was missing TsCmpVer.pas file for rebuilding packages)
+2. Combos with ParentCombo=True for databound grids problem resolved within design editor 
+
+TopGrid v2.20.23 release notes August 24, 2002
+
+1. Painting cell images problem fixed.
+
+TopGrid v2.20.22 release notes August 23, 2002
+
+1. Discovered critical issue with SaveToFile and LoadFromFile methods (saving properties of grid to file, stream or registry) due to a problem with the new TosXMLExport property.
+
+TopGrid v2.20.21 release notes August 18, 2002
+
+1. All versions compiled with QuickReport standard based on re-compiled version of QuickReports Profesional. This was done to eliminate issues with the C++ Builder QuickReport Standard environment.
+2. TimeEntry mas SysTimeEntry that is available within the designer changed to allow single digit hour and optional seconds
+3. AV error in designer when clicking on a blank (no column) area of the sample grid was fixed.
+4. Printing to the printer directly using the popup menu option was not functioning (users previously had to use Prevew first).
+5. Setting DateTimeDef property on a dbgrid Column in the designer was not holding
+6. New property CellTextWidth available on TtsGrid and TtsDbGrid to provide the width of the text in the specified cell
+7. New property MaxTextWidth on TtsCol and TtsDbCol that scans all rows to compute the maximum text width 
+8. Online help topics added for new properties
+9. Online help links were showing in larger font due to recent upgrade of online help production software - all have been reduced for better readability.
+10. Restructuring of the package (DPK files) to not include directories in the event users wish to recompile the packages.
+
+
+TopGrid V2.20.20 release notes July 15, 2002
+
+1. Several defects related to printing grids repaired (AV error, column resequencing not being picked up)
+2. New Package added to installation call OSGDRPn.BPL to contain the TosGridReport component which is now required to support grid printing.
+3. OSGn220.BPL and OSDGn220.BPL packages no longer require QuickReport package which means smaller footprint on EXE when printing not required (No QR and no BDE dependency)
+4. New properties added to TosGridReport for enhanced reporting (Margins, PrintLineMode, PrintBandColor, ColumnSpacing, ShowTitleSection)
+5. Exporting to CSV was exporting hidden columns.
+6. Grid Editor was not providing a dropdown list of TtsDateTimeDef components.
+7. Could not open Demo Delphi projects as the DFM files had gotten reset from TEXT - back to TEXT again.
+8. Anyone using QuickReport PRO will no only need to recompile the new package OSGDRPn.DPK IF they want the grid printing feature installed
+9. GetXMLData and GetXMLMetaData methods moved to protected area to allow override operation within derived grids.
+10. DbGrid Sorting project in Examples directory provides demonstration of using TosGridReport component and printing grids.
+
+
+TopGrid V2.20.19 release notes May 13, 2002
+
+1. Compiled with QuickReport Standard 3.5 vs QuickReport Standard 3.0
+
+
+TopGrid V2.20.18 release notes Apr 27th, 2002
+
+1. First release of TopGrid 2.20 for Borland C++ 6
+
+Changes in release 18
+1. Drawing a button was not always being performed when columns where re-arranged. This was due to some internal code which was operating on the displaycol instead of the datacol.
+2. MouseWheel working again
+3. TtsHTMLGridProducer generating extra entries in the TableRow <TR> that are confusing Ms Word. Extra set of double quotes are not necessary and were removed.
+
+
+TopGrid V2.20.17 release notes Mar 10th, 2002
+
+1. First release of TopGrid 2.20 for Borland C++ 5
+
+Changes in release 17
+1. Removing a column from a multi column combo sometimes cleared the fieldname property of the remaining column.
+2. Designer TopLeft position is remembered between sessions.
+3. Designer Grid View and Column View are remembered between sessions.
+4. Ability to Insert a row in a stored combo data list.
+5. An abort within a TDataSet event was leaving the rowBar indicator in an inconsistent state.
+
+TopGrid V2.20.16 release notes Feb 10th, 2002
+
+1. FocusBorder change in 14 changed default from fbDot to fbSingle, this puts the original default back to fbDot
+2. fbDot FocusBorder is back to a DrawFocusRect call to reflect the original visual behaviour instead of the Pen.Style being a dotted line (somehwhat different in appearance)
+3. Tabbing problem with Read Only columns fixed where arrowing and tabbing thru read only columns was not working eventhought SkipReadOnly = False.
+
+
+
+TopGrid V2.20.14  release notes Jan 29th, 2002
+
+New Properties
+1. FocusBorderColor to allow the option to change the color of the FocusBorder surrounding the current cell
+2. AlwaysDetectButton to allow button clicking even when the cell is read only or in a read only column or row. It even
+allows detection when in Browse mode.
+
+Designer
+1. Ability to add and remove rows in the Row Editor for a TtsGrid
+2. Ability to set the DateTimeDef for a Cell, Row or Column
+3. Setting Column ReadOnly property to true was causing the column to not be selected
+4. Potential for a column to have a buttontype of btCombo but to remain unassigned and undefined to be configured at runtime
+5. Rows spinbutton on Common tab was not always detecting a click operation to change the rowcount
+6. Selecting multiple columns and then resizing the column widht adjusts all selected columns.
+
+Printing
+1. New component called TtsGridReport to adjust the printing characteristics of the TopGrid grid report including (TitleFont,
+TitleImage, and various text labels).
+
+Miscellaneuous
+1. New property called MenuOptionsText on the TtsGridReport component to customize the text within the built in grid popup menu
+
+Defects Fixed
+1. Tabbing to next row when next row is not visible and a scroll operation is required and the last cell is read only
+2. AV error when exiting TtsImageList editor
+3. Export operation was exporting in YYYYNNDD format instead of the computer date format
+4. MaskDefs variant error fixed
+
+Online Help
+1. New topics and properties added for new TtsGridReport component
+2. New topics added for FocusBorderColor and AlwaysDetectButton property
+
+TopGrid V2.20.12  release notes Nov 16th, 2001
+
+This was primarily an emergency release to fix several defects discovered between the Delphi 6 release (11) earlier in the week and
+creating this later release for the Delphi 4 and 5 users.
+
+Designer
+1. TtsGrid column properties were no longer being brought into the designer.
+2. Combo lookups using AutoLookup fields  were no longer grabbing the underlying field value.
+
+TopGrid V2.20.10  release notes Oct 11th, 2001
+
+The following are the list of enhancements, defects fixed, and known problems on the given release date...
+General Fixes/Changes
+1. Version property of grid was showing 2.20.8 instead of 2.20.9 - this release shows 2.20.10
+2. New property called ExportDelimiter with default of a comma to allow changes to the export delimiter of a csv or text file
+3. Default to ProvideGridMenu changed to False from True (default on property is false to eliminate any reference in dfm file)
+4. Defaults added to PrintLinesPerPage, PrintTotals, PrintWithGridFormat to eliminate property references in dfm file if not touched
+
+Designer
+1. Column position Indicator has been completely re-worked to more effectively and consistently display current column position.
+2. VertAlignment, HorzAlignment, CellMaskName, RowMaskName, CellSpinOptions and RowSpinOptions added to Row and Cell editing of a TtsGrid
+3. Column SpinOptions now uses a popup dialog to set one or more of the appropriate options
+4. ProvideGridMenu property was being reset each time designer was accessed 
+5. Importing a grid layout now enables the Apply button.
+6. FieldState is no longer changed to fsCustomized when the designer is used - only if a column property is touched (ie. resized, color, etc.).
+7. Combo Datasource was not being displayed when the source was a separate form or datamodule.
+8. Combo fields are now available even if dataset is not active and as long as fields were defined within the form.
+9. Form size (height & width) and sample grid size are now remembered between sessions.
+
+Printing
+1. Column Heading height of grid and wordwrapping is used to alter the printing header.
+
+Help
+1. Properties / Methods window is no longer set to StayOnTop and is positioned more appropriately to the left of the current help topic window.
+2. One of the visual links for the TopGrid Editor image was not properly set.
+
+
+TopGrid V2.20.9  release notes Sept 10th, 2001
+
+The following are the list of enhancements, defects fixed, and known problems on the given release date...
+General Fixes/Changes
+1. New cell property (read/write) called CellCheckBoxState to read and write the checkboxstate of an indivial cell
+2. Button painting in cells is now corrected and properly paints without having to move the cursor over the cell
+3. Old 2.01 defect fixed where tabbing was cycling thru the last row in the grid twice and backward tabbing thru the first row twice (If DataSetType = dstStandard)
+4. XML export is now properly handling quotes and ampersands in the data values.
+
+Designer
+1. Combos defined on cells are now added to the Combo Listbox for selection
+2. New Combo Column Properties tab available to edit propertie such as visible, heading, HorzAlignment of each column in a combo
+3. Bookmark out of range error gone when adding all fields at once
+4. ReadOnly property of a cell was numeric and should be rrOn, rrOff or rrDefault in cell property editor
+5. Adding and removing a combo was causing an access violation is fixed.
+6. Changing the font of a cell is no enabling the Apply button
+
+Printing
+1. Total record count is now resetting back to zero between preview and print operations
+2. CheckBoxes in grid were not properly checked to reflect actual cell values is now fixed.
+3. Progress bar is now disabled when printing as TQuickReport only reflects this progress for reports bound to a dataset.
+
+Help
+No changes
+
+TopGrid V2.20.8  release notes  August26th, 2001
+
+The following are the list of enhancements, defects fixed, and known problems on the given release date...
+General Fixes.
+1. Determined that Delphi 6 no longer considers Bookmark = EmptyBookmark to be a valid comparison. This comparison
+always returned true and was the cause of several defects (such as RowSelected and combo data issues). The new logic
+converts the Bookmark to a string to compare.
+
+Designer
+1. Two new buttons added to toolbar to set and clear a picture from a cell (Cell Properties)
+2. Three new check boxes added to Common Properties (StoreData, PrintCols and GridMenu)
+3. StoreData checkbox and DropDownStyle added to ComboGrid properties
+4. BorderStyle now only lists grid borderstyles and not form borderstyles
+5. Removed ComboDataSource from Column properties (must be done in Combo tab)
+6. Add clNone as a valid color to all color properties
+7. Added ability to set Alignment, ControlType and ButtonType for multiple selected columns
+8. Added ability to delete multiple selected columns
+9. Fixed issue with column moving in editor where selected column was not showing correct column properties
+
+Printing
+1. PrintTitle now centers properly for a Portrait mode report
+2. No column headings on report if HeadingOn = False
+
+Help
+No changes
+
+TopGrid V2.20.7  release notes  August21st, 2001
+
+The following are the list of enhancements, defects fixed, and known problems on the given release date...
+Designer
+1. Combo DataSource was not properly reloading
+2. Added ability to have a heading on dropdowns (added HeadingOn, HeadingColor, HeadingFont and Heading properties)
+3. Eliminated error when Rows = 0
+4. Complete work to make Designer compatable with Delphi 4 and Delphi 5 
+
+Printing
+1. Fixed AV error when column with no field was present when printing
+2. Hidden Columns and Hidden Rows no longer show in the report
+3. Row ordering is now considered in printing (TtsGrid)
+
+Help
+1. There is a new Frequently Asked Questions topic within the online help.
+2. Print and Export property and method links are now present for TtsBaseGrid, TtsCustomGrid, TtsGrid, TtsCustomDbGrid and TtsDbGrid.
+
+The following are the list of enhancements, defects fixed, and known problems at release for the production release of version 2.20 since beta 3...
+Designer
+1. Added Row Properties and Cell Properties tab to allow editing of non databound grids
+2. Added ability to have invisible rows and invisible columns.
+3. Added property descriptions
+4. Mask Combobox automatically widens when dropped down.
+5. Renamed system masks to start with "sys"
+6 .Fixed defect in designer where changing the Cols count in the Common tab resulted in errors.
+7. Fixed defect to ensure a deleted column also removed the assoicated combo.
+
+Printing
+1. Added new properties PrintCols and PrintWithGridFormat. PrintCols will limit the grid to print only the first N columns. PrintWithGridFormat determines whether
+or not the grid formatting such as Color and Font settings as defined in the Col, Row, Cell and OnGetDrawInfo event is used in the report.
+2. Added the ability to print a TtsGrid
+3. Modified the printing to print based on the displayCol number to reflect moved columns at runtime.
+
+Online Help
+1. Added Online help for new designer with several screen shots and image hotlinks
+2. Added Online help for TtsHTMLGridProducer.
+3. Added Online help for new properties
+
+Known Problems at time of release
+1. Online help not done for Row and Cell Properties designer
+
+The following are the list of enhancements, defects fixed and known problems for this release of 2.20 (beta 3)...
+Designer
+1. Ability to properly configure column widths and column fields for a combo dropdown is enabled
+2. Ability to hide a combo column
+3. Several new properties such as GridLines, Rows and StoreData added to ComboGrid properties listing
+4. Additional mechanism to add field to the grid - Insert field will insert the field to the left of the currently selected column
+5. Added Rows and Cols properties as spinEdit controls on the common tab
+6. Selecting a column with a combo will also display the combo properties within the combo tab, and vice versa
+7. StoreData for a TtsGrid with data entry into the sample grid is now possible
+8. StoreData for a combo is now possible
+
+Printing
+1. Grid report now attempts to squeeze the grid into a single page width by scaling the column widths to fit within the pagewidth (looking at a final enhancement to add a property to specify layout (FitToPageWidth or TruncateColumns)
+2. Added two new events OnPrintRow and OnPrintCell to allow the application to control which grid rows actually print, and whether or not cell contents are shown.
+
+Online Help
+1. Upgraded online help to include new properties and grid features such as printing
+2. Upgraded online help (more to come) to provide better keyword searching for Topics
+
+
+The following are the list of enhancements, defects fixed and known problems for 2.20 (beta 2)...
+
+1. New properties on grids called PrintOrientation, PrintLinesPerPage and PrintTotals
+
+2. New property on TtsCol called PrintTotals to specify if a grand total should be shown on the grid report for that column. PrintTotals property must be set to true for any column totals to appear.
+
+3. New property on grids called ProvideGridMenu (True/False). Setting to true will automatically configure a popup menu (if none defined) that contains three menu options Print Preview..., Print..., and Export.... The Print Preview will bring up the grid report preview window. The Print will print the grid report to the default printer immediately. The Export will display a save dialog to save as either CSV or XML. HTML must be done programmatically using the TtsHTMLGridProducer component.
+* Note: If a PopupMenu is already associated with the grid, then setting the ProvideGridMenu to True will show the menu options at the bottom of the existing popup menu with a line separator.
+
+4. Improved Combo editing to the Design Editor with a new easy to use interface - list of combos for just the combos used on the grid (no need to scroll the grid horizontally anymore). Easier property setting and field specifications for the columns of the dropdown.
+* Note: StoredData entry is not available yet.
+
+5. Fixed defect where adjusting the columns of a multi column combo did not take.
+
+6. Fixed defect where LookupDatasource data was not being populated in the combo data grid.
+
+7 New property grouping called Data within the grid property viewer to view just the data oriented properties of a TtsDbGrid.
+
+8. New BeginUpdate / EndUpdate methods on grid to disable and re-enable grid painting when performing mass changes to the data. These are just more well known method calls to encase the already existing EnablePaint property .
+
+9. Fixed defect where it was no longer possible to reference a column in the grid by the field name.
+
+10. Fixed defect associated with Delphi 6 not being forgiving (like Delphi 5) on the AnsiCompareStr function. Was periodically causing an AV error when selecting the combo or during keyed entry.
+
+
+The following are the list of enhancements, defects fixed and known problems for this release of 2.20 (beta 1)...
+
+Enhancements
+
+1. New TopGrid Design Editor available from within the Delphi IDE
+	This new designer completely replaces the old TopGrid designer
+
+
+2. Ability to print and preview grid reports for the TtsDbGrid (TtsGrid in next release)
+	i. Use the PrintPreview and Print methods
+	ii. Change report properties using OnPrintGrid event and PrintTitle property
+
+3. New Cell and Col properties...
+	i.  Data property to store a pointer to any object referenced by CellData[Col, Row]
+	ii. Tag property to store an integer value referenced by CellTag[Col, Row]
+
+4. Export to CSV file using ExportCSVData(filename : String) method on TtsDbGrid
+	(TtsGrid export in next release)
+
+5. New component TtsHTMLGridProducer to associate with a Grid and produce HTML tables of grid contents
+
+6. New property on TtsDBGrid for XML to produce XML called XMLData.
+
+
+Defects Fixed
+	None
+
+Known Problems
+
+1. TopGrid designer still requires more thorough testing for Combo Properties
+	(combo columns widths not setting properly yet)
+
+2. TopGrid designer Undo/Reset functionality not complete yet
+
+3. Online Help is not updated to reflect the new enhancements (to come with production release)
+
+4. DateTime Design Editor does not function
+
+

@@ -1,0 +1,29 @@
+object frm_Umanage_Fad: Tfrm_Umanage_Fad
+  Left = 106
+  Top = 154
+  Width = 848
+  Height = 690
+  AutoSize = True
+  BorderStyle = bsNone
+  Caption = 'frm_Umanage_Fad'
+  Color = clSkyBlue
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -14
+  Font.Name = #23435#20307
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 14
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 840
+    Height = 663
+    Align = alClient
+    Color = clSkyBlue
+    TabOrder = 0
+  end
+end

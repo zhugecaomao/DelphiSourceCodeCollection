@@ -1,0 +1,21 @@
+--------------------------------------------------------------
+Component: DsFancyButton
+Compiler : Delphi 3 or later
+           
+Copyright: (c) 1999-2000 Djoko Susilo
+Jl. Niaga Raya Q14 Kemang Pratama, Bekasi 17116, Indonesia
+e-mail: djokos@cabi.net.id
+web: http://homepage.indo1.com/delphianhome
+  
+--------------------------------------------------------------
+
+Thank you for trying this component, hopefully it will meet your need. You can use it freely as far as you dont put it in commercial matter. Otherwise you must register your copy. However, I appreciate if you can contribute by sending me $1 or equivalent, for further development.
+
+DsFancyButton is a graphic button with nice face using gradient effect surrounding the border. The basic shape available are Rectangle, RoundRectangle and Ellipse. From these basic shapes you can get other nice shapes like Oval, Round or Capsule.
+
+The uniqueness of this component includes:
+- Gradient face, you need no bitmap to get same effect.
+- 3D Caption.
+
+Please send your feedback and suggestion to: djokos@cabi.net.id
+---------------------------------------------------------------

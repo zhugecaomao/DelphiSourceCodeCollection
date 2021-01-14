@@ -1,0 +1,778 @@
+object frm_Storage_Guide: Tfrm_Storage_Guide
+  Left = 140
+  Top = 97
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = #24211#23384#19978#19979#38480#25209#37327#35774#32622#21521#23548
+  ClientHeight = 320
+  ClientWidth = 561
+  Color = clBtnFace
+  Font.Charset = GB2312_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = #23435#20307
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 561
+    Height = 320
+    Align = alClient
+    Caption = 'Panel1'
+    TabOrder = 0
+    object Panel4: TPanel
+      Left = 1
+      Top = 1
+      Width = 559
+      Height = 36
+      Align = alTop
+      Alignment = taRightJustify
+      BevelOuter = bvNone
+      Caption = #27426#36814#20351#29992#24211#23384#19978#19979#38480#35774#32622#21521#23548'  '
+      Color = clAppWorkSpace
+      Font.Charset = GB2312_CHARSET
+      Font.Color = clAqua
+      Font.Height = -19
+      Font.Name = #23435#20307
+      Font.Style = [fsBold, fsItalic]
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Panel5: TPanel
+      Left = 1
+      Top = 304
+      Width = 559
+      Height = 15
+      Align = alBottom
+      BevelOuter = bvNone
+      TabOrder = 1
+    end
+    object Panel2: TPanel
+      Left = 1
+      Top = 37
+      Width = 559
+      Height = 267
+      Align = alClient
+      Caption = 'Panel2'
+      Color = cl3DLight
+      TabOrder = 2
+      object PageControl1: TPageControl
+        Left = 114
+        Top = 1
+        Width = 444
+        Height = 265
+        ActivePage = TabSheet4
+        Align = alRight
+        MultiLine = True
+        TabIndex = 3
+        TabOrder = 0
+        TabPosition = tpLeft
+        object TabSheet1: TTabSheet
+          Caption = #36873#25321#20179#24211
+          object Label2: TLabel
+            Left = 63
+            Top = 35
+            Width = 338
+            Height = 13
+            Caption = #36873#25321#20320#24819#35201#30340#37096#38376#21644#38376#24215#65292#31995#32479#40664#35748#20026#12304#20840#37096#37096#38376#21644#38376#24215#12305
+          end
+          object Cmd_JSR: TSpeedButton
+            Left = 383
+            Top = 97
+            Width = 22
+            Height = 20
+            Glyph.Data = {
+              76010000424D7601000000000000760000002800000020000000100000000100
+              04000000000000010000120B0000120B00001000000000000000000000000000
+              800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+              FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+              33333333333333333333333333333333333333333333333333FF333333333333
+              3000333333FFFFF3F77733333000003000B033333777773777F733330BFBFB00
+              E00033337FFF3377F7773333000FBFB0E000333377733337F7773330FBFBFBF0
+              E00033F7FFFF3337F7773000000FBFB0E000377777733337F7770BFBFBFBFBF0
+              E00073FFFFFFFF37F777300000000FB0E000377777777337F7773333330BFB00
+              000033333373FF77777733333330003333333333333777333333333333333333
+              3333333333333333333333333333333333333333333333333333333333333333
+              3333333333333333333333333333333333333333333333333333}
+            NumGlyphs = 2
+            OnClick = Cmd_JSRClick
+          end
+          object Cmd_Storage_Up: TSpeedButton
+            Left = 110
+            Top = 225
+            Width = 75
+            Height = 25
+            Caption = #19978#19968#27493
+            Enabled = False
+            Glyph.Data = {
+              76010000424D7601000000000000760000002800000020000000100000000100
+              04000000000000010000120B0000120B00001000000000000000000000000000
+              800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+              FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+              3333333333333333333333333333333333333333333333333333333333333333
+              3333333333333FF3333333333333003333333333333F77F33333333333009033
+              333333333F7737F333333333009990333333333F773337FFFFFF330099999000
+              00003F773333377777770099999999999990773FF33333FFFFF7330099999000
+              000033773FF33777777733330099903333333333773FF7F33333333333009033
+              33333333337737F3333333333333003333333333333377333333333333333333
+              3333333333333333333333333333333333333333333333333333333333333333
+              3333333333333333333333333333333333333333333333333333}
+            NumGlyphs = 2
+          end
+          object Cmd_Storage_Down: TSpeedButton
+            Left = 193
+            Top = 225
+            Width = 75
+            Height = 25
+            Caption = #19979#19968#27493
+            Glyph.Data = {
+              76010000424D7601000000000000760000002800000020000000100000000100
+              04000000000000010000120B0000120B00001000000000000000000000000000
+              800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+              FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+              3333333333333333333333333333333333333333333333333333333333333333
+              3333333333333333333333333333333333333333333FF3333333333333003333
+              3333333333773FF3333333333309003333333333337F773FF333333333099900
+              33333FFFFF7F33773FF30000000999990033777777733333773F099999999999
+              99007FFFFFFF33333F7700000009999900337777777F333F7733333333099900
+              33333333337F3F77333333333309003333333333337F77333333333333003333
+              3333333333773333333333333333333333333333333333333333333333333333
+              3333333333333333333333333333333333333333333333333333}
+            NumGlyphs = 2
+            OnClick = Cmd_Storage_DownClick
+          end
+          object SpeedButton3: TSpeedButton
+            Left = 329
+            Top = 225
+            Width = 75
+            Height = 25
+            Caption = #21462#28040
+            Glyph.Data = {
+              DE010000424DDE01000000000000760000002800000024000000120000000100
+              0400000000006801000000000000000000001000000000000000000000000000
+              80000080000000808000800000008000800080800000C0C0C000808080000000
+              FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+              333333333333333333333333000033338833333333333333333F333333333333
+              0000333911833333983333333388F333333F3333000033391118333911833333
+              38F38F333F88F33300003339111183911118333338F338F3F8338F3300003333
+              911118111118333338F3338F833338F3000033333911111111833333338F3338
+              3333F8330000333333911111183333333338F333333F83330000333333311111
+              8333333333338F3333383333000033333339111183333333333338F333833333
+              00003333339111118333333333333833338F3333000033333911181118333333
+              33338333338F333300003333911183911183333333383338F338F33300003333
+              9118333911183333338F33838F338F33000033333913333391113333338FF833
+              38F338F300003333333333333919333333388333338FFF830000333333333333
+              3333333333333333333888330000333333333333333333333333333333333333
+              0000}
+            NumGlyphs = 2
+            OnClick = btnCancelClick
+          end
+          object Panel3: TPanel
+            Left = 16
+            Top = 66
+            Width = 395
+            Height = 3
+            TabOrder = 0
+          end
+          object Edit_Storage_Name: TLabeledEdit
+            Left = 83
+            Top = 96
+            Width = 301
+            Height = 21
+            EditLabel.Width = 65
+            EditLabel.Height = 13
+            EditLabel.Caption = #36873#25321#20179#24211#65306
+            LabelPosition = lpLeft
+            LabelSpacing = 3
+            ReadOnly = True
+            TabOrder = 1
+            Text = #20840#37096#37096#38376#25110#38376#24215
+          end
+          object Edit_Storage_NO: TEdit
+            Left = 83
+            Top = 144
+            Width = 301
+            Height = 21
+            Enabled = False
+            ReadOnly = True
+            TabOrder = 2
+            Visible = False
+            OnChange = Edit_Storage_NOChange
+          end
+          object edtshop: TEdit
+            Left = 83
+            Top = 120
+            Width = 300
+            Height = 21
+            ReadOnly = True
+            TabOrder = 3
+            OnChange = edtshopChange
+          end
+        end
+        object TabSheet2: TTabSheet
+          Caption = #21830#21697#36873#25321
+          ImageIndex = 1
+          object SpeedButton1: TSpeedButton
+            Left = 110
+            Top = 225
+            Width = 75
+            Height = 25
+            Caption = #19978#19968#27493
+            Glyph.Data = {
+              76010000424D7601000000000000760000002800000020000000100000000100
+              04000000000000010000120B0000120B00001000000000000000000000000000
+              800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+              FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+              3333333333333333333333333333333333333333333333333333333333333333
+              3333333333333FF3333333333333003333333333333F77F33333333333009033
+              333333333F7737F333333333009990333333333F773337FFFFFF330099999000
+              00003F773333377777770099999999999990773FF33333FFFFF7330099999000
+              000033773FF33777777733330099903333333333773FF7F33333333333009033
+              33333333337737F3333333333333003333333333333377333333333333333333
+              3333333333333333333333333333333333333333333333333333333333333333
+              3333333333333333333333333333333333333333333333333333}
+            NumGlyphs = 2
+            OnClick = SpeedButton1Click
+          end
+          object SpeedButton2: TSpeedButton
+            Left = 193
+            Top = 225
+            Width = 75
+            Height = 25
+            Caption = #19979#19968#27493
+            Glyph.Data = {
+              76010000424D7601000000000000760000002800000020000000100000000100
+              04000000000000010000120B0000120B00001000000000000000000000000000
+              800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+              FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+              3333333333333333333333333333333333333333333333333333333333333333
+              3333333333333333333333333333333333333333333FF3333333333333003333
+              3333333333773FF3333333333309003333333333337F773FF333333333099900
+              33333FFFFF7F33773FF30000000999990033777777733333773F099999999999
+              99007FFFFFFF33333F7700000009999900337777777F333F7733333333099900
+              33333333337F3F77333333333309003333333333337F77333333333333003333
+              3333333333773333333333333333333333333333333333333333333333333333
+              3333333333333333333333333333333333333333333333333333}
+            NumGlyphs = 2
+            OnClick = SpeedButton2Click
+          end
+          object SpeedButton4: TSpeedButton
+            Left = 329
+            Top = 225
+            Width = 75
+            Height = 25
+            Caption = #21462#28040
+            Glyph.Data = {
+              DE010000424DDE01000000000000760000002800000024000000120000000100
+              0400000000006801000000000000000000001000000000000000000000000000
+              80000080000000808000800000008000800080800000C0C0C000808080000000
+              FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+              333333333333333333333333000033338833333333333333333F333333333333
+              0000333911833333983333333388F333333F3333000033391118333911833333
+              38F38F333F88F33300003339111183911118333338F338F3F8338F3300003333
+              911118111118333338F3338F833338F3000033333911111111833333338F3338
+              3333F8330000333333911111183333333338F333333F83330000333333311111
+              8333333333338F3333383333000033333339111183333333333338F333833333
+              00003333339111118333333333333833338F3333000033333911181118333333
+              33338333338F333300003333911183911183333333383338F338F33300003333
+              9118333911183333338F33838F338F33000033333913333391113333338FF833
+              38F338F300003333333333333919333333388333338FFF830000333333333333
+              3333333333333333333888330000333333333333333333333333333333333333
+              0000}
+            NumGlyphs = 2
+            OnClick = btnCancelClick
+          end
+          object Label1: TLabel
+            Left = 76
+            Top = 141
+            Width = 65
+            Height = 13
+            Caption = #21830#21697#21697#29260#65306
+            Font.Charset = GB2312_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = #23435#20307
+            Font.Style = []
+            ParentFont = False
+            Transparent = True
+          end
+          object Label10: TLabel
+            Left = 78
+            Top = 164
+            Width = 65
+            Height = 13
+            Caption = #21830#21697#21697#31181#65306
+            Font.Charset = GB2312_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = #23435#20307
+            Font.Style = []
+            ParentFont = False
+            Transparent = True
+          end
+          object Label11: TLabel
+            Left = 75
+            Top = 117
+            Width = 65
+            Height = 13
+            Caption = #21830#21697#31867#21035#65306
+            Font.Charset = GB2312_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = #23435#20307
+            Font.Style = []
+            ParentFont = False
+            Transparent = True
+          end
+          object CBType: TComboBox
+            Left = 143
+            Top = 114
+            Width = 156
+            Height = 21
+            Style = csDropDownList
+            Enabled = False
+            ItemHeight = 13
+            TabOrder = 0
+            OnChange = CBTypeChange
+          end
+          object cbBrand: TComboBox
+            Left = 143
+            Top = 138
+            Width = 156
+            Height = 21
+            Style = csDropDownList
+            Enabled = False
+            ItemHeight = 13
+            TabOrder = 1
+            OnChange = cbBrandChange
+          end
+          object CbBreed: TComboBox
+            Left = 143
+            Top = 161
+            Width = 156
+            Height = 21
+            Style = csDropDownList
+            Enabled = False
+            ItemHeight = 13
+            TabOrder = 2
+            OnChange = CbBreedChange
+          end
+          object edtgoodscode: TLabeledEdit
+            Left = 144
+            Top = 186
+            Width = 153
+            Height = 21
+            EditLabel.Width = 65
+            EditLabel.Height = 13
+            EditLabel.Caption = #21830#21697#32534#21495#65306
+            EditLabel.Transparent = True
+            Enabled = False
+            LabelPosition = lpLeft
+            LabelSpacing = 3
+            TabOrder = 3
+            OnExit = edtgoodscodeExit
+          end
+          object rbgoods: TRadioGroup
+            Left = 8
+            Top = 0
+            Width = 401
+            Height = 105
+            Caption = #21830#21697#36873#25321
+            ItemIndex = 0
+            Items.Strings = (
+              #20840#37096#21830#21697
+              #26576#21697#31181#21830#21697
+              #26576#20010#21830#21697)
+            TabOrder = 4
+            OnClick = rbgoodsClick
+          end
+        end
+        object TabSheet3: TTabSheet
+          Caption = #26102#38388#36873#25321
+          ImageIndex = 2
+          object Label3: TLabel
+            Left = 65
+            Top = 35
+            Width = 91
+            Height = 13
+            Caption = #38144#21806#26102#38388#27573#36873#25321
+          end
+          object Label4: TLabel
+            Left = 78
+            Top = 88
+            Width = 65
+            Height = 13
+            Caption = #24320#22987#26102#38388#65306
+          end
+          object Label5: TLabel
+            Left = 78
+            Top = 128
+            Width = 65
+            Height = 13
+            Caption = #32467#26463#26102#38388#65306
+          end
+          object SpeedButton5: TSpeedButton
+            Left = 110
+            Top = 225
+            Width = 75
+            Height = 25
+            Caption = #19978#19968#27493
+            Glyph.Data = {
+              76010000424D7601000000000000760000002800000020000000100000000100
+              04000000000000010000120B0000120B00001000000000000000000000000000
+              800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+              FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+              3333333333333333333333333333333333333333333333333333333333333333
+              3333333333333FF3333333333333003333333333333F77F33333333333009033
+              333333333F7737F333333333009990333333333F773337FFFFFF330099999000
+              00003F773333377777770099999999999990773FF33333FFFFF7330099999000
+              000033773FF33777777733330099903333333333773FF7F33333333333009033
+              33333333337737F3333333333333003333333333333377333333333333333333
+              3333333333333333333333333333333333333333333333333333333333333333
+              3333333333333333333333333333333333333333333333333333}
+            NumGlyphs = 2
+            OnClick = SpeedButton5Click
+          end
+          object SpeedButton6: TSpeedButton
+            Left = 193
+            Top = 225
+            Width = 75
+            Height = 25
+            Caption = #19979#19968#27493
+            Glyph.Data = {
+              76010000424D7601000000000000760000002800000020000000100000000100
+              04000000000000010000120B0000120B00001000000000000000000000000000
+              800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+              FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+              3333333333333333333333333333333333333333333333333333333333333333
+              3333333333333333333333333333333333333333333FF3333333333333003333
+              3333333333773FF3333333333309003333333333337F773FF333333333099900
+              33333FFFFF7F33773FF30000000999990033777777733333773F099999999999
+              99007FFFFFFF33333F7700000009999900337777777F333F7733333333099900
+              33333333337F3F77333333333309003333333333337F77333333333333003333
+              3333333333773333333333333333333333333333333333333333333333333333
+              3333333333333333333333333333333333333333333333333333}
+            NumGlyphs = 2
+            OnClick = SpeedButton6Click
+          end
+          object SpeedButton7: TSpeedButton
+            Left = 329
+            Top = 225
+            Width = 75
+            Height = 25
+            Caption = #21462#28040
+            Glyph.Data = {
+              DE010000424DDE01000000000000760000002800000024000000120000000100
+              0400000000006801000000000000000000001000000000000000000000000000
+              80000080000000808000800000008000800080800000C0C0C000808080000000
+              FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+              333333333333333333333333000033338833333333333333333F333333333333
+              0000333911833333983333333388F333333F3333000033391118333911833333
+              38F38F333F88F33300003339111183911118333338F338F3F8338F3300003333
+              911118111118333338F3338F833338F3000033333911111111833333338F3338
+              3333F8330000333333911111183333333338F333333F83330000333333311111
+              8333333333338F3333383333000033333339111183333333333338F333833333
+              00003333339111118333333333333833338F3333000033333911181118333333
+              33338333338F333300003333911183911183333333383338F338F33300003333
+              9118333911183333338F33838F338F33000033333913333391113333338FF833
+              38F338F300003333333333333919333333388333338FFF830000333333333333
+              3333333333333333333888330000333333333333333333333333333333333333
+              0000}
+            NumGlyphs = 2
+            OnClick = btnCancelClick
+          end
+          object DP1: TDateTimePicker
+            Left = 142
+            Top = 81
+            Width = 154
+            Height = 21
+            CalAlignment = dtaLeft
+            Date = 37998.5625224074
+            Time = 37998.5625224074
+            DateFormat = dfShort
+            DateMode = dmComboBox
+            Kind = dtkDate
+            ParseInput = False
+            TabOrder = 0
+          end
+          object DP2: TDateTimePicker
+            Left = 142
+            Top = 121
+            Width = 154
+            Height = 21
+            CalAlignment = dtaLeft
+            Date = 37998.5625224074
+            Time = 37998.5625224074
+            DateFormat = dfShort
+            DateMode = dmComboBox
+            Kind = dtkDate
+            ParseInput = False
+            TabOrder = 1
+          end
+        end
+        object TabSheet4: TTabSheet
+          Caption = #31579#36873#26465#20214
+          ImageIndex = 3
+          object SpeedButton8: TSpeedButton
+            Left = 56
+            Top = 225
+            Width = 75
+            Height = 25
+            Caption = #19978#19968#27493
+            Glyph.Data = {
+              76010000424D7601000000000000760000002800000020000000100000000100
+              04000000000000010000120B0000120B00001000000000000000000000000000
+              800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+              FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+              3333333333333333333333333333333333333333333333333333333333333333
+              3333333333333FF3333333333333003333333333333F77F33333333333009033
+              333333333F7737F333333333009990333333333F773337FFFFFF330099999000
+              00003F773333377777770099999999999990773FF33333FFFFF7330099999000
+              000033773FF33777777733330099903333333333773FF7F33333333333009033
+              33333333337737F3333333333333003333333333333377333333333333333333
+              3333333333333333333333333333333333333333333333333333333333333333
+              3333333333333333333333333333333333333333333333333333}
+            NumGlyphs = 2
+            OnClick = SpeedButton8Click
+          end
+          object GroupBox2: TGroupBox
+            Left = 48
+            Top = 6
+            Width = 289
+            Height = 105
+            Caption = #31579#36873#26465#20214
+            TabOrder = 0
+            object edtamount: TLabeledEditint
+              Left = 88
+              Top = 29
+              Width = 177
+              Height = 21
+              EditLabel.Width = 65
+              EditLabel.Height = 13
+              EditLabel.Caption = #38144#21806#25968#37327#65306
+              EditLabel.Transparent = True
+              LabelPosition = lpLeft
+              LabelSpacing = 3
+              TabOrder = 0
+              OnExit = edtamountExit
+            end
+            object edtmoney: TLabeledEditint
+              Left = 88
+              Top = 61
+              Width = 177
+              Height = 21
+              EditLabel.Width = 65
+              EditLabel.Height = 13
+              EditLabel.Caption = #38144#21806#37329#39069#65306
+              LabelPosition = lpLeft
+              LabelSpacing = 3
+              TabOrder = 1
+              OnExit = edtmoneyExit
+            end
+            object ComboBox1: TComboBox
+              Left = 89
+              Top = 30
+              Width = 62
+              Height = 21
+              Style = csDropDownList
+              ItemHeight = 13
+              ItemIndex = 0
+              TabOrder = 2
+              Text = '>'
+              Items.Strings = (
+                '>'
+                '>='
+                '<'
+                '<='
+                '=')
+            end
+            object ComboBox2: TComboBox
+              Left = 89
+              Top = 60
+              Width = 62
+              Height = 21
+              Style = csDropDownList
+              ItemHeight = 13
+              ItemIndex = 0
+              TabOrder = 3
+              Text = '>'
+              Items.Strings = (
+                '>'
+                '>='
+                '<'
+                '<='
+                '=')
+            end
+          end
+          object GroupBox3: TGroupBox
+            Left = 48
+            Top = 114
+            Width = 289
+            Height = 105
+            Caption = #33258#23450#20041#35745#31639#20844#24335
+            TabOrder = 1
+            object Label6: TLabel
+              Left = 16
+              Top = 46
+              Width = 72
+              Height = 13
+              Caption = #38144#21806#25968#37327' '#65336
+            end
+            object Label7: TLabel
+              Left = 202
+              Top = 46
+              Width = 78
+              Height = 13
+              Caption = #65309#12288#24211#23384#19978#38480
+            end
+            object Label8: TLabel
+              Left = 202
+              Top = 76
+              Width = 78
+              Height = 13
+              Caption = #65309#12288#24211#23384#19979#38480
+            end
+            object Label9: TLabel
+              Left = 16
+              Top = 76
+              Width = 72
+              Height = 13
+              Caption = #38144#21806#25968#37327' '#65336
+            end
+            object Edit_Big_sale: TMaskEdit
+              Left = 96
+              Top = 42
+              Width = 102
+              Height = 21
+              EditMask = '9999999999.00;1;_'
+              MaxLength = 13
+              TabOrder = 0
+              Text = '         1.00'
+            end
+            object Edit_Smal_Sale: TMaskEdit
+              Left = 96
+              Top = 70
+              Width = 101
+              Height = 21
+              EditMask = '9999999999.00;1;_'
+              MaxLength = 13
+              TabOrder = 1
+              Text = '         1.00'
+            end
+          end
+          object btnOk: TBitBtn
+            Left = 144
+            Top = 225
+            Width = 75
+            Height = 25
+            Caption = #23436#25104
+            TabOrder = 2
+            OnClick = btnOkClick
+            Kind = bkOK
+          end
+          object btnCancel: TBitBtn
+            Left = 266
+            Top = 225
+            Width = 75
+            Height = 25
+            Caption = #21462#28040
+            TabOrder = 3
+            OnClick = btnCancelClick
+            Kind = bkCancel
+          end
+        end
+      end
+      object P_Image: TPanel
+        Left = 0
+        Top = 0
+        Width = 110
+        Height = 265
+        BevelOuter = bvNone
+        Caption = 'P_Image'
+        TabOrder = 1
+        object Image1: TImage
+          Left = 0
+          Top = 0
+          Width = 110
+          Height = 265
+          Align = alClient
+          Picture.Data = {
+            07544269746D617042080000424D420800000000000042000000280000002000
+            0000200000000100100003000000000800000000000000000000000000000000
+            0000007C0000E00300001F000000FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F
+            FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F
+            FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F8C318C318C318C31
+            8C318C318C318C318C318C318C318C318C318C318C318C318C318C318C318C31
+            8C318C318C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F7B469A4A9A4A9A4A7A4A
+            7A4A7A4A7A4A7A4A7A4A7A4A7A4A7A4A7A4A7A4A7A4A7A4A7A4A7A4A7A4A7A4A
+            7A4A7A4A8C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FD956BF6B7F6B5F635F63
+            5F635F635F635F635F635F635F635F635F635F635F635F637F5B7F5B7F5B5F5F
+            5F5F5B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FD956BF6BBF6B9F679F67
+            9F679F679F679F679F677F5B7F5B7F5B7F5B7F5B5F575F577F5B7F5B7F5B7F5B
+            5F5F5B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FD956BF6BBF6BBF6B1318
+            131813181318131813189F677F5B7F5B7F5B7F5B7F5B5F577F5B7F5B7F5B7F5B
+            7F5B5B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FD956BF6BBF6BBF6BBF6B
+            9F679F679F679F679F679F679F677F5B7F5B7F5B7F5B7F5B7F5B7F5B7F5B7F5B
+            7F5B5B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFA56BE73BF6BBF6B1318
+            131813181318131813181318131813181318131813181318131813187F5B7F5B
+            7F5B7B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFA56DF73BF6BBF6BBF6B
+            BF6BBF6B9F679F679F679F679F679F679F677F5B7F5B7F5BBF677F5B7F5B7F5B
+            7F5B7B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFB5ADF73DF73BF6BBF6B
+            BF6BBF6BBF6B9F679F679F679F679F679F679F677F5B7F5B7F5B7F5B7F5B7F5B
+            7F5B7B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFB5ADF73DF73DF731318
+            131813181318131813181318131813181318131813181318131813187F5B7F5B
+            7F5B7B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F1B57DF73DF73DF73DF73
+            BF6BBF6BBF6BBF6BBF6B9F679F679F679F679F679F679F677F5B7F5B7F5B7F5B
+            7F5B7B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F1B57FF7FDF73DF731318
+            131813181318131813181318131813181318131813181318131813187F5B7F5B
+            7F5B7B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F1B57FF7FDF73DF73DF73
+            DF73DF73BF6BBF6BBF6BBF6BBF6B9F679F679F679F679F679F679F677F5B7F5B
+            7F5B7B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F1B57FF7FDF73DF73D918
+            D918D918D918D918D918D918D918D918D918D918D918D918D918D9189F677F5B
+            7F5B7B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F1B57FF7FFF7FDF73FF7F
+            DF73DF73DF73DF73BF6BBF6BBF6BBF6BBF6B9F679F679F679F679F679F677F5B
+            7F5B7B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F1C5BFF7BDF77DF77D918
+            D918D918D918D918D918D918D918D918D918D918D918D918D918D9189F677F5B
+            7F5B7B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F1C5BFF7BDF77DF77FF7F
+            DF73DF73DF73DF73DF73DF73BE73BF6BBF6BBF6BBF6B9F679F679F679F679F67
+            5F5F7B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F1C5BFF7BDF77DF77D918
+            D918D918D918D918D918D918D918D918D918D918D918D918D918D9189F679F67
+            5F5F7B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F5D5BFF7FFF7FFF7BFF7B
+            DF77DF77DF7BDF73DF73DF73DF73DF73BF6BBF6BBF6BBF6BBF6B9F679F679F67
+            5F5F7B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F5D5BFF7FFF7FFF7F1318
+            D918D918D918D918D918D918DF73DF731318131813181318131813189F679F67
+            5F5F7B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F5D63FF7FFF7FFF7F1318
+            3F333F333F333F333F339331DF73DF73DF73DF73BF6BBF6FBF6FBF6BBF6B9F67
+            5F5F7B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F5D63FF7FFF7FFF7F1318
+            3F333F333F333F333F339331FF7FDF73131813181318131813181318BF6BBF6B
+            5F5F7B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F7E63FF7FFF7FFF7F1318
+            FF33FF33FF33FF33FF339331FF7FDF73DF73DF73DF73DF73BF6FBF6FBF6FBF6B
+            5F5F7B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F7E63FF7FFF7FFF7F1318
+            BF67FF33BF67FF33FF339331BF67DF73131813181318DF73BF6F9F6F9F6B9F6B
+            5F5F5B468C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F7E63FF7FFF7FFF7F1318
+            FF33FF33FF33FF33BF679331FF7FFF7FDF73DF73DF73DF737F67DF5A9F529F52
+            7F4E5B428C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F7E63FF7FFF7FFF7F7F1A
+            7F1A7F1A7F1A7F1A7F1A7F1AFF7BDF77131813181318DF77FD4A9D225C1E1B1A
+            1B1A17368C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F9F67FF7FFF7FFF7FFF7F
+            FF7FFF7FFF7FFF7FFF7FFF7FFF7BDF77DF77DF77DF73DF771D4FFF32BF1A9F12
+            392A8C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F9F67FF7FFF7FFF7FFF7F
+            FF7FFF7FFF7FFF7FFF7FFF7FFF7BDF77DF77DF77FF7FDF771D533F43DF2A7A36
+            8C31FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F9F67FF7FFF7FFF7FFF7F
+            FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FDF775D5B7F4B583E8C31
+            FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F9F6BFF7FFF7FFF7FFF7F
+            FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFE7FDE7FFF7FDE775D5BB9468C31FF7F
+            FF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7FFF7F5F577F5F5F5B5F5B5E5B
+            5E5B3F5F1D531D531D531D531D531D531D53FC52FC52FA561D57754AFF7FFF7F
+            FF7FFF7FFF7FFF7FFF7FFF7FFF7F}
+          Stretch = True
+        end
+      end
+    end
+  end
+end

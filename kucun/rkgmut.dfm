@@ -1,0 +1,343 @@
+object rkglfm: Trkglfm
+  Left = 131
+  Top = 118
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = #26376#36827#36135#31649#29702
+  ClientHeight = 493
+  ClientWidth = 757
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 233
+    Height = 493
+    Align = alLeft
+    TabOrder = 0
+    object BitBtn1: TBitBtn
+      Left = 8
+      Top = 352
+      Width = 75
+      Height = 25
+      Caption = #26597#35810
+      TabOrder = 0
+      OnClick = BitBtn1Click
+    end
+    object BitBtn2: TBitBtn
+      Left = 120
+      Top = 352
+      Width = 75
+      Height = 25
+      Caption = #20462#25913
+      TabOrder = 1
+      OnClick = BitBtn2Click
+    end
+    object BitBtn3: TBitBtn
+      Left = 8
+      Top = 384
+      Width = 75
+      Height = 25
+      Caption = #21024#38500
+      TabOrder = 2
+      OnClick = BitBtn3Click
+    end
+    object BitBtn4: TBitBtn
+      Left = 120
+      Top = 384
+      Width = 75
+      Height = 25
+      Caption = #21462#28040
+      TabOrder = 3
+      OnClick = BitBtn4Click
+    end
+    object BitBtn5: TBitBtn
+      Left = 8
+      Top = 416
+      Width = 75
+      Height = 25
+      Caption = #19978#19968#26465
+      TabOrder = 4
+      OnClick = BitBtn5Click
+    end
+    object BitBtn6: TBitBtn
+      Left = 120
+      Top = 416
+      Width = 75
+      Height = 25
+      Caption = #19979#19968#26465
+      TabOrder = 5
+      OnClick = BitBtn6Click
+    end
+    object BitBtn7: TBitBtn
+      Left = 120
+      Top = 448
+      Width = 76
+      Height = 25
+      Caption = #20851#38381
+      TabOrder = 6
+      OnClick = BitBtn7Click
+    end
+    object GroupBox1: TGroupBox
+      Left = 8
+      Top = 8
+      Width = 209
+      Height = 337
+      Caption = #22522#26412#20449#24687
+      TabOrder = 7
+      object Label1: TLabel
+        Left = 8
+        Top = 85
+        Width = 65
+        Height = 17
+        AutoSize = False
+        Caption = #21830#21697#21517#31216#65306
+      end
+      object Label2: TLabel
+        Left = 8
+        Top = 120
+        Width = 65
+        Height = 17
+        AutoSize = False
+        Caption = #21830#21697#35268#26684#65306
+      end
+      object Label3: TLabel
+        Left = 8
+        Top = 152
+        Width = 65
+        Height = 17
+        AutoSize = False
+        Caption = #21830#21697#27454#24335#65306
+      end
+      object Label4: TLabel
+        Left = 8
+        Top = 180
+        Width = 65
+        Height = 17
+        AutoSize = False
+        Caption = #21830#21697#21697#31867#65306
+      end
+      object Label5: TLabel
+        Left = 8
+        Top = 203
+        Width = 65
+        Height = 17
+        AutoSize = False
+        Caption = #25968#37327#65306
+      end
+      object Label8: TLabel
+        Left = 8
+        Top = 251
+        Width = 65
+        Height = 17
+        AutoSize = False
+        Caption = #21333#20301#65306
+      end
+      object Label6: TLabel
+        Left = 8
+        Top = 279
+        Width = 65
+        Height = 17
+        AutoSize = False
+        Caption = #21333#20215#65306
+      end
+      object Label7: TLabel
+        Left = 8
+        Top = 304
+        Width = 65
+        Height = 17
+        AutoSize = False
+        Caption = #24635#37329#39069#65306
+      end
+      object Label9: TLabel
+        Left = 7
+        Top = 227
+        Width = 65
+        Height = 17
+        AutoSize = False
+        Caption = #21097#20313#25968#37327#65306
+      end
+      object clbh: TLabeledEdit
+        Left = 72
+        Top = 48
+        Width = 121
+        Height = 21
+        EditLabel.Width = 63
+        EditLabel.Height = 13
+        EditLabel.Caption = #21830#21697#32534#21495#65306' '
+        ImeName = #20013#25991' ('#31616#20307') - '#26234#33021' ABC'
+        LabelPosition = lpLeft
+        TabOrder = 0
+      end
+      object clmc: TComboBox
+        Left = 72
+        Top = 80
+        Width = 121
+        Height = 21
+        ImeName = #20013#25991' ('#31616#20307') - '#26234#33021' ABC'
+        ItemHeight = 13
+        TabOrder = 1
+      end
+      object cldj: TEdit
+        Left = 72
+        Top = 275
+        Width = 121
+        Height = 21
+        ImeName = #20013#25991' ('#31616#20307') - '#26234#33021' ABC'
+        TabOrder = 2
+        Text = '0'
+        OnChange = cldjChange
+        OnKeyDown = cldjKeyDown
+      end
+      object zje: TEdit
+        Left = 72
+        Top = 300
+        Width = 121
+        Height = 21
+        ImeName = #20013#25991' ('#31616#20307') - '#26234#33021' ABC'
+        TabOrder = 3
+        Text = '0'
+      end
+      object clgg: TComboBox
+        Left = 72
+        Top = 112
+        Width = 121
+        Height = 21
+        ImeName = #20013#25991' ('#31616#20307') - '#26234#33021' ABC'
+        ItemHeight = 13
+        TabOrder = 4
+      end
+      object clks: TComboBox
+        Left = 72
+        Top = 144
+        Width = 121
+        Height = 21
+        ImeName = #20013#25991' ('#31616#20307') - '#26234#33021' ABC'
+        ItemHeight = 13
+        TabOrder = 5
+      end
+      object clpl: TComboBox
+        Left = 72
+        Top = 172
+        Width = 121
+        Height = 21
+        ImeName = #20013#25991' ('#31616#20307') - '#26234#33021' ABC'
+        ItemHeight = 13
+        TabOrder = 6
+      end
+      object cldw: TComboBox
+        Left = 72
+        Top = 249
+        Width = 121
+        Height = 21
+        ImeName = #20013#25991' ('#31616#20307') - '#26234#33021' ABC'
+        ItemHeight = 13
+        TabOrder = 7
+        Items.Strings = (
+          #20214
+          #26465
+          #20010
+          #22359
+          #21305
+          #26020
+          #24352)
+      end
+      object djbh: TLabeledEdit
+        Left = 72
+        Top = 16
+        Width = 121
+        Height = 21
+        EditLabel.Width = 63
+        EditLabel.Height = 13
+        EditLabel.Caption = #21333#25454#32534#21495#65306' '
+        ImeName = #20013#25991' ('#31616#20307') - '#26234#33021' ABC'
+        LabelPosition = lpLeft
+        TabOrder = 8
+      end
+      object sl: TEdit
+        Left = 72
+        Top = 202
+        Width = 121
+        Height = 21
+        ImeName = #20013#25991' ('#31616#20307') - '#26234#33021' ABC'
+        TabOrder = 9
+        Text = '0'
+        OnChange = slChange
+        OnKeyDown = slKeyDown
+      end
+      object sysledit: TEdit
+        Left = 71
+        Top = 226
+        Width = 121
+        Height = 21
+        ImeName = #20013#25991' ('#31616#20307') - '#26234#33021' ABC'
+        TabOrder = 10
+        Text = '0'
+        OnChange = slChange
+        OnKeyDown = slKeyDown
+      end
+    end
+    object bh: TEdit
+      Left = 8
+      Top = 328
+      Width = 49
+      Height = 21
+      ImeName = #20013#25991' ('#31616#20307') - '#26234#33021' ABC'
+      TabOrder = 8
+      Visible = False
+    end
+    object BitBtn8: TBitBtn
+      Left = 8
+      Top = 448
+      Width = 75
+      Height = 25
+      Caption = #21047#26032
+      TabOrder = 9
+      OnClick = BitBtn8Click
+    end
+  end
+  object Panel2: TPanel
+    Left = 233
+    Top = 0
+    Width = 524
+    Height = 493
+    Align = alClient
+    TabOrder = 1
+    object DBGrid1: TDBGrid
+      Left = 1
+      Top = 1
+      Width = 522
+      Height = 491
+      Align = alClient
+      DataSource = DataSource1
+      ImeName = #20013#25991' ('#31616#20307') - '#26234#33021' ABC'
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+      TitleFont.Style = []
+      OnCellClick = DBGrid1CellClick
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOQuery
+    Left = 281
+    Top = 200
+  end
+  object ADOQuery: TADOQuery
+    Connection = dataconfm.datacon
+    Parameters = <>
+    Left = 256
+    Top = 144
+  end
+end

@@ -1,0 +1,54 @@
+TOPGRID LICENSE AGREEMENT
+
+This is a legal agreement between you (either an individual or an entity) and ObjectSight Corporation. By installing the TopGrid software, you are agreeing to be bound by the terms of this Agreement. If you do not agree to the terms of this Agreement, promptly remove all copies of the installation program and any installed copies of the TopGrid, return all received items, such as the TopGrid CD-ROM disc and all accompanying items, to ObjectSight, and contact ObjectSight for a full refund.
+
+
+ObjectSight SOFTWARE LICENSE
+
+1. TOPGRID SOFTWARE.
+The software and materials installed with this installation program, together with any software and materials on an accompanying CD-ROM disc as well as any other accompanying written materials, will be referred to as the TopGrid software.
+
+
+2. GRANT OF LICENSE. 
+i) A single-user license permits the use of the TopGrid software to develop applications by only one individual at any one time.
+
+ii) If the number of individuals using the TopGrid software to develop applications will exceed the number of applicable licenses, you must have a reasonable mechanism in place to ensure that the number of persons using the TopGrid software to develop applications concurrently does not exceed the number of licenses.
+
+iii) You may purchase additional single-user licenses, or a site licence agreement from ObjectSight to permit additional individuals to develop applications concurrently using the TopGrid software. 
+
+iv) An upgrade version of the TopGrid software and the TopGrid software that is upgraded, constitute a single product and may not be used by two different individuals at the same time.
+
+
+3. DISTRIBUTION OF YOUR SOFTWARE CONTAINING THE TOPGRID.  
+i) ObjectSight grants you a non-exclusive royalty-free right to reproduce and distribute your software containing the TopGrid provided that: (a) your software product is not a development tool as described below in section 3-ii; (b) you do not distribute any part, or any derivative of the TopGrid software with your software product which would allow an application developer to develop an application using the TopGrid software or part of the TopGrid software; (c) you do not use ObjectSight's name, logo, or trademarks to market your software product; (d) you agree to indemnify, hold harmless, and defend ObjectSight and its suppliers from and against any claims or lawsuits, including attorneys' fees, that arise or result from the use or distribution of your software product.
+
+ii) When your software product is a development tool, such as a component for software developers or a software development environment, and the TopGrid software or part of the TopGrid software can be used by the endusers of your clients, or by the endusers of your users, you need either a written permission from, or a Royalty Licence agreement with ObjectSight, granting you the right to distribute such a development tool. 
+
+iii) You may not distribute any TopGrid source code file nor any part of it, regardless of the modifications you make.
+
+
+4. EXAMPLES.
+ObjectSight grants you a royalty-free right to use, modify, and distribute the source code version and to reproduce and distribute the object code version of the sample code and bitmaps provided within the Examples folders provided that: (a) you do not use ObjectSight's name, logo, or trademarks to market your software product; (b) you agree to indemnify, hold harmless, and defend ObjectSight and its suppliers from and against any claims or lawsuits, including attorneys' fees, that arise or result from your distribution of your software product.
+
+
+5. COPYRIGHT.
+All the materials installed by the TopGrid installation program, and all the materials supplied on the accompanying CD-ROM disc(s), including software, images, and text, as well as all written materials are owned by ObjectSight and are protected by Dutch copyright laws and international treaty provisions. You may not reproduce or distribute any of these materials except as otherwise provided herein.
+
+
+6. OTHER RESTRICTIONS.
+You may not rent or lease the TopGrid software. You may make a permanent transfer of the TopGrid software by providing ObjectSight written notice of your name, company, and address and the name, company, and address of the person to whom you are transferring the rights granted herein. In the event of a transfer, you may not retain copies of the TopGrid software and accompanying written materials, and the recipient must agree to the terms of this Agreement. If the TopGrid software is an upgrade or has been upgraded, any transfer of the license to use the TopGrid software must include the most recent upgrade and all prior versions. 
+
+
+7. EXPORT RESTRICTIONS.
+You agree that neither you nor your customers intend to or will, directly or indirectly, export or transmit (a) the TopGrid software or related documentation and technical data or (b) your software product as described in Sections 3 and 4 of this Agreement (or any part thereof), or process, or service that is directly related to the TopGrid software to any country to which such export or transmission is restricted by any applicable U.S. regulation or statute. 
+
+
+LIMITED WARRANTY
+
+NO WARRANTIES.  ObjectSight expressly disclaims any warranty for the TopGrid software. The TopGrid software and any related documentation is provided "as is" without warranty of any kind, either express or implied, including, without limitation, the implied warranties of merchantability or fitness for a particular purpose. The entire risk arising out of use or performance of the TopGrid software remains with you.
+
+CUSTOMER REMEDIES.  ObjectSight's entire liability and your exclusive remedy shall not exceed the price paid for the TopGrid software. 
+
+NO LIABILITY FOR CONSEQUENTIAL DAMAGES.  In no event shall ObjectSight or its suppliers be liable for any damages whatsoever (including, without limitation, damages for loss of business profit, business interruption, loss of business information, or any other pecuniary loss) arising out of the use or inability to use this ObjectSight product, even if ObjectSight has been advised of the possibility of such damages. Because some countries/states/jurisdictions do not allow the exclusion or limitation of liability for consequential or incidental damages, the above limitation may not apply to you.
+
+Should you have any questions concerning this Agreement, or if you desire to contact ObjectSight for any reason, contact: ObjectSight, Delftechpark 26, 2628 XH Delft, The Netherlands. 

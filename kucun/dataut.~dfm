@@ -1,0 +1,13 @@
+object dataconfm: Tdataconfm
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Left = 509
+  Top = 260
+  Height = 206
+  Width = 291
+  object datacon: TADOConnection
+    LoginPrompt = False
+    Left = 88
+    Top = 56
+  end
+end

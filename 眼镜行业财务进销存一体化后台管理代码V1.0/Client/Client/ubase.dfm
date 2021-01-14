@@ -1,0 +1,32 @@
+object frmbase: Tfrmbase
+  Left = 125
+  Top = 117
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Frmbase'
+  ClientHeight = 348
+  ClientWidth = 536
+  Color = clBtnFace
+  Font.Charset = GB2312_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = #23435#20307
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnClose = FormClose
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object spbexit: TSpeedButton
+    Left = 424
+    Top = 8
+    Width = 55
+    Height = 22
+    Caption = #36864#20986
+    Flat = True
+    OnClick = spbexitClick
+  end
+end
