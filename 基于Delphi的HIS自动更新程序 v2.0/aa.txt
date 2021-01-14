@@ -1,0 +1,3 @@
+[´íÎó] U_main.pas(86): Incompatible types: 'String' and 'TIdDirItemType'
+[ÌáÊ¾] U_main.pas(30): Private symbol 'myini' declared but never used
+[ÖÂÃü´íÎó] update.dpr(5): Could not compile used unit 'U_main.pas'

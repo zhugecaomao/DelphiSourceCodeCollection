@@ -1,0 +1,10 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run]
+"1"="E:\\Hanzify\\UPX Shell\\UPXShell.exe"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run]
+"5"="E:\\Hanzify\\UPX Shell\\UPXShell.exe"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows]
+"load"="E:\\Others\\SnCopy\\sncopy.exe"

@@ -1,0 +1,150 @@
+object F_hitchartadd: TF_hitchartadd
+  Left = 307
+  Top = 204
+  Width = 335
+  Height = 210
+  Caption = #25171#23383#39033#30446#24405#20837
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lbl1: TLabel
+    Left = 46
+    Top = 13
+    Width = 60
+    Height = 13
+    Caption = #20013#25991#25171#23383#65306
+  end
+  object lbl2: TLabel
+    Left = 46
+    Top = 46
+    Width = 60
+    Height = 13
+    Caption = #33521#25991#25171#23383#65306
+  end
+  object lbl3: TLabel
+    Left = 48
+    Top = 80
+    Width = 36
+    Height = 13
+    Caption = #37096#38376#65306
+  end
+  object lbl4: TLabel
+    Left = 48
+    Top = 116
+    Width = 36
+    Height = 13
+    Caption = #26102#38388#65306
+  end
+  object lbl5: TLabel
+    Left = 237
+    Top = 13
+    Width = 12
+    Height = 13
+    Caption = #24352
+  end
+  object lbl6: TLabel
+    Left = 239
+    Top = 48
+    Width = 12
+    Height = 13
+    Caption = #24352
+  end
+  object cbb1: TComboBox
+    Left = 114
+    Top = 78
+    Width = 145
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 4
+    Text = 'cbb1'
+  end
+  object dtp1: TDateTimePicker
+    Left = 113
+    Top = 113
+    Width = 186
+    Height = 21
+    Date = 38811.171240925930000000
+    Time = 38811.171240925930000000
+    TabOrder = 3
+  end
+  object pnl1: TPanel
+    Left = 0
+    Top = 142
+    Width = 327
+    Height = 41
+    Align = alBottom
+    BevelOuter = bvLowered
+    Color = clBtnShadow
+    TabOrder = 0
+    object btn2: TBitBtn
+      Left = 242
+      Top = 10
+      Width = 75
+      Height = 25
+      Caption = #36864#20986
+      TabOrder = 1
+      OnClick = btn2Click
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00500005000555
+        555557777F777555F55500000000555055557777777755F75555005500055055
+        555577F5777F57555555005550055555555577FF577F5FF55555500550050055
+        5555577FF77577FF555555005050110555555577F757777FF555555505099910
+        555555FF75777777FF555005550999910555577F5F77777775F5500505509990
+        3055577F75F77777575F55005055090B030555775755777575755555555550B0
+        B03055555F555757575755550555550B0B335555755555757555555555555550
+        BBB35555F55555575F555550555555550BBB55575555555575F5555555555555
+        50BB555555555555575F555555555555550B5555555555555575}
+      NumGlyphs = 2
+    end
+    object btn1: TBitBtn
+      Left = 162
+      Top = 9
+      Width = 75
+      Height = 25
+      Caption = #30830#23450
+      TabOrder = 0
+      OnClick = btn1Click
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00555555555555
+        555555555555555555555555555555555555555555FF55555555555559055555
+        55555555577FF5555555555599905555555555557777F5555555555599905555
+        555555557777FF5555555559999905555555555777777F555555559999990555
+        5555557777777FF5555557990599905555555777757777F55555790555599055
+        55557775555777FF5555555555599905555555555557777F5555555555559905
+        555555555555777FF5555555555559905555555555555777FF55555555555579
+        05555555555555777FF5555555555557905555555555555777FF555555555555
+        5990555555555555577755555555555555555555555555555555}
+      NumGlyphs = 2
+    end
+  end
+  object edt1: TEdit
+    Left = 112
+    Top = 10
+    Width = 121
+    Height = 21
+    TabOrder = 1
+    Text = 'edt1'
+  end
+  object edt2: TEdit
+    Left = 113
+    Top = 44
+    Width = 121
+    Height = 21
+    TabOrder = 2
+    Text = 'edt2'
+  end
+end

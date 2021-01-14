@@ -1,0 +1,26 @@
+Liu_mazi MENU
+BEGIN
+  POPUP "清除"        
+  BEGIN
+    MENUITEM "定位表项", 1
+    MENUITEM "删除键值", 2
+    MENUITEM "定位文件", 3
+    MENUITEM "删除文件", 4
+  END
+
+  POPUP "背景"        
+  BEGIN
+    MENUITEM "白色", 5
+    MENUITEM "浅灰", 6
+    MENUITEM "灰色", 7
+    MENUITEM "深灰", 8
+    MENUITEM "黑色", 9, CHECKED
+  END
+
+  POPUP "其他"
+  BEGIN
+    MENUITEM "帮助", 10
+    MENUITEM "关于", 11
+    MENUITEM "资源", 12
+  END
+END

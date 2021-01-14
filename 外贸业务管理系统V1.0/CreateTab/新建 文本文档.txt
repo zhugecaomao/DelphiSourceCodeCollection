@@ -1,0 +1,102 @@
+
+procedure TTabInfoStyle_frm.Set_ControlEvent(Component:TObject);
+begin
+     with  (Component as TMyShape) do
+     begin
+       //PopupMenu :=Create_ControlPopMenu(0);
+       //OnClick :=TControlOnClick;
+       //OnDblClick :=TControlOnDblClick;
+       OnMouseDown :=TControlOnMouseDown;
+       OnMouseMove :=TControlOnMouseMove;
+       OnMouseUp :=TControlOnMouseUp;
+     end;
+
+end;
+
+procedure TTabInfoStyle_frm.TControlOnMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+begin
+  TControlSelect(sender);
+  if (ssDouble in Shift) then
+  begin
+  end;
+  mouseDownOldX :=X;
+  mouseDownOldY :=Y;
+  CtrlDownFlag:=true;
+end;
+procedure TTabInfoStyle_frm.TControlOnMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
+begin
+    //ManipulateControl(sender as Tcontrol, Shift, X, Y, 10);
+    (sender as Tcontrol).Cursor :=crDefault;
+    if (Sender is TMyLabel) then
+      if TMyLabel(Sender).Hint ='0' then exit;
+      
+    if (Sender is TMyShape) or (Sender is TMyLabel) then
+    begin
+      (sender as Tcontrol).Cursor := crSizeAll;
+      if (CtrlDownFlag =true) and (Shift=[ssLeft]) then
+      begin
+        (sender as Tcontrol).Left :=(sender as Tcontrol).Left + X - mouseDownOldX;
+        (sender as Tcontrol).Top   :=(sender as Tcontrol).Top + Y - mouseDownOldY;
+      end;
+    end;
+    
+    if ChangePicObject.Flag =true then
+      (sender as Tcontrol).Cursor :=crDrag;
+
+
+end;
+procedure TTabInfoStyle_frm.IfModify_Event();
+begin
+  if UpdateFlag =false then
+    UpdateFlag :=true;
+
+end;
+
+procedure TTabInfoStyle_frm.TControlOnMouseUp(Sender: TObject;  Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+var leftx,topy:integer;
+    CountWidth, CountHeight, MinWidth, MinHeight, defleftnum, defthreadnum, deftopnum, defbottomnum:integer;
+begin
+  IfModify_Event(); //修改标志。
+
+  CtrlDownFlag :=false;
+  exit;
+       if CompType='MOVE' then
+       begin
+         leftx :=(sender as TMyLabel).Left + X - mouseDownOldX;
+         topy  :=(sender as TMyLabel).Top + Y - mouseDownOldY;
+
+         //控制移到到最左边的位置.  //控制移到最右边的位置.
+         //控制移到到最左边的位置.  //控制移到最右边的位置.
+         if (leftx>defleftnum) and ((leftx + (sender as TMyLabel).Width) < CountWidth) then
+            (sender as TMyLabel).Left := leftx
+         else if (leftx<=defleftnum) then
+            (sender as TMyLabel).Left :=defleftnum;
+         //else if (leftx + (sender as TMyLabel).Width) >= CountWidth then   //控制移到最右边的位置.
+         //   (sender as TMyLabel).Left :=DefPageWidth + DefPageLeft - (sender as TMyLabel).Width;
+
+                //控制移到到最顶边的位置.
+         if (topy >deftopnum) and ((topy + (sender as TMyLabel).Height) < CountHeight) then
+            (sender as TMyLabel).Top :=topy
+         else if (topy<=deftopnum) then       //控制移到到最顶边的位置.
+            (sender as TMyLabel).Top :=deftopnum
+         else if (topy + (sender as TMyLabel).Height) >= CountHeight then   //控制移到最右边的位置.
+            (sender as TMyLabel).Top :=CountHeight - (sender as TMyLabel).Height;
+
+       end
+       else if CompType='CHANGE' then
+       begin
+         leftx :=(sender as TMyLabel).Width + X - mouseDownOldX;
+         topy  :=(sender as TMyLabel).Height + Y - mouseDownOldY;
+         if leftx>MinWidth then
+            (sender as TMyLabel).Width := leftx
+         else
+            (sender as TMyLabel).Width :=MinWidth;
+
+         if topy >MinHeight then
+            (sender as TMyLabel).Height :=topy
+         else
+            (sender as TMyLabel).Height :=MinHeight;
+
+       end;
+  
+end;

@@ -1,0 +1,8 @@
+// Define
+#define IDM_FONT     40001
+
+// Menu
+CHOSFONT MENU DISCARDABLE
+BEGIN
+  MENUITEM "&Font!", IDM_FONT
+END

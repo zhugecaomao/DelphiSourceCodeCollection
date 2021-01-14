@@ -1,0 +1,318 @@
+object frmSpbm: TfrmSpbm
+  Left = 267
+  Top = 127
+  BorderStyle = bsSingle
+  Caption = #21830#21697#35774#32622
+  ClientHeight = 481
+  ClientWidth = 649
+  Color = clBtnFace
+  Font.Charset = GB2312_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = #23435#20307
+  Font.Style = []
+  FormStyle = fsMDIChild
+  OldCreateOrder = False
+  Position = poDefault
+  Visible = True
+  WindowState = wsMaximized
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 12
+  object Panel1: TPanel
+    Left = 0
+    Top = 452
+    Width = 649
+    Height = 29
+    Align = alBottom
+    TabOrder = 0
+    object Panel5: TPanel
+      Left = 1
+      Top = 6
+      Width = 647
+      Height = 22
+      Align = alBottom
+      AutoSize = True
+      BevelOuter = bvNone
+      TabOrder = 0
+      object btn_refresh: TSpeedButton
+        Left = 371
+        Top = 0
+        Width = 50
+        Height = 22
+        Caption = #20851#38381
+        Flat = True
+        Glyph.Data = {
+          36030000424D3603000000000000360000002800000010000000100000000100
+          18000000000000030000120B0000120B00000000000000000000BFBFBFBFBFBF
+          BFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBD
+          BDBFBDBDBFBDBDBFBFBFBFBEBEBF0000BF0000BF0000BF0000BF0000BFBFBFBF
+          0000BF0000000000BFBFBFBFBFBFBFBFBFBFBFBFBFBDBDBFBDBDBFBEBEBF0000
+          BF0000BF0000BF0000BF0000BFBFBFBF0000BF0000000000BFBFBFBFBFBFBFBF
+          BFBFBFBFBFBDBDBFBDBDBFBEBEBF0000BE6E6EBE6E6EBE6E6EBF0000BFBFBFBF
+          BFBFBF0000000000BFBFBFBFBFBFBFBFBFBFBFBFBFBDBDBFBDBDBFBEBEBF0000
+          BE6E6EBE6E6EBE6E6EBF0000BFBFBFBFBFBFBF0000000000BFBFBFBFBFBFBFBF
+          BFBFBFBFBFBDBDBFBDBDBFBEBEBF0000BE6E6EBE6E6EBE6E6EBF0000BFBFBFBF
+          BFBFBF0000000000BFBFBFBFBFBFBFBFBFBFBFBFBFBDBDBFBDBDBFBEBEBF0000
+          BE6E6EBE6E6EBE6E6EBF0000BFBFBFBFBFBFBF0000000000BFBFBFBFBFBFBFBF
+          BFBFBFBFBFBDBDBFBDBDBFBEBEBF0000BE6E6EBE6E6EBE6E6EBF0000BFBFBFBF
+          BFBFBF0000BFBFBFBFBFBF0000FFBFBFBFBFBFBFBFBDBDBFBDBDBFBEBEBF0000
+          BE6E6EBE6E6EBE6E6EBF0000BFBFBFBFBFBFBFBFBFBFBFBF0000FF0000FFBFBF
+          BFBFBFBFBFBDBDBFBDBDBFBEBEBF0000BE6E6EBE6E6EBE6E6EBF0000BFBFBFBF
+          BFBFBFBFBF0000FF0000FF0000FF0000FF0000FFBFBFBFBFBDBDBFBEBEBF0000
+          BE6E6EBE6E6EBF0000BF0000BFBFBFBFBFBFBFBFBFBFBFBF0000FF0000FFBFBF
+          BF0000FFBFBFBFBFBDBDBFBEBEBF0000BE6E6EBF0000BF0000BFBFBFBFBFBFBF
+          BFBFBF0000BFBFBFBFBFBF0000FFBFBFBFBFBFBF0000FFBFBDBDBFBEBEBF0000
+          BF0000BF0000BFBFBFBFBFBFBFBFBFBFBFBFBF0000000000BFBFBFBFBFBFBFBF
+          BFBFBFBF0000FFBFBDBDBFBEBEBF0000BF0000BFBFBFBFBFBFBFBFBFBFBFBFBF
+          BFBFBF0000000000BFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBDBDBFBEBEBF0000
+          BF0000BF0000BF0000BF0000BF0000BF0000BF0000000000BFBFBFBFBFBFBFBF
+          BFBFBFBFBFBFBFBFBDBDBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBF
+          BFBFBFBFBFBFBFBFBFBFBFBFBDBDBFBDBDBFBDBDBFBDBDBFBDBD}
+        OnClick = btn_refreshClick
+      end
+      object btn_insert: TSpeedButton
+        Left = 118
+        Top = 0
+        Width = 50
+        Height = 22
+        Hint = #28155#21152#26032#21333#25454
+        Caption = #28155#21152
+        Flat = True
+        Font.Charset = GB2312_CHARSET
+        Font.Color = clBlack
+        Font.Height = -12
+        Font.Name = #23435#20307
+        Font.Style = []
+        Glyph.Data = {
+          E6000000424DE60000000000000076000000280000000F0000000E0000000100
+          04000000000070000000130B0000130B00001000000000000000000000000000
+          8000008000000080800080000000800080008080000080808000C0C0C0000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00888888888888
+          8880888888888888888088888888888888808888880008888880888888070888
+          8880888888070888888088800007000088808880777777708880888000070000
+          8880888888070888888088888807088888808888880008888880888888888888
+          88808888888888888880}
+        ParentFont = False
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = btn_insertClick
+      end
+      object btn_edit: TSpeedButton
+        Left = 219
+        Top = 0
+        Width = 50
+        Height = 22
+        Hint = #32534#36753#21333#25454
+        Caption = #32534#36753
+        Flat = True
+        Font.Charset = GB2312_CHARSET
+        Font.Color = clBlack
+        Font.Height = -12
+        Font.Name = #23435#20307
+        Font.Style = []
+        Glyph.Data = {
+          76010000424D7601000000000000760000002800000020000000100000000100
+          04000000000000010000120B0000120B00001000000000000000000000000000
+          800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333000000
+          000033333377777777773333330FFFFFFFF03FF3FF7FF33F3FF700300000FF0F
+          00F077F777773F737737E00BFBFB0FFFFFF07773333F7F3333F7E0BFBF000FFF
+          F0F077F3337773F3F737E0FBFBFBF0F00FF077F3333FF7F77F37E0BFBF00000B
+          0FF077F3337777737337E0FBFBFBFBF0FFF077F33FFFFFF73337E0BF0000000F
+          FFF077FF777777733FF7000BFB00B0FF00F07773FF77373377373330000B0FFF
+          FFF03337777373333FF7333330B0FFFF00003333373733FF777733330B0FF00F
+          0FF03333737F37737F373330B00FFFFF0F033337F77F33337F733309030FFFFF
+          00333377737FFFFF773333303300000003333337337777777333}
+        NumGlyphs = 2
+        ParentFont = False
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = btn_editClick
+      end
+      object btn_cancel: TSpeedButton
+        Left = 270
+        Top = 0
+        Width = 50
+        Height = 22
+        Hint = #21333#25454#23450#20301
+        Caption = #24674#22797
+        Enabled = False
+        Flat = True
+        Font.Charset = GB2312_CHARSET
+        Font.Color = clBlack
+        Font.Height = -12
+        Font.Name = #23435#20307
+        Font.Style = []
+        Glyph.Data = {
+          76010000424D7601000000000000760000002800000020000000100000000100
+          04000000000000010000130B0000130B00001000000000000000000000000000
+          800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+          3333333333FFFFF3333333333999993333333333F77777FFF333333999999999
+          3333333777333777FF3333993333339993333377FF3333377FF3399993333339
+          993337777FF3333377F3393999333333993337F777FF333337FF993399933333
+          399377F3777FF333377F993339993333399377F33777FF33377F993333999333
+          399377F333777FF3377F993333399933399377F3333777FF377F993333339993
+          399377FF3333777FF7733993333339993933373FF3333777F7F3399933333399
+          99333773FF3333777733339993333339933333773FFFFFF77333333999999999
+          3333333777333777333333333999993333333333377777333333}
+        NumGlyphs = 2
+        ParentFont = False
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object btn_save: TSpeedButton
+        Left = 321
+        Top = 0
+        Width = 50
+        Height = 22
+        Hint = #29289#36164#36895#26597
+        Caption = #20445#23384
+        Enabled = False
+        Flat = True
+        Font.Charset = GB2312_CHARSET
+        Font.Color = clBlack
+        Font.Height = -12
+        Font.Name = #23435#20307
+        Font.Style = []
+        Glyph.Data = {
+          F6000000424DF600000000000000760000002800000010000000100000000100
+          0400000000008000000000000000000000001000000000000000000000000000
+          8000008000000080800080000000800080008080000080808000C0C0C0000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00888888888888
+          8888880000000000000880330000008803088033000000880308803300000088
+          0308803300000000030880333333333333088033000000003308803088888888
+          0308803088888888030880308888888803088030888888880308803088888888
+          0008803088888888080880000000000000088888888888888888}
+        ParentFont = False
+        ParentShowHint = False
+        ShowHint = True
+      end
+      object btn_delete: TSpeedButton
+        Left = 168
+        Top = 0
+        Width = 50
+        Height = 22
+        Hint = #21024#38500#21333#25454
+        Caption = #21024#38500
+        Flat = True
+        Font.Charset = GB2312_CHARSET
+        Font.Color = clBlack
+        Font.Height = -12
+        Font.Name = #23435#20307
+        Font.Style = []
+        Glyph.Data = {
+          DE000000424DDE0000000000000076000000280000000D0000000D0000000100
+          0400000000006800000000000000000000001000000000000000000000000000
+          8000008000000080800080000000800080008080000080808000C0C0C0000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00FFFFFFFFFFFF
+          F000FFFFFFFFFFFFF000FFFFFFFFFFFFF000FFFFFFFFFFFFF000FFFFFFFFFFFF
+          F000FF000000000FF000FF0FFFFFFF0FF000FF000000000FF000FFFFFFFFFFFF
+          F000FFFFFFFFFFFFF000FFFFFFFFFFFFF000FFFFFFFFFFFFF000FFFFFFFFFFFF
+          F000}
+        ParentFont = False
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = btn_deleteClick
+      end
+      object DBNavigator: TDBNavigator
+        Left = 14
+        Top = 0
+        Width = 104
+        Height = 22
+        DataSource = DM.DS_SPBMK
+        VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast]
+        Flat = True
+        TabOrder = 0
+      end
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 0
+    Width = 649
+    Height = 452
+    Align = alClient
+    DataSource = DM.DS_SPBMK
+    Font.Charset = GB2312_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -14
+    Font.Name = #23435#20307
+    Font.Style = []
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgMultiSelect]
+    ParentFont = False
+    TabOrder = 1
+    TitleFont.Charset = GB2312_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -12
+    TitleFont.Name = #23435#20307
+    TitleFont.Style = []
+    OnDblClick = DBGrid1DblClick
+    OnTitleClick = DBGrid1TitleClick
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'spbh'
+        Title.Alignment = taCenter
+        Title.Caption = #21830#21697#32534#30721
+        Title.Color = 16777088
+        Width = 70
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'spmc'
+        Title.Alignment = taCenter
+        Title.Caption = #21830#21697#21517#31216
+        Title.Color = 16777088
+        Width = 100
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'jldw'
+        Title.Alignment = taCenter
+        Title.Caption = #20027#35745#37327#21333#20301
+        Title.Color = 16777088
+        Width = 72
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'ggxh'
+        Title.Alignment = taCenter
+        Title.Caption = #35268#26684#22411#21495
+        Title.Color = 16777088
+        Width = 100
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'spdj'
+        Title.Alignment = taCenter
+        Title.Caption = #21830#21697#21333#20215
+        Title.Color = 16777088
+        Width = 60
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'bz'
+        Title.Alignment = taCenter
+        Title.Caption = #22791#27880
+        Title.Color = 16777088
+        Width = 150
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'hsbl'
+        Title.Alignment = taCenter
+        Title.Caption = #25442#31639#27604#20363
+        Title.Color = 16777088
+        Visible = True
+      end>
+  end
+end

@@ -1,0 +1,51 @@
+// Icon       
+POPPAD2 ICON DISCARDABLE "poppad2.ico"
+       
+// Menu       
+POPPAD2 MENU DISCARDABLE        
+BEGIN      
+  POPUP "&File"                                       
+  BEGIN
+    MENUITEM  "&New", 40001
+    MENUITEM  "&Open...", 40002
+    MENUITEM  "&Save", 40003
+    MENUITEM  "Save &As...", 40004
+    MENUITEM  SEPARATOR
+    MENUITEM  "&Print", 40005
+    MENUITEM  SEPARATOR   
+    MENUITEM  "E&xit", 40006
+  END
+        
+  POPUP "&Edit" 
+  BEGIN
+    MENUITEM  "&Undo\tCtrl+Z", 40007
+    MENUITEM  SEPARATOR
+    MENUITEM  "Cu&t\tCtrl+X", 40008
+    MENUITEM  "&Copy\tCtrl+C",  40009
+    MENUITEM  "&Paste\tCtrl+V",  40010
+    MENUITEM  "De&lete\tDel",  40011
+    MENUITEM  SEPARATOR
+    MENUITEM  "&Select All",  40012
+  END
+        
+  POPUP "&Help"        
+  BEGIN
+    MENUITEM "&Help...", 40013
+    MENUITEM "&About PopPad2...", 40014
+  END        
+END
+        
+// Accelerator       
+POPPAD2 ACCELERATORS DISCARDABLE        
+BEGIN    
+  VK_BACK, 40007, VIRTKEY, ALT, NOINVERT      
+  VK_DELETE, 40011, VIRTKEY, NOINVERT
+  VK_DELETE, 40008, VIRTKEY, SHIFT, NOINVERT
+  VK_F1, 40013, VIRTKEY, NOINVERT
+  VK_INSERT, 40009, VIRTKEY, CONTROL, NOINVERT
+  VK_INSERT, 40010, VIRTKEY, SHIFT, NOINVERT
+  "^C", 40009, ASCII, NOINVERT
+  "^V", 40010, ASCII, NOINVERT
+  "^X", 40008, ASCII,  NOINVERT
+  "^Z", 40007, ASCII,  NOINVERT
+END

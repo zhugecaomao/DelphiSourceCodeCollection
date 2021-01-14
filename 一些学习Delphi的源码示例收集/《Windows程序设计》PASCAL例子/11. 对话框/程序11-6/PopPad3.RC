@@ -1,0 +1,94 @@
+// Dialog       
+ABOUTBOX DIALOG DISCARDABLE  32, 32, 180, 100
+  STYLE DS_MODALFRAME | WS_POPUP
+  FONT 8, "MS Sans Serif"
+BEGIN
+  DEFPUSHBUTTON "OK", IDOK, 66, 80, 50, 14
+  ICON  "POPPAD", IDC_STATIC, 7, 7, 20, 20
+  CTEXT "PopPad", IDC_STATIC, 40, 12, 100, 8
+  CTEXT "Popup Editor for Windows", IDC_STATIC, 7, 40, 166, 8
+  CTEXT "(c) Charles Petzold, 1998", IDC_STATIC, 7, 52, 166, 8
+END
+        
+PRINTDLGBOX DIALOG DISCARDABLE  32, 32, 186, 95
+  STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+  CAPTION "PopPad"
+  FONT 8, "MS Sans Serif"
+BEGIN
+  PUSHBUTTON "Cancel", IDCANCEL, 67, 74, 50, 14
+  CTEXT "Sending", IDC_STATIC, 8, 8, 172, 8
+  CTEXT "", 1000, 8, 28, 172, 8
+  CTEXT "to print spooler.", IDC_STATIC, 8, 48, 172, 8
+END
+        
+// Menu
+POPPAD3 MENU DISCARDABLE
+BEGIN
+
+  POPUP           "&File"
+  BEGIN
+    MENUITEM  "&New\tCtrl+N",    40001
+    MENUITEM  "&Open...\tCtrl+O",40002
+    MENUITEM  "&Save\tCtrl+S",   40003
+    MENUITEM  "Save &As...",     40004
+    MENUITEM  SEPARATOR
+    MENUITEM  "&Print\tCtrl+P",  40005
+    MENUITEM  SEPARATOR
+    MENUITEM  "E&xit",  40006
+  END
+        
+  POPUP "&Edit"
+  BEGIN
+    MENUITEM  "&Undo\tCtrl+Z",   40007
+    MENUITEM  SEPARATOR
+    MENUITEM  "Cu&t\tCtrl+X",    40008
+    MENUITEM  "&Copy\tCtrl+C",   40009
+    MENUITEM  "&Paste\tCtrl+V",  40010
+    MENUITEM  "De&lete\tDel",    40011
+    MENUITEM  SEPARATOR
+    MENUITEM  "&Select All",     40012
+  END
+      
+  POPUP     "&Search"
+  BEGIN      
+    MENUITEM      "&Find...\tCtrl+F", 40013
+    MENUITEM      "Find &Next\tF3",  40014
+    MENUITEM      "&Replace...\tCtrl+R", 40015
+  END
+        
+  POPUP  "F&ormat"
+  BEGIN
+    MENUITEM "&Font...", 40016
+  END
+        
+  POPUP "&Help"
+  BEGIN
+    MENUITEM  "&Help", 40017
+    MENUITEM  "&About PopPad...",  40018
+  END        
+END
+        
+// Accelerator
+POPPAD3 ACCELERATORS DISCARDABLE
+BEGIN
+  VK_BACK, 40007, VIRTKEY, ALT, NOINVERT
+  VK_DELETE, 40011, VIRTKEY, NOINVERT
+  VK_DELETE, 40008, VIRTKEY, SHIFT, NOINVERT
+  VK_F1, 40017, VIRTKEY, NOINVERT
+  VK_F3, 40014, VIRTKEY, NOINVERT
+  VK_INSERT, 40009,  VIRTKEY, CONTROL, NOINVERT
+  VK_INSERT, 40010, VIRTKEY, SHIFT, NOINVERT
+  "^C", 40009, ASCII, NOINVERT
+  "^F", 40013, ASCII, NOINVERT
+  "^N", 40001, ASCII, NOINVERT
+  "^O", 40002, ASCII, NOINVERT
+  "^P", 40005, ASCII, NOINVERT
+  "^R", 40015, ASCII, NOINVERT
+  "^S", 40003, ASCII, NOINVERT
+  "^V", 40010, ASCII, NOINVERT
+  "^X", 40008, ASCII, NOINVERT
+  "^Z", 40007, ASCII, NOINVERT
+END
+               
+// Icon        
+POPPAD3 ICON DISCARDABLE "poppad3.ico"

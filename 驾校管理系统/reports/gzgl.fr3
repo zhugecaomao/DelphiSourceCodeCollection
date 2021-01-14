@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Name="" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="2047" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" ReportOptions.CreateDate="38485.9055154051" ReportOptions.Description.Text="" ReportOptions.LastChange="38485.9758751042" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C65667403080203546F70020808446174617365747301010C3400000020446174615365743D22667278444244617461736574312220446174615365744E616D653D2266727844424461746173657431220000095661726961626C65730100055374796C650100">
+  <TfrxReportPage Name="Page1" Orientation="poLandscape" PaperWidth="297" PaperHeight="210" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxDetailData Name="DetailData1" Height="105.82684" Left="0" Top="45.35436" Width="1046.92981" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" RowCount="0">
+      <TfrxMemoView Name="Memo2" Left="117.16543" Top="71.81107" Width="60.47248" Height="18.89765" DataField="基本工资" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="[frxDBDataset1.&#34;基本工资&#34;]" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo3" Left="117.16543" Top="52.91342" Width="60.47248" Height="18.89765" Frame.Typ="15" HAlign="haCenter" Memo.Text="基本工资" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo4" Left="177.63791" Top="71.81107" Width="60.47248" Height="18.89765" DataField="训练工资" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="[frxDBDataset1.&#34;训练工资&#34;]" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo5" Left="177.63791" Top="52.91342" Width="60.47248" Height="18.89765" Frame.Typ="15" HAlign="haCenter" Memo.Text="训练工资" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo6" Left="238.11039" Top="71.81107" Width="60.47248" Height="18.89765" DataField="奖励工资" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="[frxDBDataset1.&#34;奖励工资&#34;]" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo7" Left="238.11039" Top="52.91342" Width="60.47248" Height="18.89765" Frame.Typ="15" HAlign="haCenter" Memo.Text="奖励工资" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo8" Left="298.58287" Top="71.81107" Width="60.47248" Height="18.89765" DataField="补休工资" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="[frxDBDataset1.&#34;补休工资&#34;]" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo9" Left="298.58287" Top="52.91342" Width="60.47248" Height="18.89765" Frame.Typ="15" HAlign="haCenter" Memo.Text="补休工资" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo10" Left="359.05535" Top="71.81107" Width="60.47248" Height="18.89765" DataField="加班工资" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="[frxDBDataset1.&#34;加班工资&#34;]" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo11" Left="359.05535" Top="52.91342" Width="60.47248" Height="18.89765" Frame.Typ="15" HAlign="haCenter" Memo.Text="加班工资" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo12" Left="419.52783" Top="71.81107" Width="60.47248" Height="18.89765" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="[frxDBDataset1.&#34;过节费&#34;]" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo13" Left="419.52783" Top="52.91342" Width="60.47248" Height="18.89765" Frame.Typ="15" HAlign="haCenter" Memo.Text="过节费" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo14" Left="540.47279" Top="71.81107" Width="60.47248" Height="18.89765" DataField="借款" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="[frxDBDataset1.&#34;借款&#34;]" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo15" Left="540.47279" Top="52.91342" Width="60.47248" Height="18.89765" Frame.Typ="15" HAlign="haCenter" Memo.Text="借  款" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo16" Left="600.94527" Top="71.81107" Width="60.47248" Height="18.89765" DataField="事故扣除" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="[frxDBDataset1.&#34;事故扣除&#34;]" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo17" Left="600.94527" Top="52.91342" Width="60.47248" Height="18.89765" Frame.Typ="15" HAlign="haCenter" Memo.Text="事故扣除" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo18" Left="661.41775" Top="71.81107" Width="60.47248" Height="18.89765" DataField="效果扣除" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="[frxDBDataset1.&#34;效果扣除&#34;]" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo19" Left="661.41775" Top="52.91342" Width="60.47248" Height="18.89765" Frame.Typ="15" HAlign="haCenter" Memo.Text="效果扣除" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo20" Left="721.89023" Top="71.81107" Width="60.47248" Height="18.89765" DataField="休假扣除" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="[frxDBDataset1.&#34;休假扣除&#34;]" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo21" Left="721.89023" Top="52.91342" Width="60.47248" Height="18.89765" Frame.Typ="15" HAlign="haCenter" Memo.Text="休假扣除" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo22" Left="782.36271" Top="71.81107" Width="60.47248" Height="18.89765" DataField="风险扣除" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="[frxDBDataset1.&#34;风险扣除&#34;]" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo23" Left="782.36271" Top="52.91342" Width="60.47248" Height="18.89765" Frame.Typ="15" HAlign="haCenter" Memo.Text="风险扣除" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo24" Left="0" Top="71.81107" Width="64.25201" Height="18.89765" DataField="姓名" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="[frxDBDataset1.&#34;姓名&#34;]" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo25" Left="0" Top="52.91342" Width="64.25201" Height="18.89765" Frame.Typ="15" HAlign="haCenter" Memo.Text="姓名" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo26" Left="64.25201" Top="71.81107" Width="52.91342" Height="18.89765" DataField="职务" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="[frxDBDataset1.&#34;职务&#34;]" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo27" Left="64.25201" Top="52.91342" Width="52.91342" Height="18.89765" Frame.Typ="15" HAlign="haCenter" Memo.Text="职务" VAlign="vaCenter"/>
+      <TfrxLineView Name="Line2" Left="0" Top="26.45671" Width="1024.25263" Height="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo28" Left="480.00031" Top="71.81107" Width="60.47248" Height="18.89765" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="[frxDBDataset1.&#34;应发合计&#34;]" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo29" Left="480.00031" Top="52.91342" Width="60.47248" Height="18.89765" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="应发合计" VAlign="vaCenter"/>
+      <TfrxLineView Name="Line3" Left="540.47279" Top="26.45671" Width="0" Height="64.2519685" Frame.Typ="1"/>
+      <TfrxLineView Name="Line4" Left="117.16543" Top="26.45671" Width="0" Height="64.25201" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo30" Left="842.83519" Top="71.81107" Width="60.47248" Height="18.89765" DataField="其它扣除" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="[frxDBDataset1.&#34;其它扣除&#34;]" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo31" Left="842.83519" Top="52.91342" Width="60.47248" Height="18.89765" Frame.Typ="15" HAlign="haCenter" Memo.Text="其它扣除" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo32" Left="903.30767" Top="71.81107" Width="60.47248" Height="18.89765" DataField="应扣合计" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="[frxDBDataset1.&#34;应扣合计&#34;]" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo33" Left="903.30767" Top="52.91342" Width="60.47248" Height="18.89765" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="应扣合计" VAlign="vaCenter"/>
+      <TfrxLineView Name="Line7" Left="963.78015" Top="26.45671" Width="0" Height="64.25201" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo34" Left="963.78015" Top="71.81107" Width="60.47248" Height="18.89765" DataField="实发工资" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Frame.Typ="15" HAlign="haCenter" Memo.Text="[frxDBDataset1.&#34;实发工资&#34;]" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo35" Left="963.78015" Top="52.91342" Width="60.47248" Height="18.89765" Frame.Typ="15" HAlign="haCenter" Memo.Text="实发工资" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo36" Left="302.3624" Top="26.45671" Width="41.57483" Height="22.67718" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haCenter" Memo.Text="应   发" ParentFont="False" VAlign="vaCenter"/>
+      <TfrxMemoView Name="Memo37" Left="740.78788" Top="30.23624" Width="45.35436" Height="15.11812" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Memo.Text="应   扣" ParentFont="False"/>
+      <TfrxLineView Name="Line1" Left="1024.25263" Top="26.45671" Width="0" Height="26.45671" Frame.Typ="1"/>
+      <TfrxLineView Name="Line5" Left="0" Top="26.45671" Width="0" Height="26.45671" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo1" Left="434.64595" Top="3.77953" Width="79.37013" Height="18.89765" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" Memo.Text="工资条" ParentFont="False"/>
+    </TfrxDetailData>
+    <TfrxMasterData Name="MasterData1" Height="3.77953" Left="0" Top="18.89765" Width="1046.92981" ColumnWidth="0" ColumnGap="0" RowCount="1"/>
+  </TfrxReportPage>
+</TfrxReport>

@@ -1,0 +1,27 @@
+// Language
+LANGUAGE  LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+// Define
+#define IDD_FILEREV            1
+#define IDC_FILESELECT         101
+#define IDI_FILEREV            102
+#define IDC_FILENAME           1000
+#define IDC_REVERSE            1001
+#define IDC_TEXTTYPE           1002
+
+// Icon
+IDI_FILEREV  ICON  DISCARDABLE   "FileRev.Ico"
+
+// Dialog
+IDD_FILEREV DIALOG DISCARDABLE  15, 24, 216, 46
+  STYLE WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+  CAPTION "File Reverse"
+  FONT 8, "System"
+BEGIN
+  LTEXT  "&Pathname:", IDC_STATIC, 4, 4, 35, 8
+  EDITTEXT  IDC_FILENAME, 44, 4, 168, 12, ES_AUTOHSCROLL
+  PUSHBUTTON  "&Browse...", IDC_FILESELECT, 4, 16, 36, 12, WS_GROUP
+  DEFPUSHBUTTON  "&Reverse file contents", IDC_REVERSE, 4, 32, 80, 12
+  LTEXT  "Type of characters in file:", IDC_STATIC, 88, 34, 87, 8
+  LTEXT  "(unknown)", IDC_TEXTTYPE, 176, 34, 34, 8
+END

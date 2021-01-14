@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Name="" Version="3.20" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Ô¤Éè" ReportOptions.CreateDate="39177.8994852662" ReportOptions.Description.Text="" ReportOptions.LastChange="39181.9284361111" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C65667403A00103546F700368010844617461736574730100095661726961626C65730100055374796C650100">
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="0" RightMargin="0" TopMargin="0" BottomMargin="0" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxPageHeader Name="PageHeader1" Height="109.60637" Left="0" Top="117.16543" Width="793.7013">
+      <TfrxMemoView Name="Memo1" Left="196.53556" Top="37.7953" Width="472.44125" Height="45.35436" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text=""/>
+    </TfrxPageHeader>
+    <TfrxReportTitle Name="ReportTitle1" Height="75.5906" Left="0" Top="18.89765" Width="793.7013"/>
+  </TfrxReportPage>
+</TfrxReport>

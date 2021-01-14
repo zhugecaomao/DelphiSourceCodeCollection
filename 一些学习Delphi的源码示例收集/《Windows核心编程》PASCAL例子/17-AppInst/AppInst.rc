@@ -1,0 +1,20 @@
+// 语言
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+// 定义
+#define IDD_APPINST                     1
+#define IDC_COUNT                       100
+#define IDI_APPINST                     101
+
+// 模板
+IDD_APPINST DIALOG DISCARDABLE  0, 0, 140, 21
+  STYLE WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+  CAPTION "Application Instances"
+  FONT 8, "MS Sans Serif"
+BEGIN
+  LTEXT  "Number of instances running:", IDC_STATIC, 12, 4, 93, 8, SS_NOPREFIX
+  RTEXT  "#", IDC_COUNT, 112, 4, 16, 12, SS_NOPREFIX
+END
+
+// 图标
+IDI_APPINST  ICON  DISCARDABLE  "AppInst.Ico"

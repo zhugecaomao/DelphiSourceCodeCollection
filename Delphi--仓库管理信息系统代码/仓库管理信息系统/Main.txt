@@ -1,0 +1,117 @@
+object MainForm: TMainForm
+  Left = 214
+  Top = 112
+  Width = 409
+  Height = 249
+  Caption = 'MainForm'
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  PixelsPerInch = 96
+  TextHeight = 13
+  FormStyle = fsMDIForm
+  Menu = MainMenu
+  ShowHint = True
+  OnCreate = FormCreate
+  object MainMenu: TMainMenu
+    Left = 220
+    Top = 40
+    object FileMenu: TMenuItem
+      Caption = '&File'
+      object FileNewItem: TMenuItem
+        Caption = '&New'
+        Hint = 'Create a new file'
+        OnClick = FileNew
+      end
+      object FileOpenItem: TMenuItem
+        Caption = '&Open...'
+        Hint = 'Open an existing file'
+        OnClick = FileOpen
+      end
+      object FileSaveItem: TMenuItem
+        Caption = '&Save'
+        Hint = 'Save current file'
+        OnClick = FileSave
+      end
+      object FileSaveAsItem: TMenuItem
+        Caption = 'Save &As...'
+        Hint = 'Save current file under a new name'
+        OnClick = FileSaveAs
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object FilePrintItem: TMenuItem
+        Caption = '&Print'
+        Hint = 'Print current file'
+        OnClick = FilePrint
+      end
+      object FilePrintSetupItem: TMenuItem
+        Caption = 'P&rint Setup...'
+        Hint = 'Change printer setup'
+        OnClick = FilePrintSetup
+      end
+      object N4: TMenuItem
+        Caption = '-'
+      end
+      object FileExitItem: TMenuItem
+        Caption = 'E&xit'
+        Hint = 'Exit this application'
+        OnClick = FileExit
+      end
+    end
+    object EditMenu: TMenuItem
+      Caption = '&Edit'
+      object EditUndoItem: TMenuItem
+        Caption = '&Undo'
+        Hint = 'Undo the last action'
+        OnClick = EditUndo
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object EditCutItem: TMenuItem
+        Caption = 'Cu&t'
+        Hint = 'Delete selected item'
+        OnClick = EditCut
+      end
+      object EditCopyItem: TMenuItem
+        Caption = '&Copy'
+        Hint = 'Copy selected item to clipboard'
+        OnClick = EditCopy
+      end
+      object EditPasteItem: TMenuItem
+        Caption = '&Paste'
+        Hint = 'Paste contents of clipboard'
+        OnClick = EditPaste
+      end
+    end
+  end
+  object OpenDialog: TOpenDialog
+    Filter = ''
+    Left = 230
+    Top = 87
+  end
+  object SaveDialog: TSaveDialog
+    Filter = ''
+    Left = 204
+    Top = 125
+  end
+  object PrintDialog: TPrintDialog
+    Left = 262
+    Top = 127
+  end
+  object PrintSetupDialog: TPrinterSetupDialog
+    Left = 276
+    Top = 93
+  end
+  object StatusLine: TStatusBar
+    Align = alBottom
+    Height = 23
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    ParentFont = False
+    SimplePanel = True
+  end
+end

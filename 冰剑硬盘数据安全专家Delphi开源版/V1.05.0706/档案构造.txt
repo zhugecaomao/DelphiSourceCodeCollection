@@ -1,0 +1,19 @@
+BinJian Security Experts V1.01.0702 
+档案结构
+
+Test.Bse
+{
+Config.ini 
+{配置文件
+     Versoin = 压缩包版本 Integer
+{如果版本支持 继续读取 否则返回版本错误}
+     DiskEncrypt = 是否使用硬盘密钥
+     PassWord = 密码验证字符串
+}
+Test.File {加密后的文件}
+}
+
+解密流程
+
+
+

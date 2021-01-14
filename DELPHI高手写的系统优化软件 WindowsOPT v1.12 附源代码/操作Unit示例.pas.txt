@@ -1,0 +1,23 @@
+unit UOperateReg;
+
+interface
+
+uses Windows, Registry; //声明 uses
+
+procedure DelRegCache; //函数或过程头部
+
+implementation
+
+procedure DelRegCache; //函数或过程体
+var
+   reg:TRegistry;
+begin
+   reg:=Tregistry.create;
+   reg.RootKey:=HKEY_CURRENT_USER;
+   reg.DeleteKey('Software\Microsoft\Internet Explorer\TypedURLs');
+   reg.Free;
+end;
+
+end.
+
+//在调用过程或函数的窗体中，uses UOperateReg

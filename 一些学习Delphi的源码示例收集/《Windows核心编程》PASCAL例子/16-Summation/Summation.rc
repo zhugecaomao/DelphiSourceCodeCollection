@@ -1,0 +1,26 @@
+// 定义
+#define IDD_SUMMATION                   101
+#define IDI_SUMMATION                   102
+#define IDC_SUMNUM                      1000
+#define IDC_CALC                        1001
+#define IDC_ANSWER                      1002
+#define IDC_STATIC                      -1
+
+// 语言
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+// 图标
+IDI_SUMMATION  ICON  DISCARDABLE  "Summation.ico"
+
+// 模板
+IDD_SUMMATION DIALOG DISCARDABLE  18, 18, 162, 41
+  STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+  CAPTION "Summation"
+  FONT 8, "MS Sans Serif"
+BEGIN
+  LTEXT  "Calculate the sum of the numbers from 0 through &x, where x is: ", IDC_STATIC, 4, 4, 112, 20
+  EDITTEXT  IDC_SUMNUM, 120, 8, 40, 13, ES_AUTOHSCROLL | ES_NUMBER
+  DEFPUSHBUTTON  "&Calculate", IDC_CALC, 4, 28, 56, 12
+  LTEXT  "Answer:", IDC_STATIC, 68, 30, 30, 8
+  LTEXT  "?", IDC_ANSWER, 104, 30, 56, 8
+END

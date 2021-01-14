@@ -1,0 +1,38 @@
+// Language
+LANGUAGE  LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+// Define
+#define IDD_VMSTAT             1
+#define IDC_MEMLOAD            100
+#define IDC_TOTALPHYS          101
+#define IDI_VMSTAT             101
+#define IDC_AVAILPHYS          102
+#define IDC_TOTALPAGEFILE      103
+#define IDC_AVAILPAGEFILE      104
+#define IDC_TOTALVIRTUAL       105
+#define IDC_AVAILVIRTUAL       106
+
+// Dialog
+IDD_VMSTAT DIALOG DISCARDABLE  60, 60, 104, 82
+  STYLE WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+  CAPTION "VMStat"
+  FONT 8, "Arial"
+BEGIN
+  LTEXT "Memory load:", IDC_STATIC, 2, 0, 51, 8
+  RTEXT "Text", IDC_MEMLOAD, 52, 0, 48, 8
+  LTEXT "TotalPhys:", IDC_STATIC, 2, 12, 51, 8
+  RTEXT "Text", IDC_TOTALPHYS, 52, 12, 48, 8
+  LTEXT "AvailPhys:", IDC_STATIC, 2, 24, 51, 8
+  RTEXT "Text", IDC_AVAILPHYS, 52, 24, 48, 8
+  LTEXT "TotalPageFile:", IDC_STATIC, 2, 36, 51, 8
+  RTEXT "Text", IDC_TOTALPAGEFILE, 52, 36, 48, 8
+  LTEXT "AvailPageFile:", IDC_STATIC, 2, 48, 51, 8
+  RTEXT "Text", IDC_AVAILPAGEFILE, 52, 48, 48, 8
+  LTEXT "TotalVirtual:", IDC_STATIC, 2, 60, 51, 8
+  RTEXT "Text", IDC_TOTALVIRTUAL, 52, 60, 48, 8
+  LTEXT "AvailVirtual:", IDC_STATIC, 2, 72, 51, 8
+  RTEXT "Text", IDC_AVAILVIRTUAL, 52, 72, 48, 8
+END
+
+// Icon
+IDI_VMSTAT  ICON  DISCARDABLE  "VMStat.Ico"

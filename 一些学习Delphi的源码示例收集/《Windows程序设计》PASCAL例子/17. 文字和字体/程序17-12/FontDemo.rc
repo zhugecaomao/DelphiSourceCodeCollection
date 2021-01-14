@@ -1,0 +1,17 @@
+// Define
+#define IDM_PRINT  40001       
+#define IDM_ABOUT  40002
+
+// Menu
+FONTDEMO MENU DISCARDABLE
+BEGIN
+  POPUP "&File"
+  BEGIN
+    MENUITEM "&Print...", IDM_PRINT
+  END
+
+  POPUP "&Help"
+  BEGIN
+    MENUITEM "&About...", IDM_ABOUT
+  END
+END

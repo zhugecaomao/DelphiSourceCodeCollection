@@ -1,0 +1,61 @@
+package organmng;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '机构(单位)管理模块'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  vclx,
+  dbrtl,
+  vcldb,
+  adortl,
+  VclSmp,
+  dxBarD6,
+  dxcomnd6,
+  dxdbtrD6,
+  dxEdtrD6,
+  dxELibD6,
+  dxDBEdD6,
+  EQGridD6,
+  ECQDBCD6,
+  EQTLD6,
+  dxmdsd6,
+  ehlibd6,
+  csctrl,
+  csextdxqtm,
+  csextehlib,
+  csextdxbar,
+  csscrctrl,
+  common;
+
+contains
+  ufrmOrganMng in 'ufrmOrganMng.pas' {frmOrganMng},
+  ufrmReplaceDlg in 'ufrmReplaceDlg.pas' {frmReplaceDlg},
+  ufrmOrganCertMng in 'ufrmOrganCertMng.pas' {frmOrganCertMng},
+  ufrmOrganCertList in 'ufrmOrganCertList.pas' {frmOrganCertList};
+
+end.

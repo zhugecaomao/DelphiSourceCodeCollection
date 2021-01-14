@@ -1,0 +1,104 @@
+      MoveTo(20, 100); LineTo(650, 100); //第一根横线
+      MoveTo(20, 100); LineTo(20, 290); //第一根竖线
+      MoveTo(650, 100); LineTo(650, 290); //最后一根竖线
+      MoveTo(20, 160); LineTo(650, 160);
+      MoveTo(110, 120); LineTo(300, 120);
+      MoveTo(110, 140); LineTo(260, 140);
+      MoveTo(430, 120); LineTo(650, 120);
+
+      MoveTo(110, 100); LineTo(110, 270);
+      MoveTo(185, 120); LineTo(185, 220);
+      MoveTo(260, 120); LineTo(260, 220);
+      MoveTo(300, 100); LineTo(300, 220);
+      MoveTo(340, 100); LineTo(340, 220);
+      MoveTo(380, 100); LineTo(380, 220);
+      MoveTo(430, 100); LineTo(430, 220);
+
+      MoveTo(20, 240); LineTo(650, 240);
+      MoveTo(20, 270); LineTo(650, 270);
+      MoveTo(20, 290); LineTo(650, 290);
+
+      MoveTo(160, 270); LineTo(160, 290);
+      MoveTo(280, 270); LineTo(280, 290);
+      MoveTo(410, 270); LineTo(410, 290);
+      MoveTo(530, 270); LineTo(530, 290);
+
+      for i := 1 to 3 do
+      begin
+        MoveTo(20, 160 + i * 20); LineTo(650, 160 + i * 20);
+      end;
+      //*******************************
+      TextOut(30, 125, '租 赁 项 目');
+      TextOut(158, 105, '租 赁 日 期');
+      TextOut(135, 125, '起');
+      TextOut(195, 125, '止');
+      TextOut(115, 145, '年 月 日');
+      TextOut(195, 145, '年 月 日');
+      TextOut(265, 135, '天 数');
+      TextOut(302, 125, '单 位');
+      TextOut(345, 125, '数 量');
+      TextOut(390, 120, '收 费');
+      TextOut(390, 135, '标 准');
+      TextOut(510, 105, '金    额');
+      for i := 1 to 11 do
+      begin
+        if i = 2 then
+          Pen.Color := clRed
+        else
+          Pen.Color := clBackground;
+        MoveTo(650 - 20 * I, 120); LineTo(650 - I * 20, 240);
+        CurrentIndex := (12 - i + 1);
+        DrawMoneyCp := Copy(MoneyCaStr, CurrentIndex * 2 - 1, 2);
+        TextOut(650 - (20 * i - 5), 135, DrawMoneyCp);
+      end;
+     //////////////////////////////////
+
+      for i:=0 to 3 do
+      begin
+        if i<>3 then
+        begin
+          TWidth:=20+(110-20-(TextWidth('杨') * Length(InVoiceTable.Cells[0,3+i])div 2)) div 2;
+          TextOut(TWidth,165+i*20,InVoiceTable.Cells[0,3+i] );
+          TWidth:=110+(185-110-(TextWidth('杨') * Length(InVoiceTable.Cells[2,3+i])div 2)) div 2;
+          TextOut(TWidth,165+i*20,InVoiceTable.Cells[2,3+i] );
+          TWidth:=185-2+(260-185-(TextWidth('杨') * Length(InVoiceTable.Cells[4,3+i])div 2)) div 2;
+          TextOut(TWidth,165+i*20,InVoiceTable.Cells[4,3+i] );
+          TWidth:=260-2+(300-260-(TextWidth('杨') * Length(InVoiceTable.Cells[5,3+i])div 2)) div 2;
+          TextOut(TWidth,165+i*20,InVoiceTable.Cells[5,3+i] );
+          TWidth:=300-2+(340-300-(TextWidth('杨') * Length(InVoiceTable.Cells[6,3+i])div 2)) div 2;
+          TextOut(TWidth,165+i*20,InVoiceTable.Cells[6,3+i] );
+          TWidth:=340-2+(380-340-(TextWidth('杨') * Length(InVoiceTable.Cells[7,3+i])div 2)) div 2;
+          TextOut(TWidth,165+i*20,InVoiceTable.Cells[7,3+i] );
+          TWidth:=380-2+(430-380-(TextWidth('杨') * Length(InVoiceTable.Cells[8,3+i])div 2)) div 2;
+          TextOut(TWidth,165+i*20,InVoiceTable.Cells[8,3+i] );
+        end;
+        DrawMoney := InVoiceTable.Cells[9, 3+i];
+        if DrawMoney <> '' then
+          DrawMoney := FormatFloat('0.00', StrToFloat(DrawMoney));
+        DrawMoney := StringReplace(DrawMoney, '.', '', []);
+        for J := 1 to 12 do
+        begin
+          TWidth := TextWidth('1') + 8;
+          if J > Length(DrawMoney) then
+            DrawOne := ''
+          else
+            DrawOne := Copy(DrawMoney, Length(DrawMoney) - J + 1, 1);
+            TextOut(650 - (20 * j - 5), 165+i*20, DrawOne);
+        end;
+      end;
+      TextOut(23,225,'金额合计|大写');
+      TextOut(130,225,InVoiceTable.Cells[2,6]);
+      TextOut(35,250,'备    注');
+      TextOut(130,250,InVoiceTable.Cells[2,7]);
+      TextOut(38,275,'出租方(盖章有效)');
+      TextOut(230,275,'开票人:');
+      TextOut(290,275,InVoiceTable.Cells[6,9]);
+      TextOut(480,275,'收款人:');
+      TextOut(540,275,InVoiceTable.Cells[10,9]);
+      Font.Color:=clBackground;
+      TextOut(50,300,' 按照《中华人民共和国企业所得税暂行条例》的规定，这种车贴属于工资的组成部分，只能');
+      TextOut(50,315,'在企业所得税前限额扣除，超过部分要做纳税调整。而且按照《中华人民共和国个人所得税法》');
+      TextOut(50,330,'的规定，这种车贴也是要征收个人所得税的。如果允许编造这样一个虚假的合同到税务机关代开');
+      TextOut(50,345,'发票，企业不仅可以在缴纳所得税前全额扣除，作为员工个人还可以少缴或不缴个人所得税。');
+    end;
+  end;

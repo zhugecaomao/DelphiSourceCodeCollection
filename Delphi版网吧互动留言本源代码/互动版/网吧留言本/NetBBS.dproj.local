@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2008-09-05 04:18:01.625.pas,C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Unit1.pas=C:\Documents and Settings\Administrator\桌面\N-NetBBS\NetBBS_Unit.pas</Transaction>
+    <Transaction>2008-09-05 04:18:01.625.dfm,C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Unit1.dfm=C:\Documents and Settings\Administrator\桌面\N-NetBBS\NetBBS_Unit.dfm</Transaction>
+    <Transaction>2008-09-05 04:18:08.453.dproj,C:\Documents and Settings\Administrator\My Documents\RAD Studio\Projects\Project2.dproj=C:\Documents and Settings\Administrator\桌面\N-NetBBS\NetBBS.dproj</Transaction>
+    <Transaction>2008-09-05 05:11:33.546.pas,C:\Documents and Settings\Administrator\桌面\N-NetBBS\Unit1.pas=C:\Documents and Settings\Administrator\桌面\N-NetBBS\DataModule1_Unit.pas</Transaction>
+    <Transaction>2008-09-05 05:11:33.546.dfm,C:\Documents and Settings\Administrator\桌面\N-NetBBS\Unit1.dfm=C:\Documents and Settings\Administrator\桌面\N-NetBBS\DataModule1_Unit.dfm</Transaction>
+    <Transaction>2008-09-05 05:12:58.234.pas,C:\Documents and Settings\Administrator\桌面\N-NetBBS\DataModule1_Unit.pas=C:\Documents and Settings\Administrator\桌面\N-NetBBS\DataModule_Unit.pas</Transaction>
+    <Transaction>2008-09-05 05:12:58.234.dfm,C:\Documents and Settings\Administrator\桌面\N-NetBBS\DataModule1_Unit.dfm=C:\Documents and Settings\Administrator\桌面\N-NetBBS\DataModule_Unit.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

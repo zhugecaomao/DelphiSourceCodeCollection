@@ -1,0 +1,23 @@
+// Dialog
+ABOUTBOX DIALOG DISCARDABLE  32, 32, 180, 100
+  STYLE DS_MODALFRAME | WS_POPUP
+  FONT 8, "MS Sans Serif"
+BEGIN
+  CONTROL  "OK", IDOK, "EllipPush", WS_GROUP | WS_TABSTOP, 73, 79, 32, 14
+  ICON  "ABOUT3", IDC_STATIC, 7, 7, 20, 20
+  CTEXT "About3", IDC_STATIC, 40, 12, 100, 8
+  CTEXT "About Box Demo Program", IDC_STATIC, 7, 40, 166, 8
+  CTEXT "(c) Charles Petzold, 1998", IDC_STATIC, 7, 52, 166, 8       
+END
+
+// Menu       
+ABOUT3 MENU DISCARDABLE
+BEGIN
+  POPUP "&Help"
+  BEGIN
+    MENUITEM  "&About About3...", 40001
+  END       
+END
+
+// Icon        
+ABOUT3 ICON  DISCARDABLE  "About3.ico"

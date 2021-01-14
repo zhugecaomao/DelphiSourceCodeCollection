@@ -1,0 +1,5 @@
+Copy "Disk.Controls.Pack\*.*" "C:\Program Files\Delphi7SE\Lib"
+Copy "znmd5\*.*" "C:\Program Files\Delphi7SE\Lib"
+Copy "FlatStyle\*.*" "C:\Program Files\Delphi7SE\Lib"
+Copy "VclZip\*.*" "C:\Program Files\Delphi7SE\Lib"
+Copy "lxpbuaa\*.*" "C:\Program Files\Delphi7SE\Lib"

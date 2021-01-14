@@ -1,0 +1,78 @@
+[Software Credits]
+Software=IconPackager 1.51
+Company=Stardock Systems, Inc
+Author=Brian Harper
+Website=http://www.stardock.com
+Email=support@stardock.com
+[Desktop Icons]
+My Documents=%ThemeDir%My Documents.ico
+My Computer=%ThemeDir%My Computer.ico
+Network Neighborhood=%ThemeDir%Network Neighborhood.ico
+The Internet=%ThemeDir%The Internet.ico
+In Box=%ThemeDir%In Box.ico
+My Briefcase=%ThemeDir%My Briefcase.ico
+Recycle Bin (empty)=%ThemeDir%Recycle Bin empty.ico
+Recycle Bin (full)=%ThemeDir%Recycle Bin Full.ico
+[Start Icons]
+Programs=%ThemeDir%Programs.ico
+Favorites=%ThemeDir%FAVORITES.ico
+Documents=%ThemeDir%Documents.ico
+Settings=%ThemeDir%Settings.ico
+Find=%ThemeDir%Find.ico
+Help=%ThemeDir%Help.ico
+Run=%ThemeDir%Run.ico
+Shut Down=%ThemeDir%Shut Down.ico
+Log Off=%ThemeDir%Log Off.ico
+Settings - Control Panel=%ThemeDir%Control Panel.ico
+Settings - Printers=%ThemeDir%Printers.ico
+[Folder Icons]
+Closed Folder=%ThemeDir%Closed Folder.ico
+Open Folder=%ThemeDir%Open Folder.ico
+Program Group=%ThemeDir%Program Group.ico
+Control Panel=%ThemeDir%Control Panel2.ico
+Administrative Tools=%ThemeDir%Administrative Tools.ico
+Fonts=%ThemeDir%Fonts.ico
+Dial-Up Networking=%ThemeDir%Dial-Up Networking.ico
+Printers=%ThemeDir%Printers2.ico
+Scheduled Tasks=%ThemeDir%Scheduled Tasks.ico
+ActiveX Cache=%ThemeDir%ActiveX Cache.ico
+Url History=%ThemeDir%Url History.ico
+Subscriptions=%ThemeDir%Subscriptions.ico
+[Drive Icons]
+Floppy Drive (5.25)=%ThemeDir%Floppy Drive.ico
+Floppy Drive (3.5)=%ThemeDir%Floppy Drive2.ico
+Hard Drive=%ThemeDir%Hard Drive.ico
+Network Drive (connected)=%ThemeDir%Network Drive Connected.ico
+Network Drive (offline)=%ThemeDir%Network Drive Offline.ico
+CD-ROM Drive=%ThemeDir%CD-ROM Drive.ico
+Removable Drive=%ThemeDir%Removable Drive.ico
+RAM Drive=%ThemeDir%RAM Drive.ico
+[Other Icons]
+Shortcut Overlay=%ThemeDir%Shortcut Overlay.ico
+Sharing Overlay=%ThemeDir%Sharing Overlay.ico
+Desktop=%ThemeDir%Desktop.ico
+Entire Network=%ThemeDir%Entire Network.ico
+Workgroup=%ThemeDir%Workgroup.ico
+Computer=%ThemeDir%Computer.ico
+Audio CD=%ThemeDir%Audio CD.ico
+[File Icons]
+Bitmap Image=%ThemeDir%Bitmap Image.ico
+Configuration Settings=%ThemeDir%Configuration Settings.ico
+Default Icon=%ThemeDir%Default Icon.ico
+Default Document=%ThemeDir%Default Document.ico
+GIF Image=%ThemeDir%GIF Image.ico
+Internet Document=%ThemeDir%Internet Document.ico
+JPEG Image=%ThemeDir%Jpeg.ico
+Media Clip=%ThemeDir%Media Clip.ico
+MIDI Sequence=%ThemeDir%MIDI Sequence.ico
+Movie Clip=%ThemeDir%Movie Clip.ico
+MS-DOS Application=%ThemeDir%MS-DOS Application.ico
+MS-DOS Batch File=%ThemeDir%MS-DOS Batch File.ico
+Rich Text Format=%ThemeDir%Rich Text Format.ico
+Text Document=%ThemeDir%Text Document.ico
+Video Clip=%ThemeDir%Video Clip.ico
+Wave Sound=%ThemeDir%Wave Sound.ico
+Write Document=%ThemeDir%Write Document.ico
+Zip File=%ThemeDir%Zip File.ico
+[Include]
+Read Me=

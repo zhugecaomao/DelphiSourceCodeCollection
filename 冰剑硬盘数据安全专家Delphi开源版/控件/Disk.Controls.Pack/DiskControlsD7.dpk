@@ -1,0 +1,70 @@
+package DiskControlsD7;
+
+{$R *.res}
+{$R '_DCReg.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Disk Controls pack for Delphi 7'}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  designide,
+  vclactnband,
+  vclx,
+  vcl,
+  dclstd;
+
+contains
+  dcAbout,
+  dcBrowseDialog,
+  dcComCtrls,
+  dcCRC,
+  dcDiskInfo,
+  dcDiskScanner,
+  dcDiskScannerEditor,
+  dcEdits,
+  dcExtDialogs,
+  dcFileAssociation,
+  dcFileCRC,
+  dcFileTail,
+  dcFileInfo,
+  dcFileOperations,
+  dcFolderMonitor,
+  dcFolderView,
+  dcIcon2Bitmap,
+  dcInternal,
+  dcPropUtils,
+  dcShellIcon,
+  dcShellLink,
+  dcShellProperties,
+  dcStdDialogs,
+  dcSystemImageList,
+  dcThread,
+  dcUtils,
+  dcVersionInfo,
+  dcVirtualDrives,
+  dcVirtualDrivesEditor,
+  dcXPThemes,
+  _DCReg in '_DCReg.pas';
+
+end.

@@ -1,0 +1,19 @@
+// Menu
+        
+DEVCAPS2 MENU DISCARDABLE
+BEGIN
+  POPUP "&Device"
+  BEGIN
+    MENUITEM "&Screen", 40001, CHECKED
+  END
+        
+  POPUP "&Capabilities"
+  BEGIN
+    MENUITEM "&Basic Information", 40002, CHECKED
+    MENUITEM "&Other Information", 40003
+    MENUITEM "&Curve Capabilities", 40004
+    MENUITEM "&Line Capabilities", 40005
+    MENUITEM "&Polygonal Capabilities", 40006
+    MENUITEM "&Text Capabilities", 40007
+  END        
+END

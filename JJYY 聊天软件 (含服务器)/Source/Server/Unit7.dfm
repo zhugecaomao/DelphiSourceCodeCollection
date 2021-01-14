@@ -1,0 +1,62 @@
+object frmConfig: TfrmConfig
+  Left = 293
+  Top = 342
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = #37197#32622
+  ClientHeight = 71
+  ClientWidth = 183
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poOwnerFormCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 8
+    Top = 17
+    Width = 36
+    Height = 12
+    Caption = #31471#21475#21495
+    Font.Charset = GB2312_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 56
+    Top = 13
+    Width = 121
+    Height = 20
+    Font.Charset = GB2312_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    OnKeyPress = Edit1KeyPress
+  end
+  object Button1: TButton
+    Left = 102
+    Top = 41
+    Width = 75
+    Height = 25
+    Caption = #20445#23384
+    Font.Charset = GB2312_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end

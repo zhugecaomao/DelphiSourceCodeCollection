@@ -1,0 +1,4 @@
+[SETUP]
+DBMS=MSSQL
+DBDRV=OLEDB
+CONSTR=Provider=SQLOLEDB;Data Source=rhxinxi-p417;Initial Catalog=bpasprdb;User Id=device;Password=%PWD%;Persist Security Info=False

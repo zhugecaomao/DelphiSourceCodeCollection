@@ -1,0 +1,67 @@
+package DiskControlsD3;
+
+{$R *.RES}
+{$R '_DCReg.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $00400000}
+{$DESCRIPTION 'DiskControls pack for Delphi 3'}
+{$DESIGNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  vcl30,
+  dclstd30;
+
+contains
+  dcAbout,
+  dcBrowseDialog,
+  dcComCtrls,
+  dcCRC,
+  dcDiskInfo,
+  dcDiskScanner,
+  dcDiskScannerEditor,
+  dcEdits,
+  dcExtDialogs,
+  dcFileAssociation,
+  dcFileCRC,
+  dcFileTail,
+  dcFileInfo,
+  dcFileOperations,
+  dcFolderMonitor,
+  dcFolderView,
+  dcIcon2Bitmap,
+  dcInternal,
+  dcPropUtils,
+  dcShellIcon,
+  dcShellLink,
+  dcShellProperties,
+  dcStdDialogs,
+  dcSystemImageList,
+  dcThread,
+  dcUtils,
+  dcVersionInfo,
+  dcVirtualDrives,
+  dcVirtualDrivesEditor,
+  dcXPThemes,
+  _DCReg;
+
+end.

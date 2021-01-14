@@ -1,0 +1,8 @@
+// Menu
+DIBCONV MENU DISCARDABLE
+BEGIN
+  POPUP "&File"
+  BEGIN
+    MENUITEM "&Open", 40001
+  END    
+END

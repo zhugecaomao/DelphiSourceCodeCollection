@@ -1,0 +1,145 @@
+object Form1: TForm1
+  Left = 386
+  Top = 222
+  Width = 873
+  Height = 642
+  ActiveControl = memRecv
+  Caption = 'Net Chat'
+  Color = clButton
+  Font.Color = clText
+  Font.Height = 17
+  Font.Name = 'MS Sans Serif'
+  Font.Pitch = fpVariable
+  Font.Style = []
+  ParentFont = False
+  OnCreate = btnActivateServerClick
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 6
+  object memRecv: TMemo
+    Left = 0
+    Top = 61
+    Width = 873
+    Height = 473
+    Align = alClient
+    MaxLength = -1
+    ReadOnly = True
+    ScrollBars = ssAutoVertical
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 534
+    Width = 873
+    Height = 108
+    Align = alBottom
+    BevelOuter = bvNone
+    TabOrder = 1
+    object memSend: TMemo
+      Left = 0
+      Top = 0
+      Width = 773
+      Height = 108
+      Align = alClient
+      MaxLength = -1
+      ScrollBars = ssAutoVertical
+      TabOrder = 0
+    end
+    object Panel2: TPanel
+      Left = 773
+      Top = 0
+      Width = 100
+      Height = 108
+      Align = alRight
+      BevelOuter = bvNone
+      ParentColor = True
+      TabOrder = 1
+      object btnSend: TButton
+        Left = 9
+        Top = 9
+        Width = 88
+        Height = 94
+        Caption = 'Send'
+        TabOrder = 0
+        OnClick = btnSendClick
+      end
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Top = 0
+    Width = 873
+    Height = 61
+    Align = alTop
+    TabOrder = 2
+    object Label1: TLabel
+      Left = 34
+      Top = 23
+      Width = 72
+      Height = 13
+      Caption = 'Remote Host:'
+      Layout = tlCenter
+    end
+    object Label2: TLabel
+      Left = 256
+      Top = 23
+      Width = 72
+      Height = 13
+      Caption = 'Remote Port:'
+      Layout = tlCenter
+    end
+    object Label3: TLabel
+      Left = 410
+      Top = 23
+      Width = 66
+      Height = 13
+      Caption = 'Local Port:'
+      Layout = tlCenter
+    end
+    object edtRemoteHost: TEdit
+      Left = 119
+      Top = 19
+      Width = 130
+      Height = 21
+      MaxLength = 32767
+      TabOrder = 0
+      Text = 'localhost'
+    end
+    object edtRemotePort: TEdit
+      Left = 333
+      Top = 19
+      Width = 52
+      Height = 21
+      MaxLength = 32767
+      TabOrder = 1
+      Text = '5000'
+    end
+    object edtLocalPort: TEdit
+      Left = 478
+      Top = 19
+      Width = 52
+      Height = 21
+      MaxLength = 32767
+      TabOrder = 2
+      Text = '5000'
+    end
+    object btnActivateServer: TButton
+      Left = 546
+      Top = 17
+      Width = 69
+      Height = 27
+      Caption = 'Change'
+      TabOrder = 3
+      OnClick = btnActivateServerClick
+    end
+  end
+  object TcpClient1: TTcpClient
+    Left = 640
+    Top = 18
+  end
+  object TcpServer1: TTcpServer
+    OnAccept = TcpServer1Accept
+    Left = 680
+    Top = 18
+  end
+end

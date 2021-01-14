@@ -1,0 +1,11 @@
+[SETUP]
+SHOPCD='01'
+DBMS=MSSQL
+DBDRV=OLEDB
+CONSTRNET=Provider=SQLOLEDB;Data Source=(local);Initial Catalog=PosMis;User Id=sa;Password= %PWD%;Persist Security Info=True
+CONSTRLOCAL=Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=PosClient.mdb;Mode=Share Deny None;Extended Properties="";Jet OLEDB:Database Password=%pwd%;
+[MACHINES]
+AUTOTIME=11:36:01
+ENABLE=1
+[COM]
+PORT=1

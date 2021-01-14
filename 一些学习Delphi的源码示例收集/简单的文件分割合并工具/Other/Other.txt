@@ -1,0 +1,16 @@
+// 图标
+Cool  Icon Liumazi.ico
+Icon1 Icon Icon1.ico
+Icon2 Icon Icon2.ico
+Icon3 Icon Icon3.ico
+
+// 光标
+Drag cursor Drop.cur
+
+// 字串
+STRINGTABLE
+BEGIN
+ 1,"指定准备分割的文件"
+ 2,"指定分割后存放位置"
+ 3,"指定合并后存放位置"
+END

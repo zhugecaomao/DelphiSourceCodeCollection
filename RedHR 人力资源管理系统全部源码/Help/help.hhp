@@ -1,0 +1,22 @@
+[OPTIONS]
+Compatibility=1.1
+Compiled file=help.chm
+Default topic=aa\index.html
+Display compile progress=No
+Language=0x804 中文(中国)
+Title=RedHr-Office帮助文档
+
+
+[FILES]
+aa\aska.htm
+aa\askb.htm
+aa\askc.htm
+aa\askd.htm
+aa\aske.htm
+aa\askf.htm
+aa\askg.htm
+aa\askh.htm
+aa\aski.htm
+aa\ba.htm
+aa\bb.htm
+aa\index.html

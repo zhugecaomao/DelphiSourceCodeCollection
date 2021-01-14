@@ -1,0 +1,20 @@
+// Chinese resources
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+// Define
+#define IDD_VMSTAT      1
+#define IDI_VMSTAT    101
+#define IDC_DATA     1000
+
+// Dialog
+IDD_VMSTAT DIALOG DISCARDABLE  60, 60, 132, 66
+  STYLE WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+  CAPTION "VMStat"
+  FONT 8, "MS Sans Serif"
+BEGIN
+  LTEXT "Memory load:\nTotalPhys:\nAvailPhys:\nTotalPageFile:\nAvailPageFile:\nTotalVirtual:\nAvailVirtual:", IDC_STATIC, 4, 4, 51, 56
+  RTEXT "Memory load:\nTotalPhys:\nAvailPhys:\nTotalPageFile:\nAvailPageFile:\nTotalVirtual:\nAvailVirtual:", IDC_DATA, 60, 4, 68, 56
+END
+
+// Icon
+IDI_VMSTAT  ICON  DISCARDABLE  "VMStat.Ico"

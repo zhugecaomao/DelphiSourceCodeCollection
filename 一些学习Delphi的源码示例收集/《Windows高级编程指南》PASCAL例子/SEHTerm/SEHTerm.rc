@@ -1,0 +1,30 @@
+// Language
+LANGUAGE  LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+// Define
+#define  IDD_SEHTERM                     1
+#define  IDC_OPENSUCCEEDS              100
+#define  IDC_SIZESUCCEEDS              101
+#define  IDI_SEHTERM                   101
+#define  IDC_MEMSUCCEEDS               102
+#define  IDC_READSUCCEEDS              103
+#define  IDC_LOG                       104
+
+// Dialog
+IDD_SEHTERM DIALOG DISCARDABLE  18, 18, 214, 196
+  STYLE WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+  CAPTION "SEH: Termination Handler Test"
+  FONT 8, "Helv"
+BEGIN
+  GROUPBOX "Results of execution", IDC_STATIC, 5, 5, 204, 78, WS_GROUP
+  CONTROL "&Opening of file succeeds", IDC_OPENSUCCEEDS, "Button", BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP, 10, 20, 92, 10
+  CONTROL "&Getting file size succeeds", IDC_SIZESUCCEEDS, "Button", BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP, 10, 36, 95, 10
+  CONTROL "&Memory allocation succeeds", IDC_MEMSUCCEEDS, "Button", BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP, 10, 52, 103, 10
+  CONTROL "&Data read succeeds", IDC_READSUCCEEDS, "Button", BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP, 10, 68, 77, 10
+  PUSHBUTTON "&Execute", IDOK, 160, 56, 44, 14, WS_GROUP
+  LTEXT "Execution lo&g:", IDC_STATIC, 4, 92, 48, 8
+  LISTBOX IDC_LOG, 4, 104, 204, 88, NOT LBS_NOTIFY | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+END
+
+// Icon
+IDI_SEHTERM  ICON  DISCARDABLE  "SEHTerm.Ico"

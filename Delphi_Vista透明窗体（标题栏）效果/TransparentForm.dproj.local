@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2007-07-27 15:13:58.484.pas,C:\Documents and Settings\Szczawik\Moje dokumenty\Borland Studio Projects\Unit1.pas=C:\Documents and Settings\Szczawik\Moje dokumenty\Borland Studio Projects\TransparentForm\Unit1.pas</Transaction>
+    <Transaction>2007-07-27 15:13:58.500.dfm,C:\Documents and Settings\Szczawik\Moje dokumenty\Borland Studio Projects\Unit1.dfm=C:\Documents and Settings\Szczawik\Moje dokumenty\Borland Studio Projects\TransparentForm\Unit1.dfm</Transaction>
+    <Transaction>2007-07-27 15:14:12.593.bdsproj,C:\Documents and Settings\Szczawik\Moje dokumenty\Borland Studio Projects\Project1.bdsproj=C:\Documents and Settings\Szczawik\Moje dokumenty\Borland Studio Projects\TransparentForm\TransparentForm.bdsproj</Transaction>
+  </Transactions>
+</BorlandProject>

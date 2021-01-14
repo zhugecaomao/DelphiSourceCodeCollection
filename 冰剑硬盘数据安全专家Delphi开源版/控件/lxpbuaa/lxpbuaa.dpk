@@ -1,0 +1,52 @@
+package lxpbuaa;
+
+{$R *.res}
+{$R 'lxpArtWordLabel.dcr'}
+{$R 'lxpTrayIcon.dcr'}
+{$R 'lxpDraggingFilesMonitor.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  vcldb,
+  designide,
+  dsnap;
+
+contains
+  lxpArtWordLabel in 'lxpArtWordLabel.pas',
+  lxpDBDatePicker in 'lxpDBDatePicker.pas',
+  lxpLabelDBDatePicker in 'lxpLabelDBDatePicker.pas',
+  Comp_NonePubProps in 'Comp_NonePubProps.pas',
+  DemoEditor in 'DemoEditor.pas',
+  lxpDraggingFilesMonitor in 'lxpDraggingFilesMonitor.pas',
+  lxpTrayIcon in 'lxpTrayIcon.pas',
+  lxpAutoListComboBox in 'lxpAutoListComboBox.pas',
+  lxpServerSocketForFiles in 'lxpServerSocketForFiles.pas',
+  FunAndProc in 'FunAndProc.pas',
+  ServerThread in 'ServerThread.pas',
+  lxpClientSocketForFiles in 'lxpClientSocketForFiles.pas',
+  ClientThread in 'ClientThread.pas';
+
+end.

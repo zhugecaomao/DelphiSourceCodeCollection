@@ -1,0 +1,250 @@
+inherited frmCardLost: TfrmCardLost
+  Left = 270
+  Top = 301
+  HorzScrollBar.Range = 0
+  VertScrollBar.Range = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = #25346#22833'/'#34917#21345'/'#36864#21345
+  ClientHeight = 176
+  ClientWidth = 323
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label2: TLabel [0]
+    Left = 20
+    Top = 65
+    Width = 65
+    Height = 13
+    Caption = #23458#25143#22995#21517#65306
+  end
+  object Label7: TLabel [1]
+    Left = 20
+    Top = 36
+    Width = 65
+    Height = 13
+    Caption = #20250#21592#21345#21495#65306
+  end
+  object Label1: TLabel [2]
+    Left = 20
+    Top = 93
+    Width = 65
+    Height = 13
+    Caption = #24403#21069#20313#39069#65306
+  end
+  object Label6: TLabel [3]
+    Left = 20
+    Top = 10
+    Width = 65
+    Height = 13
+    Caption = #26377#25928#35777#20214#65306
+  end
+  object Label3: TLabel [4]
+    Left = 8
+    Top = 116
+    Width = 78
+    Height = 13
+    Caption = #20250#21592#26032#21345#21495#65306
+    Visible = False
+  end
+  inherited bbtnConfirm: TBitBtn
+    Left = 136
+    Top = 140
+    Visible = False
+  end
+  inherited bbtnCancel: TBitBtn
+    Left = 216
+    Top = 140
+    Width = 85
+  end
+  object eCardId: TdxEdit [7]
+    Left = 92
+    Top = 32
+    Width = 121
+    Style.BorderStyle = xbsSingle
+    TabOrder = 2
+    MaxLength = 10
+    StoredValues = 2
+  end
+  object eCMName: TdxEdit [8]
+    Left = 92
+    Top = 59
+    Width = 121
+    Style.BorderStyle = xbsSingle
+    TabOrder = 3
+    ReadOnly = True
+    StoredValues = 64
+  end
+  object bbtnFindCard: TBitBtn [9]
+    Left = 216
+    Top = 6
+    Width = 85
+    Height = 22
+    Caption = #39564#35777#20250#21592
+    TabOrder = 6
+    OnClick = bbtnFindCardClick
+    Glyph.Data = {
+      F6000000424DF600000000000000760000002800000010000000100000000100
+      04000000000080000000120B0000120B00001000000010000000000000000000
+      8000008000000080800080000000800080008080000080808000C0C0C0000000
+      FF00C0C0C00000FFFF00FF000000C0C0C000FFFF0000FFFFFF00DADADADADADA
+      DADAADADADADAD00ADAD000000000910000A0FFFF0FF9F10FF0D0FF00009F10F
+      FF0A0F0787701088FF0D0078E7F70FFFFF0A008E878F08888F0D00EFE7E80FFF
+      FF0A007FF78708888F0D0F07E770FFFFFF0A0F8000088888FF0D0FFFF0FFFFFF
+      FF0A444444444444444D444444444444444A444444444444444D}
+  end
+  object eOldMoney: TdxCurrencyEdit [10]
+    Left = 92
+    Top = 87
+    Width = 121
+    Style.BorderStyle = xbsSingle
+    TabOrder = 4
+    ReadOnly = True
+    StoredValues = 64
+  end
+  object eOnlyNo: TdxEdit [11]
+    Left = 92
+    Top = 6
+    Width = 121
+    Style.BorderStyle = xbsSingle
+    TabOrder = 5
+    MaxLength = 30
+    StoredValues = 2
+  end
+  object bbtnLost: TBitBtn [12]
+    Left = 216
+    Top = 32
+    Width = 85
+    Height = 22
+    Caption = #30830#35748#25346#22833
+    TabOrder = 7
+    OnClick = bbtnLostClick
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000120B0000120B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333000000000
+      3333333777777777F3333330F777777033333337F3F3F3F7F3333330F0808070
+      33333337F7F7F7F7F3333330F080707033333337F7F7F7F7F3333330F0808070
+      33333337F7F7F7F7F3333330F080707033333337F7F7F7F7F3333330F0808070
+      333333F7F7F7F7F7F3F33030F080707030333737F7F7F7F7F7333300F0808070
+      03333377F7F7F7F773333330F080707033333337F7F7F7F7F333333070707070
+      33333337F7F7F7F7FF3333000000000003333377777777777F33330F88877777
+      0333337FFFFFFFFF7F3333000000000003333377777777777333333330777033
+      3333333337FFF7F3333333333000003333333333377777333333}
+    NumGlyphs = 2
+  end
+  object eNewCardId: TdxEdit [13]
+    Left = 92
+    Top = 112
+    Width = 121
+    Style.BorderStyle = xbsSingle
+    TabOrder = 8
+    Visible = False
+    MaxLength = 10
+    StoredValues = 2
+  end
+  object bbtnBackMoney: TBitBtn [14]
+    Left = 216
+    Top = 59
+    Width = 85
+    Height = 22
+    Caption = #20250#21592#36864#21345
+    TabOrder = 9
+    OnClick = bbtnBackMoneyClick
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000130B0000130B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333303
+      333333333333337FF3333333333333903333333333333377FF33333333333399
+      03333FFFFFFFFF777FF3000000999999903377777777777777FF0FFFF0999999
+      99037F3337777777777F0FFFF099999999907F3FF777777777770F00F0999999
+      99037F773777777777730FFFF099999990337F3FF777777777330F00FFFFF099
+      03337F773333377773330FFFFFFFF09033337F3FF3FFF77733330F00F0000003
+      33337F773777777333330FFFF0FF033333337F3FF7F3733333330F08F0F03333
+      33337F7737F7333333330FFFF003333333337FFFF77333333333000000333333
+      3333777777333333333333333333333333333333333333333333}
+    NumGlyphs = 2
+  end
+  object bbtnNewCard: TBitBtn [15]
+    Left = 216
+    Top = 86
+    Width = 85
+    Height = 22
+    Caption = #34917#21150#26032#21345
+    TabOrder = 10
+    OnClick = bbtnNewCardClick
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      04000000000000010000130B0000130B00001000000000000000000000000000
+      800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333303
+      333333333333337FF3333333333333903333333333333377FF33333333333399
+      03333FFFFFFFFF777FF3000000999999903377777777777777FF0FFFF0999999
+      99037F3337777777777F0FFFF099999999907F3FF777777777770F00F0999999
+      99037F773777777777730FFFF099999990337F3FF777777777330F00FFFFF099
+      03337F773333377773330FFFFFFFF09033337F3FF3FFF77733330F00F0000003
+      33337F773777777333330FFFF0FF033333337F3FF7F3733333330F08F0F03333
+      33337F7737F7333333330FFFF003333333337FFFF77333333333000000333333
+      3333777777333333333333333333333333333333333333333333}
+    NumGlyphs = 2
+  end
+  object MSComm: TMSComm [16]
+    Left = 148
+    Top = 84
+    Width = 32
+    Height = 32
+    ControlData = {
+      2143341208000000ED030000ED03000001568A64000006000000010000040000
+      00020000802500000000080000000000000000003F00000001000000}
+  end
+  inherited ImageList: TImageList
+    Top = 340
+  end
+  object cardinfoq: TCSADOQuery
+    ConnectionString = 'FILE NAME=D:\RunXinProject\'#32654#23481#32654#21457'\source\bin\MRong.udl'
+    Parameters = <>
+    SQL.Strings = (
+      'select * from cardinfo')
+    Left = 252
+    Top = 264
+  end
+  object cardinfod: TDataSource
+    DataSet = cardinfoq
+    Left = 252
+    Top = 296
+  end
+  object SavingCardq: TCSADOQuery
+    Parameters = <>
+    SQL.Strings = (
+      'select * from cardsaving')
+    Left = 284
+    Top = 264
+    object SavingCardqcard_id: TStringField
+      FieldName = 'card_id'
+      Size = 10
+    end
+    object SavingCardqbefore_money: TBCDField
+      FieldName = 'before_money'
+      Precision = 19
+    end
+    object SavingCardqsaving_money: TBCDField
+      FieldName = 'saving_money'
+      Precision = 19
+    end
+    object SavingCardqafter_money: TBCDField
+      FieldName = 'after_money'
+      Precision = 19
+    end
+    object SavingCardqsaving_datetime: TDateTimeField
+      FieldName = 'saving_datetime'
+    end
+    object SavingCardqsaving_kind: TIntegerField
+      FieldName = 'saving_kind'
+    end
+    object SavingCardqlogin_id: TStringField
+      FieldName = 'login_id'
+      Size = 10
+    end
+  end
+end

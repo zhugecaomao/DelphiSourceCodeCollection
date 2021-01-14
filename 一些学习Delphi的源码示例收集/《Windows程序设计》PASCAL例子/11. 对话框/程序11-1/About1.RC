@@ -1,0 +1,23 @@
+// Dialog        
+ABOUTBOX DIALOG DISCARDABLE  32, 32, 180, 100        
+  STYLE DS_MODALFRAME | WS_POPUP        
+  FONT 8, "MS Sans Serif"        
+BEGIN        
+  DEFPUSHBUTTON "OK", IDOK, 66, 80, 50, 14
+  ICON "ABOUT1", IDC_STATIC, 7, 7, 21, 20
+  CTEXT "About1", IDC_STATIC, 40, 12, 100, 8
+  CTEXT "About Box Demo Program", IDC_STATIC, 7, 40, 166, 8
+  CTEXT "(c) Charles Petzold, 1998", IDC_STATIC, 7, 52, 166, 8
+END
+  
+// Menu        
+ABOUT1 MENU DISCARDABLE        
+BEGIN        
+  POPUP "&Help"        
+  BEGIN
+    MENUITEM "&About About1...", 40001
+  END        
+END       
+
+// Icon       
+ABOUT1 ICON DISCARDABLE "About1.ico"

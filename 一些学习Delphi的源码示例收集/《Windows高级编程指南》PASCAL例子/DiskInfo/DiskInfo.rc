@@ -1,0 +1,31 @@
+// Language
+LANGUAGE  LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+// Define
+#define  IDD_DISKINFO               1
+#define  IDC_LOGDRIVES            100
+#define  IDC_DRIVETYPE            101
+#define  IDI_DISKINFO             101
+#define  IDC_VOLINFO              102
+#define  IDC_DISKINFO             103
+
+// Dialog
+IDD_DISKINFO DIALOG DISCARDABLE  15, 24, 198, 185
+  STYLE DS_NOIDLEMSG | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+  CAPTION "Disk Volume Information Viewer"
+  FONT 8, "System"
+BEGIN
+  LTEXT    "Logical &drive strings:", IDC_STATIC, 4, 4, 70, 8
+  COMBOBOX IDC_LOGDRIVES, 78, 4, 80, 76, CBS_DROPDOWNLIST | WS_GROUP | WS_TABSTOP
+  LTEXT    "Drive type:", IDC_STATIC, 4, 20, 37, 8
+  LTEXT    "Text", IDC_DRIVETYPE, 48, 20, 96, 8
+  GROUPBOX "&Volume information", IDC_STATIC, 4, 32, 192, 96, WS_GROUP | WS_TABSTOP
+  LTEXT    "Volume name:\nSerial number:\nComponent length:\nFlags:\n\n\n\n\n\nFile System:", IDC_STATIC, 8, 44, 64, 80
+  LTEXT    "Label\n12345678\n10\nFS_CASE_IS_PRESERVED\nFS_CASE_SENSITIVE\nFS_UNICODE_STORED_ON_DISK\nFS_PERSISTENT_ACLS\nFS_FILE_COMPRESSION\nFS_VOL_IS_COMPRESSED\nNTFS", IDC_VOLINFO, 77, 44, 116, 80, SS_NOPREFIX
+  GROUPBOX "Disk free &space",IDC_STATIC, 4, 134, 108, 48, WS_GROUP | WS_TABSTOP
+  LTEXT    "Sectors/Cluster:\nBytes/Sector:\nFree clusters:\nClusters:", IDC_STATIC, 8, 146, 52, 32
+  RTEXT    "8\n512\n300\n400", IDC_DISKINFO, 64, 146, 44, 32, SS_NOPREFIX
+END
+
+// Icon
+IDI_DISKINFO   ICON    DISCARDABLE     "DiskInfo.Ico"

@@ -1,0 +1,1 @@
+BRCC32 ShowDib1.rc

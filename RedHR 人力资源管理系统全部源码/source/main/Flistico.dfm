@@ -1,0 +1,49 @@
+object listico: Tlistico
+  Left = 287
+  Top = 206
+  BorderStyle = bsDialog
+  Caption = #22270#26631
+  ClientHeight = 247
+  ClientWidth = 353
+  Color = clBtnFace
+  Font.Charset = GB2312_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = #23435#20307
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 12
+  object ListView1: TListView
+    Left = 8
+    Top = 8
+    Width = 337
+    Height = 201
+    Columns = <>
+    LargeImages = Main.Branchimage
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 264
+    Top = 216
+    Width = 75
+    Height = 25
+    Cancel = True
+    Caption = #21462#28040
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 184
+    Top = 216
+    Width = 75
+    Height = 25
+    Caption = #30830#23450
+    Default = True
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+end

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Name="" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="2047" PreviewOptions.Zoom="1" PrintOptions.Printer="预设" ReportOptions.CreateDate="38808.9428119213" ReportOptions.Description.Text="" ReportOptions.LastChange="38820.5838849421" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C656674025803546F70027008446174617365747301010C3900000020446174615365743D22444D2E6672784B4552454E5245504F52542220446174615365744E616D653D227172794B4552454E5245504F5254220000095661726961626C65730100055374796C650100">
+  <TfrxReportPage Name="Page1" Orientation="poLandscape" PaperWidth="297" PaperHeight="210" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxPageHeader Name="PageHeader1" Height="94.48825" Left="0" Top="18.89765" Width="1046.92981">
+      <TfrxShapeView Name="Shape1" Left="0" Top="55.69295" Width="1046.92981" Height="39.23624"/>
+      <TfrxLineView Name="Line1" Left="0.23624" Top="76.03154" Width="982.74088" Height="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo1" Left="21.55906" Top="56.69295" Width="56.69295" Height="18.89765" Memo.Text="打字(张)"/>
+      <TfrxLineView Name="Line2" Left="98.26778" Top="57.47248" Width="0" Height="38.23624" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo2" Left="6" Top="77.5906" Width="34.01577" Height="18.89765" Memo.Text="中文"/>
+      <TfrxMemoView Name="Memo3" Left="54.91342" Top="77.37013" Width="37.7953" Height="18.89765" Memo.Text="英文"/>
+      <TfrxLineView Name="Line3" Left="45.35436" Top="75.5906" Width="0" Height="20.67718" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo4" Left="170.07885" Top="56.69295" Width="94.48825" Height="18.89765" Memo.Text="复印(张)"/>
+      <TfrxLineView Name="Line4" Left="132.28355" Top="75.5906" Width="0" Height="20.67718" Frame.Typ="1"/>
+      <TfrxLineView Name="Line5" Left="166.29932" Top="75.5906" Width="0" Height="20.67718" Frame.Typ="1"/>
+      <TfrxLineView Name="Line6" Left="200.31509" Top="75.5906" Width="0" Height="20.67718" Frame.Typ="1"/>
+      <TfrxLineView Name="Line7" Left="232.55133" Top="75.5906" Width="0" Height="20.67718" Frame.Typ="1"/>
+      <TfrxLineView Name="Line8" Left="295.80334" Top="57.25201" Width="0" Height="38.01577" Frame.Typ="1"/>
+      <TfrxLineView Name="Line9" Left="264.5671" Top="75.5906" Width="0" Height="20.67718" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo5" Left="102.04731" Top="76.5906" Width="22.67718" Height="18.89765" Memo.Text="B5"/>
+      <TfrxMemoView Name="Memo6" Left="133.28355" Top="76.5906" Width="30.23624" Height="18.89765" Memo.Text="16K"/>
+      <TfrxMemoView Name="Memo7" Left="170.07885" Top="76.5906" Width="20.89765" Height="18.89765" Memo.Text="A4"/>
+      <TfrxMemoView Name="Memo8" Left="204.09462" Top="76.5906" Width="22.67718" Height="18.89765" Memo.Text="B4"/>
+      <TfrxMemoView Name="Memo9" Left="234.33086" Top="76.5906" Width="22.67718" Height="18.89765" Memo.Text="8K"/>
+      <TfrxMemoView Name="Memo10" Left="268.34663" Top="76.5906" Width="22.67718" Height="18.89765" Memo.Text="A3"/>
+      <TfrxMemoView Name="Memo11" Left="317.48052" Top="56.69295" Width="60.47248" Height="18.89765" Memo.Text="打印,扫描"/>
+      <TfrxLineView Name="Line10" Left="350.93723" Top="75.5906" Width="0" Height="20.67718" Frame.Typ="1"/>
+      <TfrxLineView Name="Line12" Left="411.96877" Top="57.69295" Width="0" Height="38.01577" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo12" Left="302.3624" Top="77.37013" Width="34.01577" Height="18.89765" Memo.Text="打印"/>
+      <TfrxMemoView Name="Memo13" Left="362.83488" Top="77.5906" Width="37.7953" Height="18.89765" Memo.Text="扫描"/>
+      <TfrxMemoView Name="Memo15" Left="476.22078" Top="56.69295" Width="30.23624" Height="18.89765" Memo.Text="长途"/>
+      <TfrxLineView Name="Line13" Left="566.9295" Top="57.47248" Width="0" Height="38.01577" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo16" Left="419.52783" Top="78.5906" Width="34.01577" Height="18.89765" Memo.Text="国际"/>
+      <TfrxMemoView Name="Memo17" Left="464.88219" Top="78.5906" Width="37.7953" Height="18.89765" Memo.Text="国内"/>
+      <TfrxMemoView Name="Memo18" Left="510.23655" Top="78.5906" Width="56.69295" Height="18.89765" Memo.Text="港,澳,台"/>
+      <TfrxLineView Name="Line14" Left="460.32313" Top="75.5906" Width="0" Height="20.67718" Frame.Typ="1"/>
+      <TfrxLineView Name="Line15" Left="506.45702" Top="75.5906" Width="0" Height="20.67718" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo19" Left="684.09493" Top="56.69295" Width="56.69295" Height="18.89765" Memo.Text="传真(张)"/>
+      <TfrxLineView Name="Line16" Left="642.5201" Top="77.37013" Width="0" Height="20.67718" Frame.Typ="1"/>
+      <TfrxLineView Name="Line17" Left="718.1107" Top="75.5906" Width="0" Height="20.67718" Frame.Typ="1"/>
+      <TfrxLineView Name="Line18" Left="793.7013" Top="75.5906" Width="0" Height="20.67718" Frame.Typ="1"/>
+      <TfrxLineView Name="Line19" Left="869.2919" Top="57.69295" Width="0" Height="38.01577" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo20" Left="582.04762" Top="78.5906" Width="37.7953" Height="18.89765" Memo.Text="国际"/>
+      <TfrxMemoView Name="Memo21" Left="661.41775" Top="78.5906" Width="34.01577" Height="18.89765" Memo.Text="国内"/>
+      <TfrxMemoView Name="Memo22" Left="733.22882" Top="78.37013" Width="34.01577" Height="18.89765" Memo.Text="市内"/>
+      <TfrxMemoView Name="Memo23" Left="808.81942" Top="78.37013" Width="37.7953" Height="18.89765" Memo.Text="收文"/>
+      <TfrxLineView Name="Line20" Left="982.6778" Top="56.69295" Width="0" Height="38.01577" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo25" Left="997.79592" Top="68.81107" Width="37.48825" Height="18.89765" Memo.Text="备注："/>
+      <TfrxMemoView Name="Memo26" Left="393.07112" Top="11.33859" Width="279.68522" Height="30.23624" Font.Charset="134" Font.Color="0" Font.Height="-27" Font.Name="隶书" Font.Style="0" Memo.Text="商务中心客人合计报表" ParentFont="False"/>
+      <TfrxMemoView Name="Memo27" Left="15.11812" Top="34.01577" Width="94.48825" Height="18.89765" Memo.Text="制表人:"/>
+      <TfrxSysMemoView Name="SysMemo1" Left="854.17378" Top="34.01577" Width="94.48825" Height="18.89765" Memo.Text="[DATE]"/>
+      <TfrxMemoView Name="Memo28" Left="759.68553" Top="34.01577" Width="94.48825" Height="18.89765" Memo.Text="打印时间："/>
+      <TfrxMemoView Name="Memo14" Left="888.18955" Top="56.69295" Width="69.48825" Height="18.89765" Memo.Text="上网,租赁"/>
+      <TfrxLineView Name="Line11" Left="922.20532" Top="75.5906" Width="0" Height="20.67718" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo39" Left="876.85096" Top="78.5906" Width="37.7953" Height="18.89765" Memo.Text="上网"/>
+      <TfrxMemoView Name="Memo48" Left="933.54391" Top="78.5906" Width="37.7953" Height="18.89765" Memo.Text="租赁"/>
+      <TfrxMemoView Name="Memo70" Left="506.45702" Top="56.69295" Width="60.47248" Height="18.89765" Memo.Text="( 分钟)"/>
+    </TfrxPageHeader>
+    <TfrxMasterData Name="MasterData1" Height="22.67718" Left="0" Top="173.85838" Width="1046.92981" ColumnWidth="0" ColumnGap="0" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" RowCount="0">
+      <TfrxShapeView Name="Shape2" Left="0" Top="0" Width="1046.92981" Height="20.89765"/>
+      <TfrxMemoView Name="Memo29" Left="11.81107" Top="0" Width="26.23624" Height="18.89765" DataField="chinsepage" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;chinsepage&#34;]"/>
+      <TfrxMemoView Name="Memo30" Left="56.72449" Top="0.77953" Width="26.45671" Height="18.89765" DataField="englishpage" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;englishpage&#34;]"/>
+      <TfrxLineView Name="Line21" Left="45.16543" Top="0.77953" Width="0" Height="20.11812" Frame.Typ="1"/>
+      <TfrxLineView Name="Line22" Left="98.07885" Top="0" Width="0" Height="21.11812" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo31" Left="104.63791" Top="1" Width="22.67718" Height="18.89765" DataField="B5" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;B5&#34;]"/>
+      <TfrxLineView Name="Line23" Left="132.09462" Top="0" Width="0" Height="21.11812" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo32" Left="135.87415" Top="0.77953" Width="22.67718" Height="18.89765" DataField="K16" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;K16&#34;]"/>
+      <TfrxLineView Name="Line24" Left="166.11039" Top="0" Width="0" Height="21.11812" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo33" Left="172.88992" Top="0.77953" Width="18.89765" Height="18.89765" DataField="A4" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;A4&#34;]"/>
+      <TfrxLineView Name="Line25" Left="200.12616" Top="0" Width="0" Height="21.11812" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo34" Left="203.90569" Top="1" Width="22.67718" Height="18.89765" DataField="B4" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;B4&#34;]"/>
+      <TfrxLineView Name="Line26" Left="232.3624" Top="0" Width="0" Height="21.11812" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo35" Left="235.92146" Top="0" Width="22.67718" Height="18.89765" DataField="K8" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;K8&#34;]"/>
+      <TfrxLineView Name="Line27" Left="264.37817" Top="0" Width="0" Height="21.11812" Frame.Typ="1"/>
+      <TfrxLineView Name="Line28" Left="296.39394" Top="0" Width="0" Height="21.11812" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo36" Left="269.37817" Top="0" Width="30.23624" Height="18.89765" DataField="A3" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;A3&#34;]"/>
+      <TfrxLineView Name="Line29" Left="350.52783" Top="0" Width="0" Height="21.11812" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo37" Left="306.953" Top="0" Width="30.23624" Height="18.89765" DataField="print1" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;print1&#34;]"/>
+      <TfrxMemoView Name="Memo38" Left="370.00031" Top="0.77953" Width="30.23624" Height="18.89765" DataField="sacn" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;sacn&#34;]"/>
+      <TfrxLineView Name="Line31" Left="411.77984" Top="0" Width="0" Height="21.11812" Frame.Typ="1"/>
+      <TfrxLineView Name="Line32" Left="459.91373" Top="0" Width="0" Height="21.11812" Frame.Typ="1"/>
+      <TfrxLineView Name="Line33" Left="506.26809" Top="0" Width="0" Height="21.11812" Frame.Typ="1"/>
+      <TfrxLineView Name="Line34" Left="566.74057" Top="0" Width="0" Height="21.11812" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo40" Left="422.3389" Top="0.77953" Width="34.01577" Height="18.89765" DataField="nationcall" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;nationcall&#34;]"/>
+      <TfrxMemoView Name="Memo41" Left="469.47279" Top="1" Width="34.01577" Height="18.89765" DataField="chinacall" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;chinacall&#34;]"/>
+      <TfrxMemoView Name="Memo42" Left="518.82715" Top="1.77953" Width="41.57483" Height="18.89765" DataField="hgcall" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;hgcall&#34;]"/>
+      <TfrxLineView Name="Line35" Left="642.33117" Top="0" Width="0" Height="21.11812" Frame.Typ="1"/>
+      <TfrxLineView Name="Line36" Left="717.92177" Top="0" Width="0" Height="21.11812" Frame.Typ="1"/>
+      <TfrxLineView Name="Line37" Left="793.51237" Top="0" Width="0" Height="21.11812" Frame.Typ="1"/>
+      <TfrxLineView Name="Line38" Left="869.10297" Top="0" Width="0" Height="21.11812" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo43" Left="587.63822" Top="2.77953" Width="30.23624" Height="18.89765" DataField="sendoutside" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;sendoutside&#34;]"/>
+      <TfrxMemoView Name="Memo44" Left="665.44929" Top="3" Width="41.57483" Height="18.89765" DataField="sendinside" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;sendinside&#34;]"/>
+      <TfrxMemoView Name="Memo45" Left="737.81942" Top="2" Width="37.7953" Height="18.89765" DataField="sendprive" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;sendprive&#34;]"/>
+      <TfrxMemoView Name="Memo46" Left="819.96908" Top="4" Width="37.7953" Height="18.89765" DataField="resivd" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;resivd&#34;]"/>
+      <TfrxLineView Name="Line39" Left="982.48887" Top="0" Width="0" Height="21.11812" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo47" Left="875.76438" Top="4" Width="36.65368" Height="18.89765" DataField="intenet" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;intenet&#34;]"/>
+      <TfrxLineView Name="Line30" Left="922.20532" Top="0" Width="0" Height="21.11812" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo24" Left="933.54391" Top="2" Width="36.65368" Height="18.89765" DataField="land" DataSet="DM.frxKERENREPORT" DataSetName="qryKERENREPORT" Memo.Text="[qryKERENREPORT.&#34;land&#34;]"/>
+    </TfrxMasterData>
+    <TfrxReportSummary Name="ReportSummary1" Height="22.67718" Left="0" Top="257.00804" Width="1046.92981">
+      <TfrxShapeView Name="Shape3" Left="0.44094" Top="0" Width="1046.92981" Height="21.89765"/>
+      <TfrxLineView Name="Line40" Left="75.5906" Top="1.77953" Width="0" Height="20.11812" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo49" Left="5.77953" Top="2.77953" Width="64.25201" Height="18.89765" Memo.Text="金额合计;"/>
+      <TfrxMemoView Name="Memo50" Left="140.1812" Top="3" Width="34.01577" Height="18.89765" Memo.Text="[SUM(&#60;qryKERENREPORT.&#34;chinsepage&#34;&#62;*20+&#60;qryKERENREPORT.&#34;englishpage&#34;&#62;*30)]"/>
+      <TfrxMemoView Name="Memo51" Left="75.5906" Top="4.77953" Width="72.26778" Height="18.89765" Memo.Text="打字合计："/>
+      <TfrxLineView Name="Line42" Left="188.9765" Top="1" Width="0" Height="20.11812" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo52" Left="166.29932" Top="5.77953" Width="18.89765" Height="18.89765" Memo.Text="元"/>
+      <TfrxLineView Name="Line41" Left="319.1577" Top="2.77953" Width="0" Height="20.11812" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo53" Left="188.9765" Top="3.77953" Width="71.81107" Height="18.89765" Memo.Text="复印合计："/>
+      <TfrxMemoView Name="Memo54" Left="260.78757" Top="3.77953" Width="34.01577" Height="18.89765" Memo.Text="[SUM(&#60;qryKERENREPORT.&#34;B5&#34;&#62;*3+&#60;qryKERENREPORT.&#34;K16&#34;&#62;*3+&#60;qryKERENREPORT.&#34;A4&#34;&#62;*3+&#60;qryKERENREPORT.&#34;B4&#34;&#62;*5+&#60;qryKERENREPORT.&#34;K8&#34;&#62;*5+&#60;qryKERENREPORT.&#34;A3&#34;&#62;*5)]"/>
+      <TfrxMemoView Name="Memo55" Left="291.02381" Top="5.77953" Width="18.89765" Height="18.89765" Memo.Text="元"/>
+      <TfrxMemoView Name="Memo56" Left="321.26005" Top="3.77953" Width="98.26778" Height="18.89765" Memo.Text="打印,扫描合计;"/>
+      <TfrxMemoView Name="Memo57" Left="419.52783" Top="3.77953" Width="34.01577" Height="18.89765" Memo.Text="[SUM(&#60;qryKERENREPORT.&#34;print1&#34;&#62;*10+&#60;qryKERENREPORT.&#34;sacn&#34;&#62;*3)]"/>
+      <TfrxMemoView Name="Memo58" Left="453.5436" Top="4.77953" Width="18.89765" Height="18.89765" Memo.Text="元"/>
+      <TfrxLineView Name="Line43" Left="476.22078" Top="2.77953" Width="0" Height="20.11812" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo59" Left="476.22078" Top="3.77953" Width="98.26778" Height="18.89765" Memo.Text="长途话费合计："/>
+      <TfrxMemoView Name="Memo60" Left="574.48856" Top="3.77953" Width="34.01577" Height="18.89765" Memo.Text="[SUM(&#60;qryKERENREPORT.&#34;nationcall&#34;&#62;+&#60;qryKERENREPORT.&#34;chinacall&#34;&#62;+&#60;qryKERENREPORT.&#34;hgcall&#34;&#62;)]"/>
+      <TfrxMemoView Name="Memo61" Left="608.50433" Top="3.77953" Width="18.89765" Height="18.89765" Memo.Text="元"/>
+      <TfrxLineView Name="Line44" Left="642.5201" Top="2.77953" Width="0" Height="20.11812" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo62" Left="642.5201" Top="3.77953" Width="98.26778" Height="18.89765" Memo.Text="传真金额合计："/>
+      <TfrxMemoView Name="Memo63" Left="740.78788" Top="3.77953" Width="34.01577" Height="18.89765" Memo.Text="[SUM(&#60;qryKERENREPORT.&#34;sendoutside&#34;&#62;*20+&#60;qryKERENREPORT.&#34;sendinside&#34;&#62;*10+&#60;qryKERENREPORT.&#34;sendprive&#34;&#62;*5+&#60;qryKERENREPORT.&#34;resivd&#34;&#62;*2)]"/>
+      <TfrxMemoView Name="Memo64" Left="774.80365" Top="3.77953" Width="18.89765" Height="18.89765" Memo.Text="元"/>
+      <TfrxLineView Name="Line45" Left="793.7013" Top="2.77953" Width="0" Height="20.11812" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo65" Left="793.7013" Top="3.77953" Width="103.50402" Height="18.89765" Memo.Text="上网,租赁合计："/>
+      <TfrxMemoView Name="Memo67" Left="899.52814" Top="3.77953" Width="34.01577" Height="18.89765" Memo.Text="[SUM(&#60;qryKERENREPORT.&#34;intenet&#34;&#62;+&#60;qryKERENREPORT.&#34;land&#34;&#62;)]"/>
+      <TfrxMemoView Name="Memo66" Left="933.54391" Top="3.77953" Width="18.89765" Height="18.89765" Memo.Text="元"/>
+      <TfrxLineView Name="Line46" Left="956.22109" Top="2.77953" Width="0" Height="20.11812" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo68" Left="960.00062" Top="2.77953" Width="37.7953" Height="18.89765" Memo.Text="合计;"/>
+      <TfrxMemoView Name="Memo69" Left="990.23686" Top="3" Width="71.01577" Height="18.89765" Memo.Text="[SUM(&#60;qryKERENREPORT.&#34;chinsepage&#34;&#62;*20+&#60;qryKERENREPORT.&#34;englishpage&#34;&#62;*30+&#60;qryKERENREPORT.&#34;B5&#34;&#62;*3+&#60;qryKERENREPORT.&#34;K16&#34;&#62;*3+&#60;qryKERENREPORT.&#34;A4&#34;&#62;*3+&#60;qryKERENREPORT.&#34;B4&#34;&#62;*5+&#60;qryKERENREPORT.&#34;K8&#34;&#62;*5+&#60;qryKERENREPORT.&#34;A3&#34;&#62;*5+&#60;qryKERENREPORT.&#34;print1&#34;&#62;*10+&#60;qryKERENREPORT.&#34;sacn&#34;&#62;*3+&#60;qryKERENREPORT.&#34;nationcall&#34;&#62;+&#60;qryKERENREPORT.&#34;chinacall&#34;&#62;+&#60;qryKERENREPORT.&#34;hgcall&#34;&#62;+&#60;qryKERENREPORT.&#34;sendoutside&#34;&#62;*20+&#60;qryKERENREPORT.&#34;sendinside&#34;&#62;*10+&#60;qryKERENREPORT.&#34;sendprive&#34;&#62;*5+&#60;qryKERENREPORT.&#34;resivd&#34;&#62;*2+&#60;qryKERENREPORT.&#34;intenet&#34;&#62;+&#60;qryKERENREPORT.&#34;land&#34;&#62;)]"/>
+    </TfrxReportSummary>
+  </TfrxReportPage>
+</TfrxReport>

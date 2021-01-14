@@ -1,0 +1,10 @@
+图书管理系统的系统要求:
+　
+
+Windows XP, Windows 2000, 98 操作系统。
+
+Intel Pentium 166MHz 以上。
+
+64M内存。
+
+至少5M空余硬盘空间。

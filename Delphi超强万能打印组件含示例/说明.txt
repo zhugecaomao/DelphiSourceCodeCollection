@@ -1,0 +1,8 @@
+zyprint.mdb为本地打印方案，你也可以保存在SQLSERVER里面。
+zyprint.pas是调用文件
+zyprintcrt.dll是打印控件
+parameter目录是保存一些参数文件(ini)用的.现在暂时只有一个printcfg.ini文件.
+
+win2k+delphi 7 开发。
+
+随便你怎么打印,随便你怎么设计.QQ:88483816,有需要增加功能,提出bug请Q我

@@ -1,0 +1,18 @@
+RzMenuController的设置：
+ 
+FrameColor:           $00FFC185  //边框颜色
+GradientColorDefault: flase      //不用默认颜色
+GradientColorSrart:   clWhite    //开始颜色
+GradientColorStop:    $00FAE4D3  //结束颜色
+
+
+   ┏━━━━━━━━━━━━━━━━━━━━━┓
+   ┃             源 码 爱 好 者               ┃
+   ┣━━━━━━━━━━━━━━━━━━━━━┫
+   ┃                                          ┃
+   ┃           提供源码发布与下载             ┃
+   ┃                                          ┃
+   ┃        http://www.codefans.net           ┃
+   ┃                                          ┃
+   ┃            互助、分享、提高              ┃
+   ┗━━━━━━━━━━━━━━━━━━━━━┛

@@ -1,0 +1,48 @@
+// Menu
+        
+MENUDEMO MENU DISCARDABLE        
+BEGIN
+        
+   POPUP "&File"        
+   BEGIN
+     MENUITEM  "&New",  40001
+     MENUITEM  "&Open", 40002
+     MENUITEM  "&Save", 40003
+     MENUITEM  "Save &As...", 40004
+     MENUITEM  SEPARATOR
+     MENUITEM  "E&xit", 40005
+   END
+        
+   POPUP "&Edit"        
+   BEGIN
+     MENUITEM  "&Undo",   40006
+     MENUITEM  SEPARATOR                                  
+     MENUITEM  "C&ut",    40007
+     MENUITEM  "&Copy",   40008
+     MENUITEM  "&Paste",  40009
+     MENUITEM  "De&lete", 40010
+   END
+        
+   POPUP "&Background"        
+   BEGIN
+     MENUITEM "&White",      40011, CHECKED
+     MENUITEM "&Light Gray", 40012
+     MENUITEM "&Gray",       40013
+     MENUITEM "&Dark Gray",  40014
+     MENUITEM "&Black",      40015
+   END
+        
+   POPUP "&Timer"        
+   BEGIN
+     MENUITEM "&Start",  40016
+     MENUITEM "S&top",   40017, GRAYED        
+   END
+        
+   POPUP "&Help"        
+   BEGIN
+     MENUITEM "&Help...",           40018
+     MENUITEM "&About MenuDemo...", 40019
+   END
+        
+END
+

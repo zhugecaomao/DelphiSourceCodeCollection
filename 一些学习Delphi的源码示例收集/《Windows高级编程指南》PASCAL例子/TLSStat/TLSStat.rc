@@ -1,0 +1,32 @@
+// Language
+LANGUAGE  LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+// Define
+#define IDD_TLSSTAT                     1
+#define IDC_CLEAR                       100
+#define IDC_THREADNUM                   101
+#define IDI_TLSSTAT                     101
+#define IDC_NUMCYCLES                   102
+#define IDC_CYCLETIME                   103
+#define IDC_LOG                         104
+
+// Dialog
+IDD_TLSSTAT DIALOG DISCARDABLE  18, 18, 180, 215
+  STYLE WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+  CAPTION "Static Thread Local Storage"
+  FONT 8, "Helv"
+BEGIN
+  LTEXT  "Thread number:", IDC_STATIC, 4, 4, 52, 8
+  RTEXT  "1", IDC_THREADNUM, 60, 4, 13, 8
+  PUSHBUTTON  "Clea&r", IDC_CLEAR, 104, 4, 56, 14
+  LTEXT  "&Num of cycles:", IDC_STATIC, 4, 20, 50, 8
+  EDITTEXT  IDC_NUMCYCLES, 68, 20, 28, 13
+  LTEXT  "&Cycle time (secs):", IDC_STATIC, 4, 36, 59, 8
+  EDITTEXT  IDC_CYCLETIME, 68, 36, 28, 13
+  DEFPUSHBUTTON "Create &thread", IDOK, 104, 36, 56, 14, WS_GROUP
+  LTEXT  "Thread execution &log:", IDC_STATIC, 4, 56, 72, 8
+  LISTBOX  IDC_LOG, 4, 68, 172, 144, NOT LBS_NOTIFY | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+END
+
+// Icon
+IDI_TLSSTAT  ICON  DISCARDABLE  "TLSStat.Ico"

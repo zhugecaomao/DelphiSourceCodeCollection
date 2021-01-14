@@ -1,0 +1,1 @@
+BRCC32 GrafMenu.rc

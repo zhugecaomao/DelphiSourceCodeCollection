@@ -1,0 +1,213 @@
+object frmSetColumn: TfrmSetColumn
+  Left = 233
+  Top = 162
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = '栏目布局'
+  ClientHeight = 313
+  ClientWidth = 353
+  Color = clBtnFace
+  Font.Charset = GB2312_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = '宋体'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 15
+  object btnDown: TSpeedButton
+    Left = 255
+    Top = 42
+    Width = 91
+    Height = 25
+    Hint = '将栏目下移一行 (Ctrl+Down)'
+    Caption = '下移'
+    Glyph.Data = {
+      F6000000424DF600000000000000760000002800000010000000100000000100
+      04000000000080000000120B0000120B00001000000010000000000000000000
+      8000008000000080800080000000800080008080000080808000C0C0C0000000
+      FF00C0C0C00000FFFF00FF000000C0C0C000FFFF0000FFFFFF00DADADADADADA
+      DADAADADADADADADADADDADADADADADADADAADADADADADADADADDADADAD0DADA
+      DADAADADAD060DADADADDADAD06660DADADAADAD0666660DADADDAD066666660
+      DADAAD00006660000DADDADAD06660DADADAADADA06660ADADADDADAD06660DA
+      DADAADADA00000ADADADDADADADADADADADAADADADADADADADAD}
+    OnClick = btnDownClick
+  end
+  object btnUp: TSpeedButton
+    Left = 255
+    Top = 6
+    Width = 91
+    Height = 25
+    Hint = '将栏目上移一行 (Ctrl+Up)'
+    Caption = '上移'
+    Glyph.Data = {
+      F6000000424DF600000000000000760000002800000010000000100000000100
+      04000000000080000000120B0000120B00001000000010000000000000000000
+      8000008000000080800080000000800080008080000080808000C0C0C0000000
+      FF00C0C0C00000FFFF00FF000000C0C0C000FFFF0000FFFFFF00DADADADADADA
+      DADAADADADADADADADADDADADADADADADADAADADADADADADADADDADAD00000DA
+      DADAADADA06660ADADADDADAD06660DADADAADADA06660ADADADDA0000666000
+      0ADAADA066666660ADADDADA0666660ADADAADADA06660ADADADDADADA060ADA
+      DADAADADADA0ADADADADDADADADADADADADAADADADADADADADAD}
+    OnClick = btnUpClick
+  end
+  object Bevel3: TBevel
+    Left = 252
+    Top = 153
+    Width = 97
+    Height = 7
+    ParentShowHint = False
+    Shape = bsTopLine
+    ShowHint = True
+  end
+  object Label3: TLabel
+    Left = 258
+    Top = 84
+    Width = 38
+    Height = 15
+    Caption = '提示:'
+    Font.Charset = GB2312_CHARSET
+    Font.Color = clNavy
+    Font.Height = -15
+    Font.Name = '宋体'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 276
+    Top = 108
+    Width = 45
+    Height = 15
+    Caption = '不显示'
+    Font.Charset = GB2312_CHARSET
+    Font.Color = clNavy
+    Font.Height = -15
+    Font.Name = '宋体'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 276
+    Top = 132
+    Width = 30
+    Height = 15
+    Caption = '显示'
+    Font.Charset = GB2312_CHARSET
+    Font.Color = clNavy
+    Font.Height = -15
+    Font.Name = '宋体'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Image2: TImage
+    Left = 258
+    Top = 108
+    Width = 16
+    Height = 16
+    AutoSize = True
+    Picture.Data = {
+      07544269746D6170F6000000424DF60000000000000076000000280000001000
+      000010000000010004000000000080000000120B0000120B0000100000001000
+      000000000000000080000080000000808000800000008000800080800000C0C0
+      C000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+      FF00777777777777777777777777777777777FFFFFFFFFFFFF77787777777777
+      7F77780FFFFFFFFF7F7778077777777F7F7778077777777F7F7778077777777F
+      7F7778077777777F7F7778077777777F7F7778077777777F7F7778077777777F
+      7F7778077777777F7F777800000000007F777888888888888F77777777777777
+      7777}
+  end
+  object Image1: TImage
+    Left = 258
+    Top = 132
+    Width = 16
+    Height = 16
+    AutoSize = True
+    Picture.Data = {
+      07544269746D6170F6000000424DF60000000000000076000000280000001000
+      000010000000010004000000000080000000120B0000120B0000100000001000
+      000000000000000080000080000000808000800000008000800080800000C0C0
+      C000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+      FF00777777777777777777777777777777777FFFFFFFFFFFFF77787777777777
+      7F77780FFFFFFFFF7F7778077707777F7F7778077000777F7F7778070000077F
+      7F7778070070007F7F7778070777000F7F7778077777700F7F7778077777770F
+      7F777807777777777F777800000000007F777888888888888F77777777777777
+      7777}
+  end
+  object Bevel1: TBevel
+    Left = 252
+    Top = 75
+    Width = 97
+    Height = 7
+    ParentShowHint = False
+    Shape = bsTopLine
+    ShowHint = True
+  end
+  object btnOk: TBitBtn
+    Left = 256
+    Top = 193
+    Width = 90
+    Height = 31
+    Caption = '确认(&O)'
+    TabOrder = 1
+    OnClick = btnOkClick
+    Kind = bkOK
+  end
+  object btnCancel: TBitBtn
+    Left = 256
+    Top = 276
+    Width = 90
+    Height = 31
+    Caption = '取消(&C)'
+    TabOrder = 2
+    Kind = bkCancel
+  end
+  object cbSave: TCheckBox
+    Left = 256
+    Top = 167
+    Width = 97
+    Height = 17
+    Caption = '保存布局'
+    Checked = True
+    State = cbChecked
+    TabOrder = 3
+  end
+  object CheckListBox1: TCheckListBox
+    Left = 6
+    Top = 6
+    Width = 241
+    Height = 301
+    DragMode = dmAutomatic
+    Flat = False
+    ItemHeight = 20
+    Style = lbOwnerDrawFixed
+    TabOrder = 0
+    OnDragDrop = CheckListBox1DragDrop
+    OnDragOver = CheckListBox1DragOver
+  end
+  object btnIni: TBitBtn
+    Left = 256
+    Top = 235
+    Width = 90
+    Height = 31
+    Hint = '设置成系统默认的栏目布局'
+    Caption = '初始化 '
+    ModalResult = 1
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 4
+    OnClick = btnIniClick
+    Glyph.Data = {
+      F6000000424DF600000000000000760000002800000010000000100000000100
+      04000000000080000000120B0000120B00001000000010000000000000000000
+      8000008000000080800080000000800080008080000080808000C0C0C0000000
+      FF00C0C0C00000FFFF00FF000000C0C0C000FFFF0000FFFFFF00DADADADADADA
+      DADAAD0000000000000DDA0FFF0FFF0FFF0AAD0FFF0FFF0FFF0DDA0FFF0FFF0F
+      FF0AAD0FFF0FFF0FFF0DDA0FFF0FFF0FFF0AAD0FFF0FFF0FFF0DDA0FFF0FFF0F
+      FF0AAD0FFF0FFF0FFF0DDA0FFF0FFF0FFF0AAD0000000000000DDA0888088808
+      880AAD0888088808880DDA0000000000000AADADADADADADADAD}
+  end
+end

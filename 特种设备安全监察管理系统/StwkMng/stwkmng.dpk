@@ -1,0 +1,70 @@
+package stwkmng;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '开工报告管理模块'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl,
+  rtl,
+  vclx,
+  vcljpg,
+  dbrtl,
+  vcldb,
+  adortl,
+  VclSmp,
+  EQDBTLD6,
+  ECQDBCD6,
+  EQTLD6,
+  dxEdtrD6,
+  dxcomnd6,
+  dxDBEdD6,
+  EQGridD6,
+  dxELibD6,
+  ehlibd6,
+  dxBarD6,
+  dxdbtrD6,
+  dxmdsd6,
+  fastrpt6,
+  csctrl,
+  csextdxqtm,
+  csextehlib,
+  csextdxbar,
+  csscrctrl,
+  common,
+  dxPSCoreD6,
+  dxPSdxDBGrLnkD6,
+  dxPSdxDBCtrlLnkD6,
+  dxPSTLLnkD6,
+  dxGrEdD6,
+  personmng;
+
+contains
+  ufrmBeginWorkManageBase in 'ufrmBeginWorkManageBase.pas' {frmBeginWorkManageBase},
+  ufrmBeginWorkListBase in 'ufrmBeginWorkListBase.pas' {frmBeginWorkListBase},
+  ufrmBeginWorkList in 'ufrmBeginWorkList.pas' {frmBeginWorkList},
+  ufrmBeginWorkManage in 'ufrmBeginWorkManage.pas' {frmBeginWorkManage};
+
+end.

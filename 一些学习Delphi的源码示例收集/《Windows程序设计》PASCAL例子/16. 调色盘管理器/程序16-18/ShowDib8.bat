@@ -1,0 +1,1 @@
+BRCC32 ShowDib8.rc

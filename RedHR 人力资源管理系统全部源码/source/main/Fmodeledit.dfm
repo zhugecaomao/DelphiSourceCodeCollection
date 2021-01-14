@@ -1,0 +1,40 @@
+object modeledit: Tmodeledit
+  Left = 142
+  Top = 220
+  Width = 696
+  Height = 480
+  Caption = #27169#29256#25991#20214
+  Color = clBtnFace
+  Font.Charset = GB2312_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = #23435#20307
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  PixelsPerInch = 96
+  TextHeight = 12
+  object cxSpreadSheetBook1: TcxSpreadSheetBook
+    Left = 104
+    Top = 8
+    Width = 688
+    Height = 453
+    DefaultStyle.Font.Name = #23435#20307
+    DefaultStyle.Font.Size = 9
+    DefaultStyle.Font.Charset = GB2312_CHARSET
+    DefaultStyle.Format = 34
+    HeaderFont.Charset = GB2312_CHARSET
+    HeaderFont.Color = clWindowText
+    HeaderFont.Height = -12
+    HeaderFont.Name = #23435#20307
+    HeaderFont.Style = []
+    RowHeaderWidth = 35
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 461
+    Width = 792
+    Height = 19
+    Panels = <>
+  end
+end

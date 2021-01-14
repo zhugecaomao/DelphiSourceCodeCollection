@@ -1,0 +1,43 @@
+package AAFont_D7;
+
+{$R *.res}
+{$R 'AACtrls.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '平滑特效字体控件包 V2.56'}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  designide,
+  //vclactnband,
+  vclx,
+  VclSmp;
+
+contains
+  AAFontEditor in 'AAFontEditor.pas',
+  AAFont in 'AAFont.pas',
+  AAFontDialog in 'AAFontDialog.pas' {AAFontDlg},
+  AACtrls in 'AACtrls.pas';
+
+end.

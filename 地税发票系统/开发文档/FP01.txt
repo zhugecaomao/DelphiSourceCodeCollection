@@ -1,0 +1,111 @@
+{租赁发票绘制表}
+procedure TMain.FP01;
+var
+  j: integer;
+  i: integer;
+begin
+  with InVoiceTable do
+  begin
+    RowHeights[0]:=RowHeights[0]-3;
+    RowHeights[1]:=RowHeights[1]-3;
+    GridLineColor:=8684164;
+    WordWrap:=False;
+    MergeCells(0,0,2,3);
+    MergeCells(2,0,4,1);
+    MergeCells(2,1,2,1);
+    MergeCells(2,2,2,1);
+    ColWidths[3]:=20;
+    MergeCells(4,1,1,1);
+    ColWidths[4]:=64;
+    MergeCells(5,1,1,2);
+    MergeCells(6,0,1,3);
+    MergeCells(7,0,1,3);
+    ColWidths[7]:=45;
+    MergeCells(8,0,1,3);
+    ColWidths[8]:=45;
+    MergeCells(9,0,4,2);
+    MergeCells(9,2,4,1);
+    Cells[0,0]:='租 赁 项 目';
+    Cells[2,0]:='租  赁  日  期';
+    Cells[2,1]:='起';
+    Cells[2,2]:='年 月 日';
+    Cells[4,1]:='止';
+    Cells[4,2]:='年 月 日';
+    Cells[5,1]:='天 数';
+    Cells[6,0]:='单 位';
+    Cells[7,0]:='数 量';
+    Cells[8,0]:=#13'收费'#13'标准';
+    Cells[9,0]:='金      额';
+    //******************************
+    RowHeights[4]:=RowHeights[4]-7;
+    MergeCells(0,3,2,2);
+    MergeCells(2,3,2,2);
+    MergeCells(4,3,1,2);
+    MergeCells(5,3,1,2);
+    MergeCells(6,3,1,2);
+    MergeCells(7,3,1,2);
+    MergeCells(8,3,1,2);
+    MergeCells(9,3,4,2);
+    //******************************
+    RowHeights[6]:=RowHeights[5]-7;
+    MergeCells(0,5,2,2);
+    MergeCells(2,5,2,2);
+    MergeCells(4,5,1,2);
+    MergeCells(5,5,1,2);
+    MergeCells(6,5,1,2);
+    MergeCells(7,5,1,2);
+    MergeCells(8,5,1,2);
+    MergeCells(9,5,4,2);
+    //******************************
+    RowHeights[8]:=RowHeights[5]-10;
+    MergeCells(0,7,2,2);
+    MergeCells(2,7,2,2);
+    MergeCells(4,7,1,2);
+    MergeCells(5,7,1,2);
+    MergeCells(6,7,1,2);
+    MergeCells(7,7,1,2);
+    MergeCells(8,7,1,2);
+    MergeCells(9,7,4,2);
+    //******************************
+    RowHeights[10]:=RowHeights[5]-7;
+    MergeCells(0,9,2,2);
+    MergeCells(2,9,7,2);
+    MergeCells(9,9,4,2);
+    Cells[0,9]:='金额合计(大写)';
+    //******************************
+    RowHeights[12]:=RowHeights[5]-7;
+    MergeCells(0,11,2,2);
+    MergeCells(2,11,11,2);
+    Cells[0,11]:='备    注';
+    Alignments[0,11]:=taCenter;
+    //******************************
+    ColWidths[8]:=ColWidths[8]+20;
+    MergeCells(0,13,4,1);
+    MergeCells(4,13,2,1);
+    MergeCells(6,13,2,1);
+    MergeCells(8,13,2,1);
+    MergeCells(10,13,3,1);
+    Cells[0,13]:='出租方(盖章有效)';
+    Cells[4,13]:='开票人:';
+    Cells[8,13]:='收款人:';
+    Alignments[0,13]:=taCenter;
+    Alignments[4,13]:=taRightJustify;
+    Alignments[8,13]:=taRightJustify;
+
+    for i := 0 to 13 do
+      for j := 0 to 2 do
+      begin
+        Alignments[i,j]:=taCenter;
+      end;
+    VAlignment:=vtaCenter;
+  end;
+end;
+
+lors[8, 7] := 16761798;
+      Colors[1, 0] := 13041663;
+      Colors[6, 0] := 13041663;
+      Colors[10, 0] := 13041663;
+      Colors[6, 8] := 13041663;
+      Colors[10, 8] := 13041663;
+      Colors[12, 2] := 13041663;
+      Colors[2, 7] := 15204327;

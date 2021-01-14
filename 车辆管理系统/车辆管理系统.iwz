@@ -1,0 +1,393 @@
+
+[InstallShield Wizard]
+iDate=2
+iTime=1
+Flag=0
+ISX.EXE Size=630784
+ISX.EXE Date=12:43:52  1998-2-24
+ISX.EXE Ver=2.0.0.143
+SETUP.EXE Size=45312
+SETUP.EXE Date=11:53:32  1997-1-18
+SETUP.EXE Ver=3.0.111.0
+SETUP.INS Size=70160
+SETUP.INS Date=15:16:56  1998-2-11
+SETUP.INS Ver=Not available
+_INST16.EX_ Size=70160
+_INST16.EX_ Date=15:16:56  1998-2-11
+_INST16.EX_ Ver=Not available
+_INST32I.EX_ Size=320411
+_INST32I.EX_ Date=12:04:08  1997-1-18
+_INST32I.EX_ Ver=Not available
+ISDEPEND.INI Size=5492
+ISDEPEND.INI Date=19:05:06  1998-5-21
+ISDEPEND.INI Ver=Not available
+SWDEPEND.INI Size=10290
+SWDEPEND.INI Date=20:21:02  1998-5-21
+SWDEPEND.INI Ver=Not available
+ICOMP.EXE Size=119808
+ICOMP.EXE Date=16:05:10  1996-1-15
+ICOMP.EXE Ver=3.00.062
+SPLIT.EXE Size=90624
+SPLIT.EXE Date=16:09:36  1996-1-15
+SPLIT.EXE Ver=3.00.060
+PACKLIST.EXE Size=87552
+PACKLIST.EXE Date=16:10:30  1996-1-15
+PACKLIST.EXE Ver=3.00.060
+Version=2.02
+DevTool=for Delphi
+Platform=Win32
+DisksBuilt=1
+DisksDir=车辆管~1\650MB\
+TabsVisit=11111111100001111
+LangNum=0
+LangDir=
+
+[VisualDesign]
+AppName=车辆管理系统
+AppExe=[Program Files]\carsmanage.exe
+AppExeFile=
+Version=1.0
+Company=和信科技
+Title=安徽大众汽车租赁有限责任公司  车辆管理系统
+TitleType=1
+BackgrndBmp=
+BackgrndAlign=4
+Backgrnd=1
+BackgrndColor=10
+Uninstall=1
+Silent=1
+SmsMode=0
+
+[Types]
+Types=1
+Type1Components=1
+Type1Name=Complete
+Type1ComponentList=1 
+
+[Components]
+Components=1
+Component1Groups=6
+Component1Name=Application Files
+Component1Description=Application files needed to run the application
+Component1GroupList=1 2 3 4 5 6 
+
+[Groups]
+Groups=6
+Group1Size=1508352
+Group1Files=1
+Group1Name=Program Files
+Group1Dir=<INSTALLDIR>
+Group1Update=0
+Group1TargetOS=-1
+Group1File1=E:\work\车辆管理系统\carsmanage.exe
+Group2Size=101771
+Group2Files=21
+Group2Name=date
+Group2Dir=<INSTALLDIR>\date
+Group2Update=0
+Group2TargetOS=-1
+Group2File1=E:\work\车辆管理系统\date\car.xls
+Group2File2=E:\work\车辆管理系统\date\车辆出入库登记.FAM
+Group2File3=E:\work\车辆管理系统\date\车辆出入库登记.MB
+Group2File4=E:\work\车辆管理系统\date\车辆出入库登记.PX
+Group2File5=E:\work\车辆管理系统\date\车辆出入库登记.TV
+Group2File6=E:\work\车辆管理系统\date\车辆出入库登记表.DB
+Group2File7=E:\work\车辆管理系统\date\车辆出入库登记表.MB
+Group2File8=E:\work\车辆管理系统\date\车辆出入库登记表.PX
+Group2File9=E:\work\车辆管理系统\date\车辆维修保养纪录.DB
+Group2File10=E:\work\车辆管理系统\date\车辆维修保养纪录.MB
+Group2File11=E:\work\车辆管理系统\date\车辆维修保养纪录.PX
+Group2File12=E:\work\车辆管理系统\date\车辆肇事纪录.DB
+Group2File13=E:\work\车辆管理系统\date\车辆肇事纪录.MB
+Group2File14=E:\work\车辆管理系统\date\车辆肇事纪录.PX
+Group2File15=E:\work\车辆管理系统\date\车辆租用登记表.DB
+Group2File16=E:\work\车辆管理系统\date\车辆租用登记表.PX
+Group2File17=E:\work\车辆管理系统\date\会员档案登记表.DB
+Group2File18=E:\work\车辆管理系统\date\会员档案登记表.PX
+Group2File19=E:\work\车辆管理系统\date\客户档案登记表.DB
+Group2File20=E:\work\车辆管理系统\date\客户档案登记表.PX
+Group2File21=E:\work\车辆管理系统\date\用户.db
+Group3Size=10614508
+Group3Files=32
+Group3Auto=101
+Group3ID=38251
+Group3Name=BDE/IDAPI Files
+Group3Dir=<ProgramFilesDir>\Borland\Common Files\BDE
+Group3Update=-1
+Group3TargetOS=-1
+Group3File1=D:\borland\BDE\IDAPI32.DLL
+Group3File1Auto=101
+Group3File1Version=5.2.0.2
+Group3File2=D:\borland\BDE\IDR20009.DLL
+Group3File2Auto=101
+Group3File2Version=5.2.0.2
+Group3File3=D:\borland\BDE\BLW32.DLL
+Group3File3Auto=101
+Group3File3Version=3.0.0.5
+Group3File4=D:\borland\BDE\BDEADMIN.EXE
+Group3File4Auto=101
+Group3File4Version=5.2.0.2
+Group3File5=D:\borland\BDE\BDEADMIN.HLP
+Group3File5Auto=101
+Group3File6=D:\borland\BDE\BDEADMIN.CNT
+Group3File6Auto=101
+Group3File7=C:\WINDOWS\SYSTEM\BDEADMIN.CPL
+Group3File7Auto=101
+Group3File7Version=5.2.0.2
+Group3File8=D:\borland\BDE\DATAPUMP.EXE
+Group3File8Auto=101
+Group3File8Version=5.2.0.2
+Group3File9=D:\borland\BDE\DATAPUMP.HLP
+Group3File9Auto=101
+Group3File10=D:\borland\BDE\DATAPUMP.CNT
+Group3File10Auto=101
+Group3File11=D:\borland\BDE\IDDR32.DLL
+Group3File11Auto=101
+Group3File11Version=5.2.0.2
+Group3File12=D:\borland\BDE\IDPDX32.DLL
+Group3File12Auto=101
+Group3File12Version=5.2.0.2
+Group3File13=D:\borland\BDE\IDSQL32.DLL
+Group3File13Auto=101
+Group3File13Version=5.2.0.2
+Group3File14=D:\borland\BDE\IDBAT32.DLL
+Group3File14Auto=101
+Group3File14Version=5.2.0.2
+Group3File15=D:\borland\BDE\IDQBE32.DLL
+Group3File15Auto=101
+Group3File15Version=5.2.0.2
+Group3File16=D:\borland\BDE\IDDBAS32.DLL
+Group3File16Auto=101
+Group3File16Version=5.2.0.2
+Group3File17=D:\borland\BDE\IDASCI32.DLL
+Group3File17Auto=101
+Group3File17Version=5.2.0.2
+Group3File18=D:\borland\BDE\IDODBC32.DLL
+Group3File18Auto=101
+Group3File18Version=5.2.0.2
+Group3File19=D:\borland\BDE\IDDAO32.DLL
+Group3File19Auto=101
+Group3File19Version=5.2.0.2
+Group3File20=D:\borland\BDE\IDDA3532.DLL
+Group3File20Auto=101
+Group3File20Version=5.2.0.2
+Group3File21=C:\PROGRAM FILES\INSTALLSHIELD\INSTALLSHIELD EXPRESS CUSTOM EDITION FOR DELPHI 4.0\redist\IDAPINST.DLL
+Group3File21Auto=101
+Group3File21Version=5.0.0.26
+Group3File22=D:\borland\BDE\SQLLNK32.HLP
+Group3File22Auto=102
+Group3File23=D:\borland\BDE\SQLLNK32.CNT
+Group3File23Auto=102
+Group3File24=D:\borland\BDE\sqlmss32.dll
+Group3File24Auto=102
+Group3File24Version=5.2.0.2
+Group3File25=D:\borland\BDE\sqlsyb32.dll
+Group3File25Auto=102
+Group3File25Version=5.2.0.2
+Group3File26=D:\borland\BDE\sqlint32.dll
+Group3File26Auto=102
+Group3File26Version=5.2.0.2
+Group3File27=D:\borland\BDE\sqlora32.dll
+Group3File27Auto=102
+Group3File27Version=5.2.0.2
+Group3File28=D:\borland\BDE\sqlora8.dll
+Group3File28Auto=102
+Group3File28Version=5.2.0.2
+Group3File29=D:\borland\BDE\sqlinf32.dll
+Group3File29Auto=102
+Group3File29Version=5.2.0.2
+Group3File30=D:\borland\BDE\sqlinf9.dll
+Group3File30Auto=102
+Group3File30Version=5.2.0.2
+Group3File31=D:\borland\BDE\sqldb232.dll
+Group3File31Auto=102
+Group3File31Version=5.2.0.2
+Group3File32=D:\borland\BDE\sqlssc32.dll
+Group3File32Auto=102
+Group3File32Version=5.2.0.2
+Group4Size=2159046
+Group4Files=9
+Group4Auto=99
+Group4ID=38249
+Group4Name=BDE/IDAPI Language Files
+Group4Dir=<ProgramFilesDir>\Borland\Common Files\BDE
+Group4Update=-1
+Group4TargetOS=-1
+Group4File1=D:\borland\BDE\BANTAM.DLL
+Group4File1Auto=99
+Group4File2=D:\borland\BDE\BLW32.DLL
+Group4File2Auto=99
+Group4File3=D:\borland\BDE\USA.BTL
+Group4File3Auto=99
+Group4File4=D:\borland\BDE\EUROPE.BTL
+Group4File4Auto=99
+Group4File5=D:\borland\BDE\CEEUROPE.BTL
+Group4File5Auto=99
+Group4File6=D:\borland\BDE\JAPAN.BTL
+Group4File6Auto=99
+Group4File7=D:\borland\BDE\OTHER.BTL
+Group4File7Auto=99
+Group4File8=D:\borland\BDE\FAREAST.BTL
+Group4File8Auto=99
+Group4File9=D:\borland\BDE\CHARSET.CVB
+Group4File9Auto=99
+Group5Size=82920
+Group5Files=10
+Group5Auto=98
+Group5ID=38248
+Group5Name=BDE/IDAPI CNF File
+Group5Dir=<ProgramFilesDir>\Borland\Common Files\BDE
+Group5Update=-1
+Group5TargetOS=-1
+Group5File1=C:\PROGRAM FILES\INSTALLSHIELD\INSTALLSHIELD EXPRESS CUSTOM EDITION FOR DELPHI 4.0\redist\IDAPI.CNF
+Group5File1Auto=98
+Group5File2=C:\PROGRAM FILES\INSTALLSHIELD\INSTALLSHIELD EXPRESS CUSTOM EDITION FOR DELPHI 4.0\redist\SQL_MSS.CNF
+Group5File2Auto=98
+Group5File3=C:\PROGRAM FILES\INSTALLSHIELD\INSTALLSHIELD EXPRESS CUSTOM EDITION FOR DELPHI 4.0\redist\SQL_SYB.CNF
+Group5File3Auto=98
+Group5File4=C:\PROGRAM FILES\INSTALLSHIELD\INSTALLSHIELD EXPRESS CUSTOM EDITION FOR DELPHI 4.0\redist\SQL_INT.CNF
+Group5File4Auto=98
+Group5File5=C:\PROGRAM FILES\INSTALLSHIELD\INSTALLSHIELD EXPRESS CUSTOM EDITION FOR DELPHI 4.0\redist\SQL_ORA.CNF
+Group5File5Auto=98
+Group5File6=C:\PROGRAM FILES\INSTALLSHIELD\INSTALLSHIELD EXPRESS CUSTOM EDITION FOR DELPHI 4.0\redist\SQL_ORA8.CNF
+Group5File6Auto=98
+Group5File7=C:\PROGRAM FILES\INSTALLSHIELD\INSTALLSHIELD EXPRESS CUSTOM EDITION FOR DELPHI 4.0\redist\SQL_SSC.CNF
+Group5File7Auto=98
+Group5File8=C:\PROGRAM FILES\INSTALLSHIELD\INSTALLSHIELD EXPRESS CUSTOM EDITION FOR DELPHI 4.0\redist\SQL_DB2.CNF
+Group5File8Auto=98
+Group5File9=C:\PROGRAM FILES\INSTALLSHIELD\INSTALLSHIELD EXPRESS CUSTOM EDITION FOR DELPHI 4.0\redist\SQL_INF.CNF
+Group5File9Auto=98
+Group5File10=C:\PROGRAM FILES\INSTALLSHIELD\INSTALLSHIELD EXPRESS CUSTOM EDITION FOR DELPHI 4.0\redist\SQL_INF9.CNF
+Group5File10Auto=98
+Group6Size=3383808
+Group6Files=4
+Group6Auto=250
+Group6ID=250
+Group6Name=System Files - WinSysDir
+Group6Dir=<WINSYSDIR>
+Group6Update=-1
+Group6TargetOS=-1
+Group6File1=C:\WINDOWS\SYSTEM\VCL40.BPL
+Group6File1Auto=250
+Group6File2=C:\WINDOWS\SYSTEM\VCLDB40.BPL
+Group6File2Auto=251
+Group6File3=C:\WINDOWS\SYSTEM\QRPT40.BPL
+Group6File3Auto=248
+Group6File4=C:\WINDOWS\SYSTEM\VCLX40.BPL
+Group6File4Auto=248
+
+[Sequence]
+DestinationLocationDir=<ProgramFilesDir>\和信科技\车辆管理系统
+SelectProgramFolderName=车辆管理系统
+WelcomeMessage=1
+WelcomeMessageFile=
+UserInformation=1
+DestinationLocation=1
+SelectProgramFolder=1
+BeginFileTransfer=1
+ProgressBar=1
+Billboards=1
+BillboardsFile=C:\PROGRA~1\INSTAL~2\INSTAL~1.0\Redist
+SetupComplete=1
+SetupCompleteExec=[Program Files]\carsmanage.exe
+SetupCompleteExecParam=
+SetupCompleteExecReadme=
+
+[RegEntries]
+Reg1Path=HKEY_CLASSES_ROOT
+Reg1Val1Type=0
+Reg1Val1Name=(Default)
+Reg1Val1Data=(value not set)
+Reg1Vals=1
+Reg2Path=HKEY_CURRENT_USER
+Reg2Val1Type=0
+Reg2Val1Name=(Default)
+Reg2Val1Data=(value not set)
+Reg2Vals=1
+Reg3Path=HKEY_LOCAL_MACHINE
+Reg3Val1Type=0
+Reg3Val1Name=(Default)
+Reg3Val1Data=(value not set)
+Reg3Vals=1
+Reg4Path=HKEY_USERS
+Reg4Val1Type=0
+Reg4Val1Name=(Default)
+Reg4Val1Data=(value not set)
+Reg4Vals=1
+Reg5Path=HKEY_CURRENT_CONFIG
+Reg5Val1Type=0
+Reg5Val1Name=(Default)
+Reg5Val1Data=(value not set)
+Reg5Vals=1
+Reg6Path=HKEY_DYN_DATA
+Reg6Val1Type=0
+Reg6Val1Name=(Default)
+Reg6Val1Data=(value not set)
+Reg6Vals=1
+Regs=6
+
+[Registry]
+
+[Icons]
+Icons=1
+Icon1Param=
+Icon1Cmd=[Program Files]\carsmanage.exe
+Icon1Description=carsmanage
+Icon1WorkingDir=[Program Files]
+Icon1IconFile=
+Icon1RealFile=E:\work\车辆管理系统\carsmanage.exe
+Icon1WhichIcon=0
+Icon1KeyVirtual=0
+Icon1KeyFlags=0
+Icon1StartMenu=0
+Icon1Window=0
+
+[SQL Link Drivers]
+Driver1=Microsoft SQL Server
+Driver2=Sybase (DB-Lib)
+Driver3=Interbase
+Driver4=Oracle7
+Driver5=Oracle8
+Driver6=Informix7
+Driver7=Informix9
+Driver8=DB2
+Driver9=Sybase (CT-Lib)
+Drivers=9
+DrvUsed=111111111
+DrvHave=9
+
+[IDAPI Alias]
+Alias1=car
+Alias1Path=<INSTALLDIR>\date
+Alias1Type=PARADOX
+Aliases=1
+SaveCfg=1
+
+[IDAPI Alias car]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Autoexec]
+PathDir=
+ShareLocks=
+ShareFiles=
+Command=
+
+[CopyToFloppy]
+DriveOption=
+DestinationPath=
+DestinationPathOneFile=
+Password=

@@ -1,0 +1,26 @@
+// Language
+LANGUAGE  LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+// Define
+#define  IDD_COUNTER                     101
+#define  IDI_COUNTER                     102
+#define  IDC_FIBER                       1000
+#define  IDC_ANSWER                      1001
+#define  IDC_COUNT                       1002
+
+// Dialog
+IDD_COUNTER DIALOG DISCARDABLE  0, 0, 156, 37
+  STYLE DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+  CAPTION "Counter"
+  FONT 8, "MS Sans Serif"
+BEGIN
+  LTEXT  "Count to:", IDC_STATIC, 4, 6, 34, 8
+  EDITTEXT  IDC_COUNT, 38, 4, 40, 14, ES_AUTOHSCROLL | ES_NUMBER
+  LTEXT  "Answer:", IDC_STATIC, 90, 6, 25, 8
+  RTEXT  "0", IDC_ANSWER, 122, 6, 23, 8
+  LTEXT  "Currently-running fiber:", IDC_STATIC, 4, 24, 75, 8
+  LTEXT  "Fiber", IDC_FIBER, 80, 24, 72, 8
+END
+
+// Icon
+IDI_COUNTER  ICON  DISCARDABLE  "Counter.ico"

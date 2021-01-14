@@ -1,0 +1,63 @@
+package devicemng;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '设备管理模块'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl,
+  rtl,
+  vclx,
+  dbrtl,
+  vcldb,
+  adortl,
+  VclSmp,
+  dxBarD6,
+  dxcomnd6,
+  dxEdtrD6,
+  dxELibD6,
+  dxDBEdD6,
+  EhLibD6,
+  csctrl,
+  csextdxqtm,
+  csextehlib,
+  csextdxbar,
+  common,
+  organmng,
+  vcljpg,
+  fastrpt6;
+
+contains
+  ufrmDeviceManage in 'ufrmDeviceManage.pas' {frmDeviceManage},
+  ufraTechInfoBase in 'ufraTechInfoBase.pas' {fraTechInfoBase: TFrame},
+  ufraVesselInfo in 'ufraVesselInfo.pas' {fraVesselInfo: TFrame},
+  ufraEscalatorInfo in 'ufraEscalatorInfo.pas' {fraEscalatorInfo: TFrame},
+  ufraHoistInfo in 'ufraHoistInfo.pas' {fraHoistInfo: TFrame},
+  ufraLiftInfo in 'ufraLiftInfo.pas' {fraLiftInfo: TFrame},
+  ufraTruckInfo in 'ufraTruckInfo.pas' {fraTruckInfo: TFrame},
+  ufraBoilerInfo in 'ufraBoilerInfo.pas' {fraBoilerInfo: TFrame},
+  ufrmDevReplaceDlg in 'ufrmDevReplaceDlg.pas' {frmDevReplaceDlg};
+
+end.

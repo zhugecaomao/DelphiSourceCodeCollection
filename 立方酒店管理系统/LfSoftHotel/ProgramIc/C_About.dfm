@@ -1,0 +1,174 @@
+object AboutForm: TAboutForm
+  Left = 276
+  Top = 156
+  BorderStyle = bsDialog
+  Caption = #20851#20110#26412#36719#20214
+  ClientHeight = 267
+  ClientWidth = 295
+  Color = clBtnFace
+  Font.Charset = GB2312_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = #23435#20307
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  PixelsPerInch = 96
+  TextHeight = 12
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 295
+    Height = 267
+    Align = alClient
+    AutoSize = True
+    BevelOuter = bvNone
+    BorderWidth = 5
+    ParentColor = True
+    TabOrder = 0
+    object Bevel2: TBevel
+      Left = 5
+      Top = 5
+      Width = 285
+      Height = 257
+      Align = alClient
+      Shape = bsFrame
+    end
+    object Label1: TLabel
+      Left = 59
+      Top = 31
+      Width = 190
+      Height = 19
+      Caption = #31435#26041#36149#23486#21345#31649#29702#31995#32479
+      Font.Charset = GB2312_CHARSET
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Name = #26999#20307'_GB2312'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Label3: TLabel
+      Left = 60
+      Top = 31
+      Width = 190
+      Height = 19
+      Caption = #31435#26041#36149#23486#21345#31649#29702#31995#32479
+      Font.Charset = GB2312_CHARSET
+      Font.Color = clBlack
+      Font.Height = -19
+      Font.Name = #26999#20307'_GB2312'
+      Font.Style = [fsBold]
+      ParentFont = False
+      Transparent = True
+    end
+    object Image1: TImage
+      Left = 24
+      Top = 32
+      Width = 32
+      Height = 32
+      AutoSize = True
+      Center = True
+      Picture.Data = {
+        055449636F6E0000010002002020100000000000E80200002600000010101000
+        00000000280100000E0300002800000020000000400000000100040000000000
+        8002000000000000000000000000000000000000000000000000800000800000
+        0080800080000000800080008080000080808000C0C0C0000000FF0000FF0000
+        00FFFF00FF000000FF00FF00FFFF0000FFFFFF00000000777777770007777000
+        0000000000008007777770080077770000000000000888000000008880007770
+        0000000001008001111110080011077700000000099000911111190009110077
+        7000000009999999979999999999800070000000000000111111111100000000
+        000000000001110FE7EFEFE7099990F0F70000000000110EF7FEFE7EE0999900
+        F7800000000000000000000FE000000FF788000000000000999999900B0FFFFF
+        F78880000000000000000000FB0FFFFFF788870000000000FFFFFF0FFB0FFFFF
+        F788780000000000FFFFFF00000FFFFFF788870000000000FFFFFFFFFFFFFFFF
+        F788780000000000F700007FFF700007F788870000000000F70BB07FFF70BB07
+        F788780000000000F70BB07FFF70BB07F788870000000000F700B07FFF700B07
+        F788770000000000F700007FFF700007F7887700000000007777777777777777
+        7787770000000000000000000000000000007700000000088888887777788888
+        807700000000000088888000007888880777770000000000088880BBB0788880
+        77877770000000000088807BB088880777778700000000000008880008888077
+        7777700000000000007088808888077877770000000000000077088888807777
+        7770000000000000007700888808777877000000000000000000000880777777
+        7000000000000000000000000000000000000000E00007FFC00003FF800001FF
+        000000FF0000007F0000007F8000003FC000001FE000000FF0000007FE000003
+        FE000001FE000001FE000001FE000001FE000001FE000001FE000001FE000001
+        FE000001FE000001FC000001FC000001FE000001FF000000FF800001FF800003
+        FF800007FF80000FFF80001FFF84003FFFFE007F280000001000000020000000
+        0100040000000000C00000000000000000000000000000000000000000000000
+        00008000008000000080800080000000800080008080000080808000C0C0C000
+        0000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF0007077770
+        777000000080000800000000010111101118000001111111011180000000EE0E
+        E00077000000000000FF78700000FFF000FF787000007007F000787000007B07
+        F0B0787000007B07F0B078700000000000000070000088888888070000000877
+        70807770000000870807770000000708807770000000000000000000801F0000
+        000F0000000700000003000080010000E0000000E0000000E0000000E0000000
+        E0000000E0000000E0000000F0000000F0010000F0030000F0070000}
+    end
+    object Label4: TLabel
+      Left = 56
+      Top = 88
+      Width = 162
+      Height = 12
+      Caption = 'Version 1.0 (Build 1.0.0.0)'
+    end
+    object Label5: TLabel
+      Left = 56
+      Top = 104
+      Width = 210
+      Height = 12
+      Caption = 'Copyright by Cubic Soft Corporation'
+    end
+    object Label6: TLabel
+      Left = 63
+      Top = 52
+      Width = 168
+      Height = 12
+      Caption = 'Hotel Management System 2002'
+    end
+    object Bevel1: TBevel
+      Left = 56
+      Top = 80
+      Width = 217
+      Height = 2
+      Shape = bsBottomLine
+    end
+    object Label9: TLabel
+      Left = 56
+      Top = 121
+      Width = 114
+      Height = 12
+      Caption = 'All Rights Reserved'
+    end
+    object Label10: TLabel
+      Left = 56
+      Top = 144
+      Width = 66
+      Height = 12
+      Caption = 'Contact Us:'
+    end
+    object Label11: TLabel
+      Left = 56
+      Top = 160
+      Width = 132
+      Height = 12
+      Caption = 'Telphone:(0519)6671599'
+    end
+    object Label12: TLabel
+      Left = 56
+      Top = 176
+      Width = 144
+      Height = 12
+      Caption = 'http://www.cubicsoft.com'
+    end
+    object btnOK: TBitBtn
+      Left = 200
+      Top = 224
+      Width = 75
+      Height = 25
+      Caption = #30830#23450'(&O)'
+      TabOrder = 0
+      Kind = bkOK
+    end
+  end
+end

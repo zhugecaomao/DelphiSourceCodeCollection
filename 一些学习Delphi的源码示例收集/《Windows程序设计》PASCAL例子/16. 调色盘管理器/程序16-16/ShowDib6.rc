@@ -1,0 +1,9 @@
+// Menu
+        
+SHOWDIB6 MENU DISCARDABLE
+BEGIN
+  POPUP "&File"
+  BEGIN
+    MENUITEM "&Open", 40001
+  END
+END

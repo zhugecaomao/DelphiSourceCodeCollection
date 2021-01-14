@@ -1,0 +1,26 @@
+// Define
+#define IDD_MMFSHARE                    1
+#define IDC_DATA                        100
+#define IDC_CREATEFILE                  101
+#define IDC_OPENFILE                    102
+#define IDI_MMFSHARE                    102
+#define IDC_CLOSEFILE                   103
+
+// Language
+LANGUAGE  LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+// Dialog
+IDD_MMFSHARE DIALOG DISCARDABLE  38, 36, 186, 61
+  STYLE WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+  CAPTION "Memory-Mapped File Sharing"
+  FONT 8, "MS Sans Serif"
+BEGIN
+  PUSHBUTTON  "&Create mapping of Data", IDC_CREATEFILE, 4, 4, 84, 14, WS_GROUP
+  PUSHBUTTON  "&Close mapping of Data", IDC_CLOSEFILE, 96, 4, 84, 14
+  LTEXT  "&Data:", IDC_STATIC, 4, 26, 18, 8
+  EDITTEXT  IDC_DATA, 28, 24, 153, 12
+  PUSHBUTTON  "&Open mapping and get Data", IDC_OPENFILE, 40, 44, 104, 14, WS_GROUP
+END
+
+// Icon
+IDI_MMFSHARE  ICON  DISCARDABLE  "MMFShare.Ico"

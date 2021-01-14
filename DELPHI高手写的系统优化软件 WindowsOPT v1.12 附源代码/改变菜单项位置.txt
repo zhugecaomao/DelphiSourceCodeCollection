@@ -1,0 +1,1 @@
+ModifyMenu(MainMenu1.Handle, 2, mf_ByPosition or mf_Popup or mf_Help, N169.Handle, '¹ØÓÚ');

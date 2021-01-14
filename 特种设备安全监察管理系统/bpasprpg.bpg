@@ -1,0 +1,52 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = common.bpl codemng.bpl organmng.bpl personmng.bpl devicemng.bpl \
+  suprmng.bpl stwkmng.bpl acctmng.bpl othermng.bpl sysquery.bpl \
+  bpaspr.exe 
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+common.bpl: Common\common.dpk
+  $(DCC)
+
+codemng.bpl: CodeMng\codemng.dpk
+  $(DCC)
+
+OrganMng.bpl: OrganMng\organmng.dpk
+  $(DCC)
+
+personmng.bpl: PersonMng\personmng.dpk
+  $(DCC)
+
+devicemng.bpl: DeviceMng\devicemng.dpk
+  $(DCC)
+
+suprmng.bpl: SuprMng\suprmng.dpk
+  $(DCC)
+
+stwkmng.bpl: StwkMng\stwkmng.dpk
+  $(DCC)
+
+acctmng.bpl: AcctMng\acctmng.dpk
+  $(DCC)
+
+othermng.bpl: OtherMng\othermng.dpk
+  $(DCC)
+
+sysquery.bpl: SysQuery\sysquery.dpk
+  $(DCC)
+
+bpaspr.exe: bpaspr.dpr
+  $(DCC)
+
+

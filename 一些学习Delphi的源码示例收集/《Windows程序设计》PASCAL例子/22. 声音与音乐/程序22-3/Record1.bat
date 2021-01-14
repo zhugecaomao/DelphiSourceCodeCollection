@@ -1,0 +1,1 @@
+BRCC32  Record1.rc

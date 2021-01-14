@@ -1,0 +1,256 @@
+program Jxc;
+
+{%ToDo 'Jxc.todo'}
+
+uses
+  Forms,
+  windows,
+  Controls,
+  ComFlzl in 'ComFlzl.pas' {frmComFlzl},
+  ComEdit in 'ComEdit.pas' {frmComEdit},
+  ComDjzb in 'ComDjzb.pas' {frmComDjzb},
+  ComMx in 'ComMx.pas' {frmComMx},
+  ComTjfx in 'ComTjfx.pas' {frmComTjfx},
+  Common in 'Common.pas',
+  ComJbzl in 'ComJbzl.pas' {frmComJbzl},
+  Dm in 'Dm.pas' {Data: TDataModule},
+  Wnl in 'Wnl.pas' {frmWnl},
+  RecError in 'RecError.pas' {ReconcileErrorForm},
+  UserEdit in 'UserEdit.pas' {frmUserEdit},
+  User in 'User.pas' {frmUser},
+  Password in 'Password.pas' {frmPassword},
+  SetIcon in 'SetIcon.pas' {frmSetIcon},
+  GroupDesktopClassEdit in 'GroupDesktopClassEdit.pas' {frmGroupDesktopClassEdit},
+  Filter in 'Filter.pas' {frmFilter},
+  Desktop in 'Desktop.pas' {frmDesktop},
+  Login in 'Login.pas' {frmLogin},
+  SetColumn in 'SetColumn.pas' {frmSetColumn},
+  Bbzx in 'Bbzx.pas' {frmBbzx},
+  Guide in 'Guide.pas' {frmGuide},
+  PopedomCopy in 'PopedomCopy.pas' {frmPopedomCopy},
+  SetPrint in 'SetPrint.pas' {frmSetPrint},
+  Start in 'Start.pas' {frmStart},
+  About in 'About.pas' {frmAbout},
+  YhckqkCk in 'YhckqkCk.pas' {frmYhckqkCk},
+  Yfdsz in 'Yfdsz.pas' {frmYfdsz},
+  Ndsz in 'Ndsz.pas' {frmNdsz},
+  Yfsz in 'Yfsz.pas' {frmYfsz},
+  SetSort in 'SetSort.pas' {frmSetSort},
+  SetPrint_P in 'SetPrint_p.pas' {rptSetPrint: TQuickRep},
+  ComDczl in 'ComDczl.pas' {frmComDczl},
+  DefDate in 'DefDate.pas' {frmDefDate},
+  ComMain in 'ComMain.pas' {frmComMain},
+  Main in 'Main.pas' {frmMain},
+  UserGroupEdit in 'UserGroupEdit.pas' {frmUserGroupEdit},
+  ComSysOption in 'ComSysOption.pas' {frmComSysOption},
+  ComHelp in 'ComHelp.pas' {frmComHelp},
+  Select in 'Select.pas' {frmSelect},
+  InputString in 'InputString.pas' {frmInputString},
+  ComFun in 'ComFun.pas',
+  Gys in 'Gys.pas' {frmGys},
+  GysEdit in 'GysEdit.pas' {frmGysEdit},
+  Zh in 'Zh.pas' {frmZh},
+  ZhEdit in 'ZhEdit.pas' {frmZhEdit},
+  ComLbzl in 'ComLbzl.pas' {frmComLbzl},
+  Kh in 'Kh.pas' {frmKh},
+  KhEdit in 'KhEdit.pas' {frmKhEdit},
+  Sfkfs in 'Sfkfs.pas' {frmSfkfs},
+  SfkfsEdit in 'SfkfsEdit.pas' {frmSfkfsEdit},
+  Srzclb in 'Srzclb.pas' {frmSrzclb},
+  SrzclbEdit in 'SrzclbEdit.pas' {frmSrzclbEdit},
+  Ck in 'Ck.pas' {frmCk},
+  CkEdit in 'CkEdit.pas' {frmCkEdit},
+  Hplb in 'Hplb.pas' {frmHplb},
+  SjzlZl in 'SjzlZl.pas' {frmSjzlZl},
+  Cyjsdw in 'Cyjsdw.pas' {frmCyjsdw},
+  Bm in 'Bm.pas' {frmBm},
+  HplbEdit in 'HplbEdit.pas' {frmHplbEdit},
+  SjzlEdit in 'SjzlEdit.pas' {frmSjzlEdit},
+  CyjsdwEdit in 'CyjsdwEdit.pas' {frmCyjsdwEdit},
+  BmEdit in 'BmEdit.pas' {frmBmEdit},
+  Yglb in 'Yglb.pas' {frmYglb},
+  YglbEdit in 'YglbEdit.pas' {frmYglbEdit},
+  Yg in 'Yg.pas' {frmYg},
+  YgEdit in 'YgEdit.pas' {frmYgEdit},
+  Qtkcbdlx in 'Qtkcbdlx.pas' {frmQtkcbdlx},
+  QtkcbdlxEdit in 'QtkcbdlxEdit.pas' {frmQtkcbdlxEdit},
+  Hphsff in 'Hphsff.pas' {frmHphsff},
+  HphsffEdit in 'HphsffEdit.pas' {frmHphsffEdit},
+  Hp in 'Hp.pas' {frmHp},
+  HpEdit in 'HpEdit.pas' {frmHpEdit},
+  Yhckqk in 'Yhckqk.pas' {frmYhckqk},
+  YhckqkEdit in 'YhckqkEdit.pas' {frmYhckqkEdit},
+  SetDate in 'SetDate.pas' {frmSetDate},
+  ComDcrq in 'ComDcrq.pas' {frmComDcrq},
+  Xsskzb in 'Xsskzb.pas' {frmXsskzb},
+  Xssk in 'Xssk.pas' {frmXssk},
+  MyLib in 'MyLib.pas',
+  QtkcbdHpHelp in 'QtkcbdHpHelp.pas' {frmQtkcbdHpHelp},
+  Xsddzb in 'Xsddzb.pas' {frmXsddzb},
+  Xsdd in 'Xsdd.pas' {frmXsdd},
+  KhHelp in 'KhHelp.pas' {frmKhHelp},
+  ComDczb in 'ComDczb.pas' {frmComDczb},
+  SetCal in 'SetCal.pas' {frmSetCal},
+  Xsthzb in 'Xsthzb.pas' {frmXsthzb},
+  Xsth in 'Xsth.pas' {frmXSth},
+  Xskd in 'Xskd.pas' {frmXskd},
+  Xskdzb in 'Xskdzb.pas' {frmXskdzb},
+  Cgddzb in 'Cgddzb.pas' {frmCgddzb},
+  Cgdd in 'Cgdd.pas' {frmCgdd},
+  SrzclbHelp in 'SrzclbHelp.pas' {frmSrzclbHelp},
+  ZlfxTj in 'ZlfxTj.pas' {frmZlfxTj},
+  Qtkcbdzb in 'Qtkcbdzb.pas' {frmQtkcbdzb},
+  Qtkcbd in 'Qtkcbd.pas' {frmQtkcbd},
+  CgshHelp in 'CgshHelp.pas' {frmCgshHelp},
+  Cgfkzb in 'Cgfkzb.pas' {frmCgfkzb},
+  Cgfk in 'Cgfk.pas' {frmCgfk},
+  Cgthzb in 'Cgthzb.pas' {frmCgthzb},
+  Cgth in 'Cgth.pas' {frmCgth},
+  Llzb in 'Llzb.pas' {frmLlzb},
+  Ll in 'Ll.pas' {frmLl},
+  Chtjzb in 'Chtjzb.pas' {frmChtjzb},
+  Chtj in 'Chtj.pas' {frmChtj},
+  Ckdbzb in 'Ckdbzb.pas' {frmCkdbzb},
+  Ckdb in 'Ckdb.pas' {frmCkdb},
+  Kcpdzb in 'Kcpdzb.pas' {frmKcpdzb},
+  Kcpd in 'Kcpd.pas' {frmKcpd},
+  Tlzb in 'Tlzb.pas' {frmTlzb},
+  Tl in 'Tl.pas' {frmTl},
+  Cpjczb in 'Cpjczb.pas' {frmCpjczb},
+  Cpjc in 'Cpjc.pas' {frmCpjc},
+  Qtsrzb in 'Qtsrzb.pas' {frmQtsrzb},
+  Qtsr in 'Qtsr.pas' {frmQtsr},
+  Cgshzb in 'Cgshzb.pas' {frmCgshzb},
+  Cgsh in 'Cgsh.pas' {frmCgsh},
+  GysHelp in 'GysHelp.pas' {frmGysHelp},
+  Fykzzb in 'Fykzzb.pas' {frmFykzzb},
+  Fykz in 'Fykz.pas' {frmFykz},
+  Dq in 'Dq.pas' {frmDq},
+  DqEdit in 'DqEdit.pas' {frmDqEdit},
+  ComUserOption in 'ComUserOption.pas' {frmComUserOption},
+  UserOption in 'UserOption.pas' {frmUserOption},
+  CgddHelp in 'CgddHelp.pas' {frmCgddHelp},
+  CgFkgc in 'CgFkgc.pas' {frmCgFkgc},
+  XsThgc in 'XsThgc.pas' {frmXsThgc},
+  XskdHelp in 'XskdHelp.pas' {frmXskdHelp},
+  Thgc in 'Thgc.pas' {frmThgc},
+  HpHelp in 'HpHelp.pas' {frmHpHelp},
+  Popedom in 'Popedom.pas' {frmPopedom},
+  ComDj in 'ComDj.pas' {frmComDj},
+  BbHplbXsHz in 'BbHplbXsHz.pas' {frmBbHplbXsHz},
+  DmBb in 'DmBb.pas' {DataBb: TDataModule},
+  BbHplbXsMx in 'BbHplbXsMx.pas' {frmBbHplbXsMx},
+  HpRqd in 'HpRqd.pas' {frmHpRqd},
+  CkHpRqd in 'CkHpRqd.pas' {frmCkHpRqd},
+  BbYwyYjtj in 'BbYwyYjtj.pas' {frmBbYwyYjtj},
+  BbGysGhMx in 'BbGysGhMx.pas' {frmBbGysGhMx},
+  BbYyLrb in 'BbYyLrb.pas' {frmBbYyLrb},
+  BbXsMlNbMx in 'BbXsMlNbMx.pas' {frmBbXsMlNbMx},
+  GysRqd in 'GysRqd.pas' {frmGysRqd},
+  YwyRqd in 'YwyRqd.pas' {frmYwyRqd},
+  BbYwyCgHz in 'BbYwyCgHz.pas' {frmBbYwyCgHz},
+  BbYwyCgMx in 'BbYwyCgMx.pas' {frmBbYwyCgMx},
+  ComForm in 'ComForm.pas' {frmComForm},
+  BbDqXsHz in 'BbDqXsHz.pas' {frmBbDqXsHz},
+  BbDqXsMx in 'BbDqXsMx.pas' {frmBbDqXsMx},
+  DqRqd in 'DqRqd.pas' {frmDqRqd},
+  BbCkkcHz in 'BbCkkcHz.pas' {frmBbCkkcHz},
+  BbHpCgMx in 'BbHpCgMx.pas' {frmBbHpCgMx},
+  BbGysGhHz in 'BbGysGhHz.pas' {frmBbGysGhHz},
+  BbCgMfdj in 'BbCgMfdj.pas' {frmBbCgMfdj},
+  BbGysLsz in 'BbGysLsz.pas' {frmBbGysLsz},
+  BbCgddQk in 'BbCgddQk.pas' {frmBbCgddQk},
+  BbHpXsMlHz in 'BbHpXsMlHz.pas' {frmBbHpXsMlHz},
+  BbHpXsMlMx in 'BbHpXsMlMx.pas' {frmBbHpXsMlMx},
+  BbYfkZb in 'BbYfkZb.pas' {frmBbYfkZb},
+  BbCkkcMx in 'BbCkkcMx.pas' {frmBbCkkcMx},
+  SzlbRqd in 'SzlbRqd.pas' {frmSzlbRqd},
+  BbHpXsMx in 'BbHpXsMx.pas' {frmBbHpXsMx},
+  BbHpXsHz in 'BbHpXsHz.pas' {frmBbHpXsHz},
+  BbHpCwb in 'BbHpCwb.pas' {frmBbHpCwb},
+  BbHpCgHz in 'BbHpCgHz.pas' {frmBbHpCgHz},
+  HplbRqd in 'HplbRqd.pas' {frmHplbRqd},
+  BbYfkMx in 'BbYfkMx.pas' {frmBbYfkMx},
+  CkRqd in 'CkRqd.pas' {frmCkRqd},
+  BbXsMsdj in 'BbXsMsdj.pas' {frmBbXsMsdj},
+  BbYfkZlfx in 'BbYfkZlfx.pas' {frmBbYfkZlfx},
+  BbYwyXsMx in 'BbYwyXsMx.pas' {frmBbYwyXsMx},
+  BbYwyXsHz in 'BbYwyXsHz.pas' {frmBbYwyXsHz},
+  BbYfkZlMx in 'BbYfkZlMx.pas' {frmBbYfkZlMx},
+  BbSzHz in 'BbSzHz.pas' {frmBbSzHz},
+  ZlfxSz in 'ZlfxSz.pas' {frmZlfxSz},
+  BbSzMx in 'BbSzMx.pas' {frmBbSzMx},
+  ZlfxGysSz in 'ZlfxGysSz.pas' {frmZlfxGysSz},
+  BbXjyhHz in 'BbXjyhHz.pas' {frmBbXjyhHz},
+  BbXjyhMx in 'BbXjyhMx.pas' {frmBbXjyhMx},
+  BbYskZlfx in 'BbYskZlfx.pas' {frmBbYskZlfx},
+  BbYskZlMx in 'BbYskZlMx.pas' {frmBbYskZlMx},
+  ZlfxKhSz in 'ZlfxKhSz.pas' {frmZlfxKhSz},
+  BbXsMlAdjs in 'BbXsMlAdjs.pas' {frmBbXsMlAdjs},
+  BbSzLsz in 'BbSzLsz.pas' {frmBbSzLsz},
+  BbCkLsz in 'BbCkLsz.pas' {frmBbCkLsz},
+  BbKhLsz in 'BbKhLsz.pas' {frmBbKhLsz},
+  BbKhXsHz in 'BbKhXsHz.pas' {frmBbKhXsHz},
+  BbKhXsMx in 'BbKhXsMx.pas' {frmBbKhXsMx},
+  KhRqd in 'KhRqd.pas' {frmKhRqd},
+  BbYskZb in 'BbYskZb.pas' {frmBbYskZb},
+  BbYskMx in 'BbYskMx.pas' {frmBbYskMx},
+  JdqSz in 'JdqSz.pas' {frmJdqSz},
+  KhXx in 'KhXx.pas' {frmKhXx},
+  XsSkgc in 'XsSkgc.pas' {frmXsSkgc},
+  ComDclbzb in 'ComDclbzb.pas' {frmComDclbzb},
+  XsddHelp in 'XsddHelp.pas' {frmXsddHelp},
+  BbCqYfk in 'BbCqYfk.pas' {frmBbCqYfk},
+  BbXsddQk in 'BbXsddQk.pas' {frmBbXsddQk},
+  BbJdqYfk in 'BbJdqYfk.pas' {frmBbJdqYfk},
+  Rqdsz in 'RqdSz.pas' {frmRqdsz},
+  BbCqYsk in 'BbCqYsk.pas' {frmBbCqYsk},
+  BbJdqYsk in 'BbJdqYsk.pas' {frmBbJdqYsk},
+  BbXsMlNb in 'BbXsMlNb.pas' {frmBbXsMlNb},
+  MyGuide in 'MyGuide.pas' {frmMyGuide},
+  MyLabel in 'MyLabel.pas' {fraMyLabel: TFrame},
+  MyIcon32 in 'MyIcon32.pas' {fraMyIcon32: TFrame};
+
+var
+  Window1 : HWND;
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Window1 := FindWindow(nil,'IT业进销存管理系统' );
+  if Window1 = 0 then
+  begin
+    Application.Title := 'IT业进销存管理系统';
+  Application.HintPause := 5;
+    Application.HintShortPause := 5;
+    Screen.Cursor := crHourGlass;
+    frmStart := TfrmStart.Create(Application);
+    frmStart.Show;
+    frmStart.Update;
+    Application.CreateForm(TData, Data);
+  Application.CreateForm(TfrmMain, frmMain);
+  frmMain.Animate1.Active := True;
+  frmMain.pnlMain.Visible := True;
+  frmMain.pnlMain.Repaint;
+  Application.CreateForm(TDataBb, DataBb);
+  Application.CreateForm(TfrmMyGuide, frmMyGuide);
+  Application.CreateForm(TfrmSetColumn, frmSetColumn);
+  Application.CreateForm(TfrmSetPrint, frmSetPrint);
+  Application.CreateForm(TfrmFilter, frmFilter);
+  Application.CreateForm(TfrmSetSort, frmSetSort);
+  Application.CreateForm(TfrmSelect, frmSelect);
+  Application.CreateForm(TfrmSetDate, frmSetDate);
+  Application.CreateForm(TfrmSetCal, frmSetCal);
+  frmMain.Animate1.Active := False;
+  frmMain.pnlMain.Visible := False;
+  Screen.Cursor := crdefault;
+  frmStart.Free;
+    Application.Run;
+  end else
+  begin
+    Application.Terminate ;
+    ShowWindow( Window1, SW_SHOWDEFAULT );
+  end;
+
+end.

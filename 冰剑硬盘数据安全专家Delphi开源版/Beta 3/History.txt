@@ -1,0 +1,40 @@
+(*****************************************************)
+(*                                                   *)
+(*          Advanced Encryption Standard (AES)       *)
+(*          Interface Unit v1.3                      *)
+(*                                                   *)
+(*          History.txt 版本历史  2004.12.04         *)
+(*                                                   *)
+(*****************************************************)
+
+{  --  v1.3 - 2004.12.04  --  }
+
+重新修改加密模式，支持 128、192 和 256 位密匙加密。
+改动函数参数表，添加 KeyBit 参数。
+但是可以不带此参数，默认情况按照 128 位操作。
+
+添加了新例程，支持对流和文件的操作。
+
+包含 4 个函数：
+function EncryptString(Value: string; Key: string;
+  KeyBit: TKeyBit = kb128): string;
+function DecryptString(Value: string; Key: string;
+  KeyBit: TKeyBit = kb128): string;
+function EncryptStream(Stream: TStream; Key: string;
+  KeyBit: TKeyBit = kb128): TStream;
+function DecryptStream(Stream: TStream; Key: string;
+  KeyBit: TKeyBit = kb128): TStream;
+
+包含 2 个过程：
+procedure EncryptFile(SourceFile, DestFile: string;
+  Key: string; KeyBit: TKeyBit = kb128);
+procedure DecryptFile(SourceFile, DestFile: string;
+  Key: string; KeyBit: TKeyBit = kb128);
+
+{  --  v1.0 - 2004.12.03  --  }
+
+包含 2 个函数：
+function EncryptString(Value: string; Key: string): string;
+function DecryptString(Value: string; Key: string): string;
+
+支持 128 位密匙加密和解密字符串。

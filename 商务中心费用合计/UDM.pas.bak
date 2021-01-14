@@ -1,0 +1,113 @@
+unit UDM;
+
+interface
+
+uses
+  SysUtils, Classes, DB, ADODB,IniFiles, frxClass, frxDBSet;
+
+type
+  TDM = class(TDataModule)
+    adocon1: TADOConnection;
+    ADOq1: TADOQuery;
+    ADOTEMP: TADOQuery;
+    qryadoq2: TADOQuery;
+    qrypsw: TADOQuery;
+    qrykr: TADOQuery;
+    qry1: TADOQuery;
+    ADOq1npage: TBCDField;
+    ADOq1wpage: TBCDField;
+    ADOq1B5: TBCDField;
+    ADOq1k16: TBCDField;
+    ADOq1A4: TBCDField;
+    ADOq1B4: TBCDField;
+    ADOq1K8: TBCDField;
+    ADOq1A3: TBCDField;
+    ADOq1A42: TBCDField;
+    ADOq1K82: TBCDField;
+    ADOq1LABAN: TBCDField;
+    ADOq1chinacall: TBCDField;
+    ADOq1hgcall: TBCDField;
+    ADOq1nationcall: TBCDField;
+    ADOq1SENDOUTSIDE: TBCDField;
+    ADOq1sendinside: TBCDField;
+    ADOq1sendprive: TBCDField;
+    ADOq1resivdpage: TBCDField;
+    ADOq1department: TStringField;
+    ADOq1t_time: TDateTimeField;
+    qrytemp: TADOQuery;
+    MONEYREPORT: TfrxDBDataset;
+    qryREPORT: TADOQuery;
+    qryKERENREPORT: TADOQuery;
+    frxKERENREPORT: TfrxDBDataset;
+    qryadoq2t_time: TDateTimeField;
+    qryadoq2npage: TBCDField;
+    qryadoq2wpage: TBCDField;
+    qryadoq2B5: TBCDField;
+    qryadoq2k16: TBCDField;
+    qryadoq2A4: TBCDField;
+    qryadoq2B4: TBCDField;
+    qryadoq2K8: TBCDField;
+    qryadoq2A3: TBCDField;
+    qryadoq2A42: TBCDField;
+    qryadoq2K82: TBCDField;
+    qryadoq2LABAN: TBCDField;
+    qryadoq2chinacall: TBCDField;
+    qryadoq2hgcall: TBCDField;
+    qryadoq2nationcall: TBCDField;
+    qryadoq2SENDOUTSIDE: TBCDField;
+    qryadoq2sendinside: TBCDField;
+    qryadoq2sendprive: TBCDField;
+    qryadoq2resivdpage: TBCDField;
+    qryadoq2department: TStringField;
+    ADOq1id: TAutoIncField;
+    ADOq1lx: TStringField;
+    ADObmls: TADOQuery;
+    ADOkrls: TADOQuery;
+    procedure DataModuleCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    intid,prs:Integer;
+    { Public declarations }
+  end;
+
+var
+  DM: TDM;
+
+implementation
+
+
+
+{$R *.dfm}
+
+procedure TDM.DataModuleCreate(Sender: TObject);
+var
+  inifile:Tinifile;
+  strfilename,strtemp:string;
+  strserver,strdatabase,struid,strpwd:string;
+  begin
+    strfilename:=ExtractFilePath(ParamStr(0))+'swzx.ini';
+    inifile:=Tinifile.Create(strfilename);
+    strserver:=inifile.ReadString('dbconfig','server','');
+    strdatabase:=inifile.ReadString('dbconfig','database','');
+    struid:=IniFile.ReadString('dbconfig','uid','');
+    strpwd:=inifile.ReadString('dbconfig','pwd','');
+    inifile.Free;
+
+    strtemp:='provider=sqloledb.1;persist security info=false;';
+    strtemp:=strtemp+'data source='+strserver+';';
+    strtemp:=strtemp+'initial catalog='+strdatabase+';';
+    strtemp:=strtemp+'user id='+struid+';';
+    strtemp:=strtemp+'password='+strpwd+';';
+    adocon1.Close;
+    adocon1.ConnectionString:=strtemp;
+    try
+    adocon1.Open;
+    except
+      Exit;
+    end;
+
+
+  end;
+
+end.

@@ -1,0 +1,13 @@
+ 2007-4-3 21:09:00  -设置节点时出错q_Client: Cannot perform this operation on a closed dataset
+ 2007-4-3 21:09:03  -设置节点时出错q_Client: Cannot perform this operation on a closed dataset
+ 2007-4-3 21:09:09  -设置节点时出错q_Client: Cannot perform this operation on a closed dataset
+ 2007-4-3 21:09:10  -设置节点时出错q_Client: Cannot perform this operation on a closed dataset
+ 2007-4-3 21:12:53  -设置节点时出错q_Client: Cannot perform this operation on a closed dataset
+ 2007-4-3 21:12:54  -设置节点时出错q_Client: Cannot perform this operation on a closed dataset
+ 2007-4-3 21:13:35  -设置节点时出错q_Client: Cannot perform this operation on a closed dataset
+ 2007-4-3 21:17:28  -设置节点时出错q_Client: Cannot perform this operation on a closed dataset
+ 2007-4-3 22:08:54  -SQL语句出错语法错误 (操作符丢失) 在查询表达式 '* DocumentsReporter where CID=1 AND ReportID='002'' 中。
+ 2007-4-3 22:08:54  -SQL语句出错语法错误 (操作符丢失) 在查询表达式 '* DocumentsReporter where CID=1 AND ReportID='003'' 中。
+ 2007-4-3 22:08:54  -SQL语句出错语法错误 (操作符丢失) 在查询表达式 '* DocumentsReporter where CID=1 AND ReportID='006'' 中。
+ 2007-4-3 22:08:54  -SQL语句出错语法错误 (操作符丢失) 在查询表达式 '* DocumentsReporter where CID=1 AND ReportID='007'' 中。
+ 2007-4-3 22:15:57  -SQL语句出错语法错误 (操作符丢失) 在查询表达式 '* DocumentsReporter where CID=1' 中。

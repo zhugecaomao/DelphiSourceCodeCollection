@@ -1,0 +1,198 @@
+27.05.2004  3.8
+===============
+	Bugfixes and optimizations.
+
+
+21.05.2003  3.7
+===============
+	Both dcDiskScanner and dcMultiDiskScanner now supports UNC names
+	and can search folders in local network.
+
+	dcFolderView supports XP themes.
+
+	Some minor code optimizations.
+
+
+05.11.2002  3.6
+===============
+	Added MonitorType property and CheckChanges method to
+	dcFileTail component. These improvements allows to choose
+	the kind of monitoring for changes in specified file and
+	"manually" check it for changes without using separate thread.
+
+
+21.09.2002  3.5
+===============
+        Release for Delphi 7 and a couple of minor fixes.
+
+
+24.08.2002  3.4
+===============
+	Added dcFileTail, utility component with functionality
+	similar to the tail command in Unix.
+
+	A lots of improvements in dcFolderListView component.
+
+
+31.08.2001  3.2
+===============
+	Improved dcBrowseDialog and dcFolderEdit control. Added
+	"Create new folder" button (NewFolder structure) to the
+	browse-for-folder dialog.
+
+	Improved dcFileInfo component. Now you can also change
+	the date/time when the file was created, accessed or modified
+	(TimeCreated, TimeLastAccessed and TimeLastModified properties).
+
+
+23.08.2001  3.1
+===============
+	Bufixes / corrections in WaitThread and SearchAttributes
+	properties of dcDiskScanner and dcMultiDiskScanner components.
+
+	Fixed bug in dcFileInfo component (FileSize property now returns
+	correct file size in D4/BCB4 and higher).
+
+
+20.07.2001  3.0
+===============
+	Added 6 new components: dcFolderListView, dcFolderMonitor,
+	dcVirtualDrives, dcFileEdit, dcFolderEdit and dcSystemImageList.
+
+	Completely redesigned the dcDiskScanner and dcMultiDiskScanner
+	engines. Both components was optimized for speed + added some
+	additional properties/events (FindAllFolders and Files
+	properties to dcDiskScanner; OnFolderNotFound event to
+	dcMultiDiskScanner; UseIcons property both to dcDiskScanner and
+	dcMultiDiskScanner). Note that OnFileFound event is
+	incompatible with previous versions due to additional
+	parameters. (FileTime and SysImageIndex. The FileTime returns
+	date/time of last modification and SysImageIndex is the icon
+	index in the system image list (see dcSystemImageList component.)
+
+	Completely redesigned the dcShellProperties component. Now it's
+	supports additional options of the context menu + contains
+	events which allows to hook, handle and discard context menu
+	commands.
+
+	The dcShellExtension component was slightly improved and
+	renamed to dcFileAssociation + added new property,
+	ExtCommandName.
+
+	Added Directory, Temporary, Compressed and Offline flags to the
+	FileAttributes property and TimeLastAccessed property to
+	dcFileInfo component.
+
+	Added SysImageIndex properties to the dcFileInfo, dcDiskInfo
+	and dcShellIcon components. The SysImageIndex returns the index
+	of icon in the system image list.
+
+	Changes in the dcBrowseDialog component: Title property
+	renamed to the StatusText; Caption renamed to Title.
+
+	Improved dcVersionInfo component. Added 4 new properties which
+	represents 16-bit values for version number: FileVerMajor,
+	FileVerMinor, FileVerRelease, FileVerBuild.
+
+	a lots of others minor improvements...
+
+
+06.06.2001  2.9
+===============
+	Added new component - dcFileCRC, which calculates a CRC
+	(Cyclic Redundency Check) for any files. Supports three
+	methods of checking: CRC32, CRC16 and CRCArc.
+
+	Improved the dcDiskScanner and dcMultiDiskScanner components.
+	Added new features which allows you to specify the priority
+	of the searching thread (TheadPriority property), lets to
+	suspend and resume the searching "on the fly" at run-time
+	(Suspended property), wait for the search results before
+	continuing next steps of your program (WaitThread property).
+
+	Added two methods to the TDiskScanList class (which operates
+	with Include and Exclude lists of the dcMultiDiskScanner
+	component): SaveToFile and LoadFromFile. These methods
+	allows to save and restore the searching rules from the
+	flat-text files.
+
+
+24.05.2001  2.8
+===============
+	Updated the dcFileInfo, dcDiskScanner and dcMultiDiskScanner
+	components. Improvements allows to get the information from
+	opened files.
+
+	Fixed small bug in the dcFileInfo, now it correctly return
+	size for huge files over 2Gb. The type of FileSize property
+	has been changed to Int64.
+
+
+26.04.2001  2.7
+===============
+	Minor bugfixes and optimizations in the dcDiskScanner and
+	dcMultiDiskScanner components.
+
+
+19.03.2001  2.6
+===============
+	Added new component - dcVersionInfo, used to extract version
+	information from a file.
+
+	Improved the dcBrowseDialog. Added two new properties which
+	affects on dialog appearance, and two options which let users
+	to browse either for folders and files at the same time.
+	The dcClasses unit renamed to dcInternal to avoid conflict
+	with DreamCompany's libraries (which also uses "dc" prefix
+	in module names).
+
+
+23.02.2001  2.5
+===============
+	Minor improvements in the DiskScanner engine (in DiskScannerThread).
+	Component names changed from TComponentName to TdcComponentName.
+	Added 8 new components:
+	   dcShellIcon
+	   dcShellLink
+	   dcShellProperties
+	   dcShellFileOperation
+	   dcShellExtension
+	   dcBrowseDialog
+	   dcIcon2Bitmap
+
+
+25.09.2000  2.1
+===============
+	Some bugfixes and improvements at dcDiskScanner and
+	dcMultiDiskScanner. Now they supports files with size more
+	than 2 gigabytes (FileSize parameter of the OnFileFound
+	event changed to Extended).
+
+
+08.08.2000  2.0
+===============
+	DiskControls pack. Completely rewritten scanning mechanism.
+	Added our old DiskInfo, FileInfo and DiskBrowser components
+	(was distributed by UtilMind Solutions as separate freeware/
+	shareware components since 1999). Package now contains 5
+        components.
+
+
+24.06.2000  1.5
+===============
+	Improvements of MultiDiskScanner. Added IncludeList and
+	ExcludeList properties. MultiDiskScanner now considering
+	the searching file attributes, size and time same way as
+	it DiskScanner does.
+
+
+17.06.2000  1.2
+===============
+	Added MultiDiskScanner component which able to search
+	files in multiple locations. Minor imrovements in the
+	DiskScanner engine.
+
+
+11.06.2000  1.0
+===============
+	Initial public release of the TDiskScanner component.

@@ -1,0 +1,77 @@
+DBMS DEFINE FILE
+
+[DBMS_LIST]
+MSSQL=
+SYBASA7LM=
+SYBASA7EM=
+SYBASA7SM=
+
+[MSSQL]
+OLEDB=1
+ODBC=1
+DESCRIPTION=Microsoft SQL Server
+
+[SYBASA7LM]
+OLEDB=0
+ODBC=1
+DESCRIPTION=Sybase SQL Anywhere 7 Locale Mode
+
+[SYBASA7EM]
+OLEDB=0
+ODBC=1
+DESCRIPTION=Sybase SQL Anywhere 7 Enhanced Mode
+
+[SYBASA7SM]
+OLEDB=0
+ODBC=1
+DESCRIPTION=Sybase SQL Anywhere 7 Server Mode
+
+[ODBC]
+Provider=MSDASQL
+Data Source=%DSN%
+User Id=%UID%
+Password=%PWD%
+Persist Security Info=False
+
+[MSSQL_OLEDB]
+Provider=SQLOLEDB
+Data Source=<S><U><D:服务器名称>
+Initial Catalog=%DBN%
+User Id=%UID%
+Password=%PWD%
+Persist Security Info=False
+
+[MSSQL_ODBC]
+Driver=<S><D:驱动程序><V:%WINSYSDIR%\sqlsrv32.dll>
+Server=<S><U><D:服务器名称>
+Database=%DBN%
+
+[SYBASA7LM_ODBC]
+AutoStop=Yes
+DatabaseName=%DBN%
+Debug=No
+DisableMultiRowFetch=No
+Integrated=No
+Driver=<S><D:驱动程序><V:%PATH_DBE%\dbodbc7.dll>
+Start=<S><D:启动命令><V:%PATH_DBE%\dbeng7.exe -Q -c 8M -n %DBN%>
+DatabaseFile=<S><D:数据库文件><V:%PATH_DBF%\%DBF%>
+
+[SYBASA7EM_ODBC]
+AutoStop=Yes
+DatabaseName=%DBN%
+Debug=No
+DisableMultiRowFetch=No
+Integrated=No
+Driver=<S><D:驱动程序><V:%PATH_DBE%\dbodbc7.dll>
+Start=<S><D:启动命令><V:%PATH_DBE%\dbsrv7.exe -x tcpip -Q -c 8M -n %DBN%>
+DatabaseFile=<S><D:数据库文件><V:%PATH_DBF%\%DBF%>
+
+[SYBASA7SM_ODBC]
+AutoStop=No
+CommLinks=TCPIP{}
+DatabaseName=%DBN%
+Debug=No
+DisableMultiRowFetch=No
+Integrated=No
+EngineName=<S><U><D:服务器名称>
+Driver=<S><D:驱动程序><V:%PATH_DBE%\dbodbc7.dll>

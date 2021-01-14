@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Name="" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="2047" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" ReportOptions.CreateDate="38527.9160865162" ReportOptions.Description.Text="" ReportOptions.LastChange="38528.9509803588" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C65667403180203546F70021008446174617365747301010C3400000020446174615365743D22667278444244617461736574312220446174615365744E616D653D2266727844424461746173657431220000095661726961626C65730100055374796C650100">
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxPageHeader Name="PageHeader1" Height="71.81107" Left="0" Top="18.89765" Width="718.1107">
+      <TfrxMemoView Name="Memo1" Left="201.57493333" Top="3.77953" Width="317.48052" Height="37.7953" Font.Charset="0" Font.Color="0" Font.Height="-35" Font.Name="宋体" Font.Style="0" Memo.Text="从业资格证培训档案" ParentFont="False"/>
+      <TfrxLineView Name="Line44" Left="204.09462" Top="45.35436" Width="309.92146" Height="0" Frame.Style="fsDouble" Frame.Typ="4"/>
+    </TfrxPageHeader>
+    <TfrxMasterData Name="MasterData1" Font.Charset="0" Font.Color="0" Font.Height="-19" Font.Name="宋体" Font.Style="0" Height="797.48083" Left="0" ParentFont="False" Top="151.1812" Width="718.1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" RowCount="0">
+      <TfrxMemoView Name="Memo2" Left="68.03154" Top="13.11812" Width="60.47248" Height="22.67716535" DataField="学号" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;学号&#34;]"/>
+      <TfrxMemoView Name="Memo3" Left="11.33859" Top="13.11812" Width="56.69295" Height="22.67718" Font.Charset="0" Font.Color="0" Font.Height="-19" Font.Name="宋体" Font.Style="0" Memo.Text="学 号" ParentFont="False"/>
+      <TfrxMemoView Name="Memo4" Left="209.87415" Top="11.33859" Width="75.5906" Height="22.67718" DataField="姓名" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;姓名&#34;]"/>
+      <TfrxMemoView Name="Memo5" Left="145.62214" Top="13.11812" Width="52.91342" Height="22.67716535" Font.Charset="0" Font.Color="0" Font.Height="-19" Font.Name="宋体" Font.Style="0" Memo.Text="姓 名" ParentFont="False"/>
+      <TfrxMemoView Name="Memo6" Left="366.61441" Top="13.11812" Width="41.57483" Height="22.67716535" DataField="性别" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;性别&#34;]"/>
+      <TfrxMemoView Name="Memo7" Left="302.3624" Top="13.11812" Width="52.91342" Height="22.67716535" Memo.Text="性 别"/>
+      <TfrxMemoView Name="Memo8" Left="491.3389" Top="13.11812" Width="37.7953" Height="22.67716535" DataField="年龄" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;年龄&#34;]"/>
+      <TfrxMemoView Name="Memo9" Left="427.08689" Top="13.11812" Width="52.91342" Height="22.67716535" Memo.Text="年 龄"/>
+      <TfrxMemoView Name="Memo10" Left="103.82684" Top="50.91342" Width="98.26771898" Height="22.67716535" DataField="报名时间" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;报名时间&#34;]"/>
+      <TfrxMemoView Name="Memo11" Left="11.33859" Top="50.91342" Width="83.14966" Height="22.67716535" Font.Charset="0" Font.Color="0" Font.Height="-19" Font.Name="宋体" Font.Style="0" Memo.Text="报名时间" ParentFont="False"/>
+      <TfrxMemoView Name="Memo12" Left="309.92146" Top="50.91342" Width="158.74026" Height="22.67716535" DataField="身份证号" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;身份证号&#34;]"/>
+      <TfrxMemoView Name="Memo13" Left="211.65368" Top="50.91342" Width="79.37013" Height="22.67716535" Memo.Text="身份证号"/>
+      <TfrxMemoView Name="Memo14" Left="105.82684" Top="127.28355" Width="487.55937" Height="22.67716535" DataField="住址或单位" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;住址或单位&#34;]"/>
+      <TfrxMemoView Name="Memo15" Left="2.77953" Top="127.28355" Width="98.26778" Height="22.67716535" Memo.Text="住址或单位"/>
+      <TfrxLineView Name="Line1" Left="2.77953" Top="0" Width="714.33117" Height="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line2" Left="1.77953" Top="0" Width="0" Height="793.700787401575" Frame.Typ="1"/>
+      <TfrxLineView Name="Line3" Left="716.55164" Top="0" Width="0" Height="793.7013" Frame.Typ="1"/>
+      <TfrxLineView Name="Line4" Left="3.77953" Top="41.57483" Width="593.38621" Height="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line5" Left="3.77953" Top="79.37013" Width="593.38621" Height="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line6" Left="2.77953" Top="117.16543" Width="593.38574866" Height="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line7" Left="64.25201" Top="0" Width="0" Height="41.57480315" Frame.Typ="1"/>
+      <TfrxLineView Name="Line8" Left="136.06308" Top="0" Width="0" Height="41.57483" Frame.Typ="1"/>
+      <TfrxLineView Name="Line9" Left="207.87415" Top="0" Width="0" Height="79.37013" Frame.Typ="1"/>
+      <TfrxLineView Name="Line10" Left="298.58287" Top="0" Width="0" Height="41.57483" Frame.Typ="1"/>
+      <TfrxLineView Name="Line13" Left="487.55937" Top="0" Width="0" Height="41.57480315" Frame.Typ="1"/>
+      <TfrxLineView Name="Line14" Left="597.16574" Top="0" Width="0" Height="158.74026" Frame.Typ="1"/>
+      <TfrxLineView Name="Line15" Left="100.26778" Top="41.57483" Width="0" Height="158.74026" Frame.Typ="1"/>
+      <TfrxLineView Name="Line11" Left="419.52783" Top="0" Width="0" Height="41.57483" Frame.Typ="1"/>
+      <TfrxLineView Name="Line12" Left="362.83488" Top="0" Width="0" Height="41.57483" Frame.Typ="1"/>
+      <TfrxLineView Name="Line16" Left="298.58287" Top="41.57483" Width="0" Height="75.5906" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo16" Left="105.82684" Top="90.70872" Width="120.94496" Height="18.89765" DataField="联系电话" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;联系电话&#34;]"/>
+      <TfrxMemoView Name="Memo17" Left="11.33859" Top="90.70872" Width="79.37013" Height="18.89765" Memo.Text="联系电话"/>
+      <TfrxMemoView Name="Memo18" Left="370.39394" Top="86.92919" Width="105.82684" Height="18.89765" DataField="手机" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;手机&#34;]"/>
+      <TfrxMemoView Name="Memo19" Left="306.14193" Top="86.92919" Width="41.57483" Height="18.89765" Memo.Text="手机"/>
+      <TfrxLineView Name="Line17" Left="1.77953" Top="158.74026" Width="714.33117" Height="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line18" Left="362.83488" Top="80.37013" Width="0" Height="37.79527559" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo20" Left="643.77994333" Top="35.27561333" Width="25.19686667" Height="85.66934667" Memo.Text="照      片"/>
+      <TfrxMemoView Name="Memo21" Left="107.82684" Top="170.07885" Width="37.7953" Height="18.89765" DataField="持驾照类别" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;持驾照类别&#34;]"/>
+      <TfrxMemoView Name="Memo22" Left="1.77953" Top="170.07885" Width="98.26778" Height="18.89765" Memo.Text="持驾照类别"/>
+      <TfrxMemoView Name="Memo23" Left="308.02381" Top="170.07885" Width="98.26778" Height="18.89765" DataField="初次领证日期" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;初次领证日期&#34;]"/>
+      <TfrxMemoView Name="Memo24" Left="158.74026" Top="170.07885" Width="136.06308" Height="18.89765" Memo.Text="初次领证日期"/>
+      <TfrxMemoView Name="Memo25" Left="515.89796" Top="170.07885" Width="143.62214" Height="18.89765" DataField="驾照号码" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;驾照号码&#34;]"/>
+      <TfrxMemoView Name="Memo26" Left="421.40971" Top="170.07885" Width="79.37013" Height="18.89765" Memo.Text="驾照号码"/>
+      <TfrxLineView Name="Line19" Left="2" Top="200.31509" Width="714.33117" Height="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line20" Left="300.46475" Top="158.74026" Width="0" Height="173.85838" Frame.Typ="1"/>
+      <TfrxLineView Name="Line21" Left="413.85065" Top="159.51979" Width="0" Height="83.14966" Frame.Typ="1"/>
+      <TfrxLineView Name="Line22" Left="508.3389" Top="158.74026" Width="0" Height="41.57483" Frame.Typ="1"/>
+      <TfrxLineView Name="Line23" Left="151.1812" Top="158.74026" Width="0" Height="83.14966" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo27" Left="158.74026" Top="211.65368" Width="136.06308" Height="18.89765" DataField="拟办资格证种类" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;拟办资格证种类&#34;]"/>
+      <TfrxMemoView Name="Memo28" Left="7.55906" Top="211.65368" Width="136.06308" Height="18.89765" Memo.Text="拟办资格证种类"/>
+      <TfrxMemoView Name="Memo29" Left="425.18924" Top="211.65368" Width="306.14193" Height="18.89765" DataField="原毕业学校" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;原毕业学校&#34;]"/>
+      <TfrxMemoView Name="Memo30" Left="308.02381" Top="211.65368" Width="102.04731" Height="18.89765" Memo.Text="原毕业学校"/>
+      <TfrxLineView Name="Line24" Left="2" Top="241.88992" Width="714.33117" Height="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo31" Left="117.16543" Top="257.00804" Width="177.63791" Height="18.89765" DataField="结业证号码" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;结业证号码&#34;]"/>
+      <TfrxMemoView Name="Memo32" Left="7.55906" Top="257.00804" Width="98.26778" Height="18.89765" Memo.Text="结业证号码"/>
+      <TfrxMemoView Name="Memo33" Left="371.05535" Top="257.00804" Width="79.37013" Height="18.89765" DataField="缴费" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;缴费&#34;]"/>
+      <TfrxMemoView Name="Memo34" Left="310.58287" Top="257.00804" Width="41.57483" Height="18.89765" Memo.Text="缴费"/>
+      <TfrxMemoView Name="Memo35" Left="515.23655" Top="257.00804" Width="56.69295" Height="18.89765" DataField="理论" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;理论&#34;]"/>
+      <TfrxMemoView Name="Memo36" Left="462.5436" Top="257.00804" Width="41.57483" Height="18.89765" Memo.Text="理论"/>
+      <TfrxMemoView Name="Memo37" Left="645.5201" Top="257.00804" Width="64.25201" Height="18.89765" DataField="操作" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;操作&#34;]"/>
+      <TfrxMemoView Name="Memo38" Left="590.60668" Top="257.00804" Width="41.57483" Height="18.89765" Memo.Text="操作"/>
+      <TfrxLineView Name="Line25" Left="109.60637" Top="241.88992" Width="0" Height="90.70872" Frame.Typ="1"/>
+      <TfrxLineView Name="Line26" Left="2" Top="287.24428" Width="714.33117" Height="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line27" Left="362.71676" Top="241.88992" Width="0" Height="45.35436" Frame.Typ="1"/>
+      <TfrxLineView Name="Line28" Left="457.98454" Top="241.88992" Width="0" Height="45.35436" Frame.Typ="1"/>
+      <TfrxLineView Name="Line29" Left="510.67749" Top="241.88992" Width="0" Height="45.35436" Frame.Typ="1"/>
+      <TfrxLineView Name="Line30" Left="578.26809" Top="241.88992" Width="0" Height="45.35436" Frame.Typ="1"/>
+      <TfrxLineView Name="Line31" Left="639.96104" Top="241.88992" Width="0" Height="45.35436" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo39" Left="117.16543" Top="302.3624" Width="173.85838" Height="18.89765" DataField="资格证号" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;资格证号&#34;]"/>
+      <TfrxMemoView Name="Memo40" Left="7.55906" Top="302.3624" Width="79.37013" Height="18.89765" Memo.Text="资格证号"/>
+      <TfrxLineView Name="Line32" Left="2" Top="332.59864" Width="714.33117" Height="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo41" Left="402.51206" Top="302.3624" Width="79.37013" Height="18.89765" DataField="发证途径" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;发证途径&#34;]"/>
+      <TfrxMemoView Name="Memo42" Left="308.02381" Top="302.3624" Width="79.37013" Height="18.89765" Memo.Text="发证途径"/>
+      <TfrxMemoView Name="Memo43" Left="139.84261" Top="347.71676" Width="559.37044" Height="18.89765" DataField="不能发证原因" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;不能发证原因&#34;]"/>
+      <TfrxMemoView Name="Memo44" Left="7.55906" Top="347.71676" Width="117.16543" Height="18.89765" Memo.Text="不能发证原因"/>
+      <TfrxLineView Name="Line33" Left="2" Top="377.953" Width="714.33117" Height="0" Frame.Typ="4"/>
+      <TfrxLineView Name="Line34" Left="394.953" Top="287.24428" Width="0" Height="45.35436" Frame.Typ="1"/>
+      <TfrxLineView Name="Line35" Left="132.28355" Top="332.59864" Width="0" Height="45.35436" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo45" Left="102.04731" Top="393.07112" Width="64.25201" Height="18.89765" DataField="需告知人" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;需告知人&#34;]"/>
+      <TfrxMemoView Name="Memo46" Left="7.55906" Top="393.07112" Width="79.37013" Height="18.89765" Memo.Text="需告知人"/>
+      <TfrxLineView Name="Line36" Left="2" Top="423.30736" Width="714.33070866" Height="0" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo47" Left="313.70099" Top="393.07112" Width="105.82684" Height="18.89765" DataField="需告知人电话" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;需告知人电话&#34;]"/>
+      <TfrxMemoView Name="Memo48" Left="181.41744" Top="393.07112" Width="117.16543" Height="18.89765" Memo.Text="需告知人电话"/>
+      <TfrxMemoView Name="Memo49" Left="578.26809" Top="393.07112" Width="105.82684" Height="18.89765" DataField="需告知人手机" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Memo.Text="[frxDBDataset1.&#34;需告知人手机&#34;]"/>
+      <TfrxMemoView Name="Memo50" Left="438.42548" Top="393.07112" Width="120.94496" Height="18.89765" Memo.Text="需告知人手机"/>
+      <TfrxLineView Name="Line37" Left="94.48825" Top="377.953" Width="0" Height="45.35436" Frame.Typ="1"/>
+      <TfrxLineView Name="Line38" Left="173.85838" Top="377.953" Width="0" Height="45.35436" Frame.Typ="1"/>
+      <TfrxLineView Name="Line39" Left="306.14193" Top="377.953" Width="0" Height="45.35436" Frame.Typ="1"/>
+      <TfrxLineView Name="Line40" Left="427.08689" Top="377.953" Width="0" Height="45.35436" Frame.Typ="1"/>
+      <TfrxLineView Name="Line41" Left="563.14997" Top="377.953" Width="0" Height="45.35436" Frame.Typ="1"/>
+      <TfrxLineView Name="Line42" Left="56.69295" Top="423.30736" Width="0" Height="370.39394" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo51" Left="13.85827667" Top="575.74840333" Width="25.19686667" Height="117.16543" Memo.Text="备          注"/>
+      <TfrxLineView Name="Line43" Left="2" Top="793.7013" Width="714.33070866" Height="0" Frame.Typ="4"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" Font.Charset="0" Font.Color="0" Font.Height="-14" Font.Name="宋体" Font.Style="0" Height="34.01577" Left="0" ParentFont="False" Top="1009.13451" Width="718.1107">
+      <TfrxMemoView Name="Memo52" Left="493.85858667" Top="7.55906000000004" Width="221.73242667" Height="17.63780667" Memo.Text="打印日期：[Now]"/>
+      <TfrxMemoView Name="Memo54" Left="7.55906" Top="7.55906000000004" Width="120.94496" Height="18.89765" Memo.Text="建档人：[frxDBDataset1.&#34;建档人&#34;]"/>
+      <TfrxMemoView Name="Memo56" Left="136.06308" Top="7.55906000000004" Width="185.19697" Height="18.89765" Memo.Text="建档日期：[frxDBDataset1.&#34;建档日期&#34;]"/>
+    </TfrxPageFooter>
+  </TfrxReportPage>
+</TfrxReport>

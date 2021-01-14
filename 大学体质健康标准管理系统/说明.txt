@@ -1,0 +1,15 @@
+大学体质健康标准管理系统
+开发环境：delphi6.0+winxp
+作者:tjh33sj
+
+
+数据库设置：sport   本目录下的info\下
+             
+            standard本目录下的info\standard\下
+
+用户密码无
+
+本软件尽用于学习
+如用于商业用途请与作者联系
+jacky.pass@tom.com
+

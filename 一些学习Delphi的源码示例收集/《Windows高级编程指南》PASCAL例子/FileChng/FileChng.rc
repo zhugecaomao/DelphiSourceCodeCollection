@@ -1,0 +1,49 @@
+// Language
+LANGUAGE  LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+// Define
+#define IDD_FILECHNG                    1
+#define IDC_PATH                        100
+#define IDC_INCSUBDIRS                  101
+#define IDC_NCOUNT                      102
+#define IDI_FILECHNG                    102
+#define IDC_FILENAME                    103
+#define IDC_DIRNAME                     104
+#define IDC_ATTRIBS                     105
+#define IDC_SIZEFLTR                    106
+#define IDC_LASTWRITE                   107
+#define IDC_LASTACCESS                  108
+#define IDC_START                       109
+#define IDC_STOP                        110
+#define IDC_TREE                        111
+#define IDC_CREATION                    112
+#define IDC_SECURITY                    113
+
+// Icon
+IDI_FILECHNG  ICON  DISCARDABLE  "FileChng.Ico"
+
+// Dialog
+IDD_FILECHNG DIALOG DISCARDABLE  6, 18, 256, 237
+  STYLE WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+  CAPTION "File Change Notifications"
+  FONT 8, "Helv"
+BEGIN
+  LTEXT     "&Path:", IDC_STATIC, 4, 4, 19, 8
+  EDITTEXT  IDC_PATH, 24, 4, 228, 12, ES_AUTOHSCROLL
+  GROUPBOX  "Filters", IDC_STATIC, 4, 20, 248, 40
+  CONTROL   "File&name", IDC_FILENAME, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 8, 32, 42, 10
+  CONTROL   "&Dir name", IDC_DIRNAME, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 8, 44, 40, 10
+  CONTROL   "&Attributes", IDC_ATTRIBS, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 64, 32, 42, 10
+  CONTROL   "Si&ze", IDC_SIZEFLTR, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 64, 44, 25, 10
+  CONTROL   "&Last write time", IDC_LASTWRITE,"Button", BS_AUTOCHECKBOX | WS_TABSTOP, 120, 32, 58, 10
+  CONTROL   "Last access time", IDC_LASTACCESS, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 120, 44, 69, 10
+  CONTROL   "Creation time", IDC_CREATION, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 192, 32, 57, 10
+  CONTROL   "Securit&y", IDC_SECURITY, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 192, 44, 38, 10
+  CONTROL   "&Include subdirectories", IDC_INCSUBDIRS, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 4, 64, 83, 10
+  DEFPUSHBUTTON  "&Start", IDC_START, 184, 64, 32, 14
+  PUSHBUTTON     "S&top", IDC_STOP, 220, 64, 32, 14
+  LTEXT          "&File list:", IDC_STATIC, 4, 84, 27, 8
+  LISTBOX   IDC_TREE, 4, 96, 248, 136, NOT LBS_NOTIFY | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+  LTEXT     "Notification count:", IDC_STATIC, 164, 84, 62, 9, SS_NOPREFIX
+  LTEXT     "0", IDC_NCOUNT, 228, 84, 24, 8, SS_NOPREFIX
+END

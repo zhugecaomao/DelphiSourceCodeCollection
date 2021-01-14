@@ -1,0 +1,26 @@
+// Language
+LANGUAGE  LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+// Define
+#define IDD_ALERTIO                    1
+#define IDC_BROWSE                   100
+#define IDC_SRCFILE                  101
+#define IDC_SRCFILESIZE              102
+#define IDI_ALERTIO                  102
+
+// Icon
+IDI_ALERTIO   ICON   DISCARDABLE   "AlertIO.Ico"
+
+// Dialog
+IDD_ALERTIO DIALOG DISCARDABLE  15, 24, 214, 37
+  STYLE WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+  CAPTION "Alertable I/O File Copy"
+  FONT 8, "System"
+BEGIN
+  LTEXT  "&Pathname:", IDC_STATIC, 4, 6, 35, 8
+  EDITTEXT  IDC_SRCFILE, 44, 4, 168, 12, ES_AUTOHSCROLL
+  PUSHBUTTON  "&Browse...", IDC_BROWSE, 4, 20, 36, 12, WS_GROUP
+  DEFPUSHBUTTON  "&Copy", IDOK, 52, 20, 36, 12
+  LTEXT  "File size:", IDC_STATIC, 144, 20, 31, 8
+  LTEXT  "0", IDC_SRCFILESIZE, 180, 20, 34, 8
+END

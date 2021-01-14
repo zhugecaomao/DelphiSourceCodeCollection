@@ -1,0 +1,1 @@
+BRCC32 ShowDib7.rc

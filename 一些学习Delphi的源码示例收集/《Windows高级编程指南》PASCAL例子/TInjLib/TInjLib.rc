@@ -1,0 +1,22 @@
+// Language
+LANGUAGE  LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+// Define
+#define  IDD_TINJLIB                   1
+#define  IDC_INJECT                  100
+#define  IDI_TINJLIB                 101
+#define  IDC_PROCESSID               101
+
+// Icon
+IDI_TINJLIB  ICON  DISCARDABLE  "TInjLib.ico"
+
+// Dialog
+IDD_TINJLIB DIALOG DISCARDABLE  15, 24, 158, 24
+  STYLE DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+  CAPTION "Inject Library Tester"
+  FONT 8, "System"
+BEGIN
+  LTEXT "&Process Id (decimal):", -1, 4, 6, 69, 8
+  EDITTEXT IDC_PROCESSID, 78, 4, 36, 12, ES_AUTOHSCROLL
+  DEFPUSHBUTTON "&Inject", IDC_INJECT, 120, 4, 36, 12, WS_GROUP
+END

@@ -1,0 +1,59 @@
+package codemng;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '系统代码维护模块'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  vcldb,
+  adortl,
+  csctrl,
+  ECQDBCD6,
+  EQTLD6,
+  dxEdtrD6,
+  dxcomnd6,
+  dxDBEdD6,
+  EQGridD6,
+  ehlibd6,
+  csextdxbar,
+  dxBarD6,
+  csscrctrl,
+  dxmdsd6,
+  dxdbtrD6,
+  common,
+  dxELibD6;
+
+contains
+  ufrmBaseCode in 'ufrmBaseCode.pas' {frmBaseCode},
+  ufrmAccidentCode in 'ufrmAccidentCode.pas' {frmAccidentCode},
+  ufrmContentTemplet in 'ufrmContentTemplet.pas' {frmContentTemplet},
+  ufrmOrganCode in 'ufrmOrganCode.pas' {frmOrganCode},
+  ufrmDeviceCode in 'ufrmDeviceCode.pas' {frmDeviceCode},
+  ufrmPersonCode in 'ufrmPersonCode.pas' {frmPersonCode};
+
+end.

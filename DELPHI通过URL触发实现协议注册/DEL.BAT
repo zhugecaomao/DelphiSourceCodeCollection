@@ -1,0 +1,6 @@
+DEL *.~* /S
+DEL *.DCU /S
+DEL *.DSK /S
+DEL *.DDP /S
+
+PAUSE

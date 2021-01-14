@@ -1,0 +1,13 @@
+// TEXT
+AnnabelLee TEXT DISCARDABLE "poepoem.txt"
+
+// Icon        
+PoePoem ICON DISCARDABLE "poepoem.ico"
+
+// String Table        
+STRINGTABLE DISCARDABLE        
+BEGIN        
+  1 "PoePoem"
+  2 """Annabel Lee"" by Edgar Allan Poe"
+  3 "This program requires Windows NT!"
+END

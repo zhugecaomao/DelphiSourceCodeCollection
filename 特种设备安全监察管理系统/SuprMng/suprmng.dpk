@@ -1,0 +1,60 @@
+package suprmng;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION '¼à¶½¼ì²ìÄ£¿é'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  vclx,
+  dbrtl,
+  vcldb,
+  adortl,
+  VclSmp,
+  csctrl,
+  csextdxqtm,
+  dxEdtrD6,
+  dxcomnd6,
+  dxDBEdD6,
+  dxELibD6,
+  csextehlib,
+  ehlibd6,
+  csextdxbar,
+  dxBarD6,
+  csscrctrl,
+  dxmdsd6,
+  dxdbtrD6,
+  common,
+  vcljpg,
+  fastrpt6,
+  organmng;
+
+contains
+  ufrmSuprNotice in 'ufrmSuprNotice.pas' {frmSuprNotice},
+  ufrmSuprTotal in 'ufrmSuprTotal.pas' {frmSuprTotal},
+  ufrmSuprExam in 'ufrmSuprExam.pas' {frmSuprExam};
+
+end.

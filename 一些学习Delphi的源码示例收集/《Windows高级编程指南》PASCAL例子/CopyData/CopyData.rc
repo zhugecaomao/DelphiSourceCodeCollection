@@ -1,0 +1,27 @@
+// Language
+LANGUAGE  LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+// Define
+#define IDD_COPYDATA                    1
+#define IDC_DATA1                       100
+#define IDC_COPYDATA1                   101
+#define IDC_DATA2                       102
+#define IDI_COPYDATA                    102
+#define IDC_COPYDATA2                   103
+
+// Dialog
+IDD_COPYDATA DIALOG DISCARDABLE  38, 36, 220, 42
+  STYLE WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+  CAPTION "WM_COPYDATA Message Share Application"
+  FONT 8, "System"
+BEGIN
+  LTEXT       "Data&1:", IDC_STATIC, 4, 4, 24, 12
+  EDITTEXT    IDC_DATA1, 28, 4, 76, 12
+  PUSHBUTTON  "&Send Data1 to other windows", IDC_COPYDATA1, 112, 4, 104, 14, WS_GROUP
+  LTEXT       "Data&2:", IDC_STATIC, 4, 24, 24, 12
+  EDITTEXT    IDC_DATA2, 28, 24, 76, 12
+  PUSHBUTTON  "Send &Data2 to other windows", IDC_COPYDATA2, 112, 24, 104, 14, WS_GROUP
+END
+
+// Icon
+IDI_COPYDATA  ICON  DISCARDABLE  "CopyData.Ico"

@@ -1,0 +1,36 @@
+// Language
+LANGUAGE  LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+// Define
+#define IDD_SPREADSHEET                 1
+#define IDC_LOG                         101
+#define IDI_SPREADSHEET                 102
+#define IDC_ROW                         1001
+#define IDC_COLUMN                      1002
+#define IDC_COLUMN2                     1003
+#define IDC_VALUE                       1003
+#define IDC_READCELL                    1004
+#define IDC_WRITECELL                   1005
+
+// Dialog
+IDD_SPREADSHEET DIALOG DISCARDABLE  18, 18, 164, 165
+  STYLE DS_CENTER | WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+  CAPTION "Spreadsheet"
+  FONT 8, "MS Sans Serif"
+BEGIN
+  LTEXT      "Cell size:\nRows:\nColumns:\nTotal size:", IDC_STATIC, 4, 4, 36, 36
+  LTEXT      "1024 bytes\n256\n1024\n256 MB (268,435,456 bytes)", IDC_STATIC, 44, 4, 104, 36
+  LTEXT      "R&ow (0-255):", IDC_STATIC, 4, 56, 42, 8
+  EDITTEXT   IDC_ROW, 60, 52, 40, 14, ES_AUTOHSCROLL | ES_NUMBER
+  LTEXT      "&Column (0-1023):", IDC_STATIC, 4, 76, 54, 8
+  EDITTEXT   IDC_COLUMN, 60, 72, 40, 14, ES_AUTOHSCROLL | ES_NUMBER
+  PUSHBUTTON "&Read Cell", IDC_READCELL, 108, 72, 50, 14
+  LTEXT      "&Value:", IDC_STATIC, 4, 96, 21, 8
+  EDITTEXT   IDC_VALUE, 60, 92, 40, 14, ES_AUTOHSCROLL | ES_NUMBER
+  PUSHBUTTON "&Write Cell", IDC_WRITECELL, 108, 92, 50, 14
+  LTEXT      "Execution lo&g:", IDC_STATIC, 4, 118, 48, 8
+  EDITTEXT   IDC_LOG, 4, 132, 156, 28, ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+END
+
+// Icon
+IDI_SPREADSHEET  ICON  DISCARDABLE  "Spreadsheet.Ico"

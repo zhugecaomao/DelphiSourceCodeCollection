@@ -1,0 +1,6 @@
+ 2007-4-4 16:37:38  -读取主节点时出错Access violation at address 0000A5B5. Read of address 0000A5B5
+ 2007-4-4 16:39:19  -读取主节点时出错Access violation at address 0000A5B5. Read of address 0000A5B5
+ 2007-4-4 16:39:50  -读取主节点时出错Access violation at address 00000101. Read of address 00000101
+ 2007-4-4 16:40:29  -读取主节点时出错Access violation at address 0000A5B5. Read of address 0000A5B5
+ 2007-4-4 16:44:29  delete from DocumentsReporter where CID=2 AND ReportID='001'
+ 2007-4-4 16:57:09  -设置节点时出错q_Client: Cannot perform this operation on a closed dataset

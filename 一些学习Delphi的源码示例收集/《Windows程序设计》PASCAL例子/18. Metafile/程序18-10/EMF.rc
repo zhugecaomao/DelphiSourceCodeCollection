@@ -1,0 +1,21 @@
+//Define
+#define  IDM_PRINT  40001
+#define  IDM_EXIT   40002
+#define  IDM_ABOUT  40003
+
+
+// Menu
+EMF MENU DISCARDABLE
+BEGIN
+  POPUP "&File"
+  BEGIN
+    MENUITEM "&Print...", IDM_PRINT
+    MENUITEM SEPARATOR
+    MENUITEM "E&xit", IDM_EXIT
+  END
+        
+  POPUP "&Help"
+  BEGIN
+    MENUITEM "&About...", IDM_ABOUT
+  END
+END

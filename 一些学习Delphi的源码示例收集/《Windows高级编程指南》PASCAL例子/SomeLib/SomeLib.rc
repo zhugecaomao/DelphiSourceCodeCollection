@@ -1,0 +1,29 @@
+// Language
+
+LANGUAGE  LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+
+// Define
+
+#define IDS_STRINGFIRST  1000
+
+
+// String Table
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  1008  "String #8"
+  1009  "String #9"
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  IDS_STRINGFIRST  "String #0"
+  1001  "String #1"
+  1002  "String #2"
+  1003  "String #3"
+  1004  "String #4"
+  1005  "String #5"
+  1006  "String #6"
+  1007  "String #7"
+END

@@ -1,0 +1,155 @@
+object frmChangePassword: TfrmChangePassword
+  Left = 479
+  Top = 120
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsDialog
+  Caption = #20462#25913#30331#24405#23494#30721
+  ClientHeight = 156
+  ClientWidth = 268
+  Color = clBtnFace
+  Font.Charset = GB2312_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = #23435#20307
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  PixelsPerInch = 96
+  TextHeight = 12
+  object Label14: TLabel
+    Left = 13
+    Top = 136
+    Width = 66
+    Height = 12
+    Caption = #26381#21153#22120#29366#24577':'
+  end
+  object LabelStatus: TLabel
+    Left = 80
+    Top = 136
+    Width = 6
+    Height = 12
+    Font.Charset = GB2312_CHARSET
+    Font.Color = clGreen
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Top = 8
+    Width = 249
+    Height = 121
+    Caption = #20462#25913#24080#21495#23494#30721
+    TabOrder = 0
+    object Label9: TLabel
+      Left = 8
+      Top = 20
+      Width = 54
+      Height = 12
+      Caption = #30331#24405#24080#21495':'
+    end
+    object Label10: TLabel
+      Left = 8
+      Top = 44
+      Width = 42
+      Height = 12
+      Caption = #26087#23494#30721':'
+    end
+    object Label1: TLabel
+      Left = 8
+      Top = 92
+      Width = 54
+      Height = 12
+      Caption = #30830#35748#23494#30721':'
+    end
+    object Label2: TLabel
+      Left = 8
+      Top = 68
+      Width = 42
+      Height = 12
+      Caption = #26032#23494#30721':'
+    end
+    object EditAccount: TEdit
+      Left = 64
+      Top = 16
+      Width = 89
+      Height = 20
+      BevelKind = bkFlat
+      BevelOuter = bvRaised
+      BorderStyle = bsNone
+      Font.Charset = GB2312_CHARSET
+      Font.Color = clBlue
+      Font.Height = -12
+      Font.Name = #23435#20307
+      Font.Style = []
+      MaxLength = 10
+      ParentFont = False
+      TabOrder = 0
+    end
+    object EditPassword: TEdit
+      Left = 64
+      Top = 40
+      Width = 89
+      Height = 20
+      BevelKind = bkFlat
+      BevelOuter = bvRaised
+      BorderStyle = bsNone
+      Font.Charset = GB2312_CHARSET
+      Font.Color = clBlue
+      Font.Height = -12
+      Font.Name = #23435#20307
+      Font.Style = []
+      MaxLength = 10
+      ParentFont = False
+      PasswordChar = '*'
+      TabOrder = 1
+    end
+    object EditConfirm: TEdit
+      Left = 64
+      Top = 88
+      Width = 89
+      Height = 20
+      BevelKind = bkFlat
+      BevelOuter = bvRaised
+      BorderStyle = bsNone
+      Font.Charset = GB2312_CHARSET
+      Font.Color = clBlue
+      Font.Height = -12
+      Font.Name = #23435#20307
+      Font.Style = []
+      MaxLength = 10
+      ParentFont = False
+      PasswordChar = '*'
+      TabOrder = 3
+    end
+    object EditNewPassword: TEdit
+      Left = 64
+      Top = 64
+      Width = 89
+      Height = 20
+      BevelKind = bkFlat
+      BevelOuter = bvRaised
+      BorderStyle = bsNone
+      Font.Charset = GB2312_CHARSET
+      Font.Color = clBlue
+      Font.Height = -12
+      Font.Name = #23435#20307
+      Font.Style = []
+      MaxLength = 10
+      ParentFont = False
+      PasswordChar = '*'
+      TabOrder = 2
+    end
+    object ButtonOK: TRzButton
+      Left = 168
+      Top = 80
+      Caption = #30830#23450'(&O)'
+      HighlightColor = 16026986
+      HotTrack = True
+      HotTrackColor = 3983359
+      TabOrder = 4
+      OnClick = ButtonOKClick
+    end
+  end
+end

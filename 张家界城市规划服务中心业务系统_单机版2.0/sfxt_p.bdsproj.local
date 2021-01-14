@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2008-03-07 11:24:08.562.pas,d:\My Documents\RAD Studio\Projects\Unit2.pas=E:\tjz\delphi_app\ghj\收费通知单\sfxt.pas</Transaction>
+    <Transaction>2008-03-07 11:24:08.562.dfm,d:\My Documents\RAD Studio\Projects\Unit2.dfm=E:\tjz\delphi_app\ghj\收费通知单\sfxt.dfm</Transaction>
+    <Transaction>2008-03-07 11:24:23.031.bdsproj,d:\My Documents\RAD Studio\Projects\Project2.bdsproj=E:\tjz\delphi_app\ghj\收费通知单\sfxt_p.bdsproj</Transaction>
+    <Transaction>2008-03-07 11:36:40.500.pas,E:\tjz\delphi_app\ghj\收费通知单\chutu.pas=</Transaction>
+    <Transaction>2008-03-07 11:36:40.500.dfm,E:\tjz\delphi_app\ghj\收费通知单\chutu.dfm=</Transaction>
+    <Transaction>2008-03-10 15:59:37.781.pas,E:\tjz\delphi_app\ghj\收费通知单\Unit1.pas=E:\tjz\delphi_app\ghj\收费通知单\ctdcx_u.pas</Transaction>
+    <Transaction>2008-03-10 15:59:37.781.dfm,E:\tjz\delphi_app\ghj\收费通知单\Unit1.dfm=E:\tjz\delphi_app\ghj\收费通知单\ctdcx_u.dfm</Transaction>
+    <Transaction>2008-03-10 16:34:26.703.pas,E:\tjz\delphi_app\ghj\收费通知单\Unit1.pas=E:\tjz\delphi_app\ghj\收费通知单\sfdcx_u.pas</Transaction>
+    <Transaction>2008-03-10 16:34:26.703.dfm,E:\tjz\delphi_app\ghj\收费通知单\Unit1.dfm=E:\tjz\delphi_app\ghj\收费通知单\sfdcx_u.dfm</Transaction>
+    <Transaction>2008-03-14 09:28:31.203.pas,E:\tjz\delphi_app\ghj\服务中心业务系统\Unit1.pas=E:\tjz\delphi_app\ghj\服务中心业务系统\yhgl_u.pas</Transaction>
+    <Transaction>2008-03-14 09:28:31.203.dfm,E:\tjz\delphi_app\ghj\服务中心业务系统\Unit1.dfm=E:\tjz\delphi_app\ghj\服务中心业务系统\yhgl_u.dfm</Transaction>
+    <Transaction>2008-03-19 14:38:25.359.pas,E:\tjz\delphi_app\ghj\张家界城市规划服务中心业务系统\dwcx.pas=E:\tjz\delphi_app\ghj\张家界城市规划服务中心业务系统\dwcx_u.pas</Transaction>
+    <Transaction>2008-03-19 14:38:25.359.dfm,E:\tjz\delphi_app\ghj\张家界城市规划服务中心业务系统\dwcx.dfm=E:\tjz\delphi_app\ghj\张家界城市规划服务中心业务系统\dwcx_u.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

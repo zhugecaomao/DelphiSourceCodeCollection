@@ -1,0 +1,37 @@
+// Menu        
+SHOWDIB2 MENU DISCARDABLE
+BEGIN
+  POPUP "&File"
+  BEGIN
+    MENUITEM "&Open...\tCtrl+O", 40001
+    MENUITEM "&Save...\tCtrl+S", 40010
+    MENUITEM SEPARATOR
+    MENUITEM "&Print\tCtrl+P", 40006
+  END
+        
+  POPUP "&Edit"
+  BEGIN
+    MENUITEM "Cu&t\tCtrl+X", 40008
+    MENUITEM "&Copy\tCtrl+C", 40007
+    MENUITEM "&Delete\tDelete", 40009
+  END
+        
+  POPUP "&Show"
+  BEGIN
+    MENUITEM "&Actual Size", 40002, CHECKED
+    MENUITEM "&Center", 40003
+    MENUITEM "&Stretch to Window", 40004
+    MENUITEM "Stretch &Isotropically", 40005
+  END
+END
+        
+// Accelerator
+SHOWDIB2 ACCELERATORS DISCARDABLE
+BEGIN
+  "C", 40007, VIRTKEY, CONTROL, NOINVERT
+  "O", 40001, VIRTKEY, CONTROL, NOINVERT
+  "P", 40006, VIRTKEY, CONTROL, NOINVERT
+  "S", 40010, VIRTKEY, CONTROL, NOINVERT
+  VK_DELETE, 40009, VIRTKEY, NOINVERT
+  "X", 40008, VIRTKEY, CONTROL, NOINVERT
+END
